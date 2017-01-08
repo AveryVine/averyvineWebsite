@@ -7,6 +7,8 @@ const ROOT = "./public";
 app.set('views','./views');
 app.set('view engine','pug');
 
+app.set('port', (process.env.PORT || 5000));
+
 app.use(function(req, res, next) {
 	console.log(req.method + " request for " + req.url);
 	next();
@@ -27,6 +29,6 @@ app.all("*", function(req, res) {
 	res.render('404');
 })
 
-app.listen(2406, function() {
-	console.log("Server listening on port 2406");
+app.listen(app.get('port'), function() {
+  console.log('Server listening on port', app.get('port'));
 });
