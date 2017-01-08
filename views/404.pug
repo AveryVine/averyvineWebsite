@@ -1,0 +1,20 @@
+html
+  head
+    title Page Not Found - Avery Vine - Resume
+    link(rel = "stylesheet", href = "/style.css")
+    script(src = "scripts.js")
+
+  body
+    div#bodyDiv
+      div#headerDiv
+        h1#title We lost your page!
+      div#navBarDiv
+        ul#navBar
+          li#navBarLI #[a(href = "/index.pug") Page 1]
+          li#navBarLI #[a(href = "/qwerty.pug") Page 2]
+          li#navBarLI #[a(href = "/abcde.pug") Page 3]
+      div#contents
+        p
+          | It seems like this page doesn't exist! Here's a link to
+          span#documentReferrer #[a(href = "/") the home page]
+          |  to get you back on track.

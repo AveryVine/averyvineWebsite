@@ -1,0 +1,183 @@
+html
+  head
+    meta(name = "viewport", content = "width=device-width, initial-scale=1")
+    title Home - Avery Vine - Resume
+    link(rel = "stylesheet", href = "http://www.w3schools.com/lib/w3.css")
+    script(src = "scripts.js")
+
+  body(class = "w3-pale-blue")
+    div#navBar(class = "w3-top")
+      ul(class = "w3-navbar w3-card-8 w3-black")
+        li(class = "w3-hide-large w3-black w3-opennav w3-left")
+          a(href = "javascript:void(0);", onclick = "collapseNavBar('dropdownNavBar')") ☰
+        li
+          a(class = "w3-hover-teal w3-hide-small w3-hide-medium", href = "#") Home
+        li
+          a(class = "w3-hover-teal w3-hide-small w3-hide-medium", href = "#education") Education
+        li
+          a(class = "w3-hover-teal w3-hide-small w3-hide-medium", href = "#skills") Skills
+        li
+          a(class = "w3-hover-teal w3-hide-small w3-hide-medium", href = "#workExperience") Work Experience
+        li
+          a(class = "w3-hover-teal w3-hide-small w3-hide-medium", href = "#appliedProjects") Applied Projects
+        li
+          a(class = "w3-hover-teal w3-hide-small w3-hide-medium", href = "#extraCurriculars") Extra-Curriculars
+        li
+          a(class = "w3-hover-teal w3-hide-small w3-hide-medium", href = "#grades") Grades
+
+      div#dropdownNavBar(class = "w3-hide w3-hide-large")
+        ul(class = "w3-navbar w3-left-align w3-black")
+          li
+            a(class = "w3-hover-teal", href = "#") Home
+          li
+            a(class = "w3-hover-teal", href = "#education") Education
+          li
+            a(class = "w3-hover-teal", href = "#skills") Skills
+          li
+            a(class = "w3-hover-teal", href = "#workExperience") Work Experience
+          li
+            a(class = "w3-hover-teal", href = "#appliedProjects") Applied Projects
+          li
+            a(class = "w3-hover-teal", href = "#extraCurriculars") Extra-Curriculars
+          li
+            a(class = "w3-hover-teal", href = "#grades") Grades
+
+    div(class = "w3-panel")
+    div(class = "w3-panel")
+
+    div#mainContent(class = "w3-container")
+      div#row1(class = "w3-row-padding")
+        div(class = "w3-third")
+          div#home(class = "w3-card-4 w3-padding-8 w3-leftbar w3-white", style = "min-height: 360px")
+            div(class = "w3-container")
+              div(class = "w3-row")
+                div(class = "w3-third")
+                  img(src = "assets/avine.jpg", class = "w3-circle", alt = "Avery Vine", style = "width: 100%")
+                div(class = "w3-twothird")
+                  div#aboutMeText(class = "w3-center")
+                    h2 Avery Vine
+
+        div(class = "w3-third")
+          div#education(class = "w3-card-4 w3-padding-8 w3-leftbar w3-white", style = "min-height: 360px")
+            div#educationText(class = "w3-container")
+              div(class = "w3-center")
+                h2 Education
+              p Bachelor of Computer Science, Mobile Computing, Co-op (September 2015 - Present)
+              p Carleton University, Ottawa, ON
+              ul
+                li 2#[sup nd] Year Undergraduate, CGPA 10.53/12 (A-)
+                li Expected Graduation April 2020
+
+        div(class = "w3-third")
+          div#skills(class = "w3-card-4 w3-padding-8 w3-leftbar w3-white", style = "min-height: 360px")
+            div(class = "w3-container")
+              div(class = "w3-display-container")
+                a(class = "w3-btn-floating w3-display-topleft", onclick = "changeTab(-1, 'skillTab')") &#10094;
+                a(class = "w3-btn-floating w3-display-topright", onclick = "changeTab(1, 'skillTab')") &#10095;
+
+                div#technical(class = "skillTab")
+                  div(class = "w3-center")
+                    div(class = "w3-margin-left w3-margin-right")
+                      div(class = "w3-margin-left w3-margin-right")
+                        div(class = "w3-margin-left w3-margin-right")
+                          h2 Skills - Technical
+                  ul
+                    li Developed a proficiency in HTML, CSS, JavaScript, Java, C, C++, and Swift throughout several courses
+                    li Implemented local web servers for several web development assignments
+                    li Experience using macOS, Windows, and Linux operating systems
+
+                div#communication(class = "skillTab", style = "display: none")
+                  div(class = "w3-center")
+                    div(class = "w3-margin-left w3-margin-right")
+                      div(class = "w3-margin-left w3-margin-right")
+                        div(class = "w3-margin-left w3-margin-right")
+                          h2 Skills - Communication
+                  ul
+                    li Reviewed with my employer the reults from previous testing, the implications the outcomes had on the status of the project, and the next steps to take in order to efficiently progress with our work
+                    li Collaborated with co-workers to ensure that all restaurant tasks are accomplished before the end of the shift
+
+                div#problemSolving(class = "skillTab", style = "display: none")
+                  div(class = "w3-center")
+                    div(class = "w3-margin-left w3-margin-right")
+                      div(class = "w3-margin-left w3-margin-right")
+                        div(class = "w3-margin-left w3-margin-right")
+                          h2 Skills - Problem Solving
+                  ul
+                    li Implemented various command line and graphical solutions to understand the more common shortest path algorithms in depth
+                    li Successfully prioritized tasks that needed to be accomplished during my time at Subway, such as cleaning and baking
+                    li Conducted increasingly specific tests to discover and removes sources of error in my implementations of several shortest path algorithms
+
+      div#row2(class = "w3-row-padding w3-margin-top")
+        div(class = "w3-third")
+          div#workExperience(class = "w3-card-4 w3-padding-8 w3-leftbar w3-white", style = "min-height: 360px")
+            div(class = "w3-container")
+              div(class = "w3-display-container")
+                a(class = "w3-btn-floating w3-display-topleft", onclick = "changeTab(-1, 'workExperienceTab')") &#10094;
+                a(class = "w3-btn-floating w3-display-topright", onclick = "changeTab(1, 'workExperienceTab')") &#10095;
+
+                div#pianoTeacher(class = "workExperienceTab")
+                  div(class = "w3-center")
+                    div(class = "w3-margin-left w3-margin-right")
+                      div(class = "w3-margin-left w3-margin-right")
+                        div(class = "w3-margin-left w3-margin-right")
+                          h2 Work - Piano Teacher
+                    h3 Lauzon Music, Ottawa, ON (June 2016 - Present)
+                  ul
+                    li Instruct children on how to dedicate themselves to a task by teaching them to practice their instrument efficiently
+
+                div#undergradResearch(class = "workExperienceTab", style = "display: none")
+                  div(class = "w3-center")
+                    div(class = "w3-margin-left w3-margin-right")
+                      div(class = "w3-margin-left w3-margin-right")
+                        div(class = "w3-margin-left w3-margin-right")
+                          h2 Work - Undergraduate Research Assistant
+                    h3 Carleton University, Ottawa, ON (May 2016 - September 2016)
+                  ul
+                    li Researched several existing algorithms to optimally find the shortest path to a moving target, with the purpose of discovering more efficient algorithms and furthering my understanding of the research process
+
+                div#sandwichArtist(class = "workExperienceTab", style = "display: none")
+                  div(class = "w3-center")
+                    div(class = "w3-margin-left w3-margin-right")
+                      div(class = "w3-margin-left w3-margin-right")
+                        div(class = "w3-margin-left w3-margin-right")
+                          h2 Work - Sandwich Artist
+                    h3 Subway, Ottawa, ON (May 2015 - May 2016)
+                  ul
+                    li Contributed to a positive restaurant environment by fully commiting myself to my work each day, ultimately increasing customer and employee satisfaction
+
+        div(class = "w3-third")
+          div#appliedProjects(class = "w3-card-4 w3-padding-8 w3-leftbar w3-white", style = "min-height: 360px")
+            div#appliedProjectsText(class = "w3-container")
+              div(class = "w3-center")
+                h2 Applied Projects
+              h3 Lead (and Sole) Developer
+              p Two Buttons - The Reflex Tapping Game (February 2016 - September 2016)
+              ul
+                li Applied knowledge of Swift and Model-View Controller learned in my mobile applications course to ensure that each screen flows into the next
+                li Overcame challenges such as not knowing how to persistently store data, through careful research and testing
+                li Released the application on the iOS App Store, after delays due to developer age restrictions
+
+
+        div(class = "w3-third")
+          div#extraCurriculars(class = "w3-card-4 w3-padding-8 w3-leftbar w3-white", style = "min-height: 360px")
+            div#extraCurricularsText(class = "w3-container")
+              div(class = "w3-center")
+                h2 Extra-Curricular Experience
+              ul
+                li Participated in the Carleton Code Guru Competition (April 2016)
+                li Member of the Carleton Computer Science Society (Since September 2015)
+                li Participated in the ECOO Programming Competition finals in Toronto (May 2015)
+
+    div(class = "w3-panel")
+    div(class = "w3-panel")
+    div(class = "w3-panel")
+    div(class = "w3-panel")
+    div(class = "w3-panel")
+    div(class = "w3-panel")
+    div(class = "w3-panel")
+    div(class = "w3-panel")
+
+    div#footer(class = "w3-bottom w3-container w3-khaki")
+      h3 Contact Info
+      p email: averyvine@cmail.carleton.ca
+      p phone: (613) 867-2355
