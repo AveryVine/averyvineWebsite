@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('#gradesImage').height($('#grades').height());
+  $('#gradesImage').height($('#grades').height() - $('#gradesHeader').height() - 16);
 });
 
 function collapseNavBar(navBar) {

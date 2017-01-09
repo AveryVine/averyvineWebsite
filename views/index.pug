@@ -67,7 +67,7 @@ html
           div#education(class = "w3-card-4 w3-leftbar w3-border-dark-gray w3-light-gray", style = "min-height: 400px")
             div(class = "w3-panel w3-grey w3-center")
               h3 Education
-            div#educationText(class = "w3-container")
+            div(class = "w3-container")
               p Bachelor of Computer Science, Mobile Computing, Co-op (September 2015 - Present)
               p Carleton University, Ottawa, ON
               ul
@@ -76,86 +76,64 @@ html
 
         div(class = "w3-col l4")
           div#skills(class = "w3-card-4 w3-leftbar w3-border-dark-gray w3-light-gray", style = "min-height: 400px")
-            div(class = "w3-container")
-              div(class = "w3-display-container")
-                a(class = "w3-btn-floating w3-display-topleft", onclick = "changeTab(-1, 'skillTab')") &#10094;
-                a(class = "w3-btn-floating w3-display-topright", onclick = "changeTab(1, 'skillTab')") &#10095;
+            div#technical(class = "skillTab")
+              div(class = "w3-panel w3-grey w3-center")
+                h3 #[a(onclick = "changeTab(-1, 'skillTab')") &#10094;] &nbsp Skills - Technical &nbsp #[a(onclick = "changeTab(1, 'skillTab')") &#10095;]
+              div(class = "w3-container")
+                ul
+                  li Developed a proficiency in HTML, CSS, JavaScript, Java, C, C++, and Swift throughout several courses
+                  li Implemented local web servers for several web development assignments
+                  li Experience using macOS, Windows, and Linux operating systems
 
-                div#technical(class = "skillTab")
-                  div(class = "w3-center")
-                    div(class = "w3-margin-left w3-margin-right")
-                      div(class = "w3-margin-left w3-margin-right")
-                        div(class = "w3-margin-left w3-margin-right")
-                          h3 Skills - Technical
-                  ul
-                    li Developed a proficiency in HTML, CSS, JavaScript, Java, C, C++, and Swift throughout several courses
-                    li Implemented local web servers for several web development assignments
-                    li Experience using macOS, Windows, and Linux operating systems
+            div#communication(class = "skillTab", style = "display: none")
+              div(class = "w3-panel w3-grey w3-center")
+                h3 #[a(onclick = "changeTab(-1, 'skillTab')") &#10094;] &nbsp Skills - Communication &nbsp #[a(onclick = "changeTab(1, 'skillTab')") &#10095;]
+              div(class = "w3-container")
+                ul
+                  li Reviewed with my employer the reults from previous testing, the implications the outcomes had on the status of the project, and the next steps to take in order to efficiently progress with our work
+                  li Collaborated with co-workers to ensure that all restaurant tasks are accomplished before the end of the shift
 
-                div#communication(class = "skillTab", style = "display: none")
-                  div(class = "w3-center")
-                    div(class = "w3-margin-left w3-margin-right")
-                      div(class = "w3-margin-left w3-margin-right")
-                        div(class = "w3-margin-left w3-margin-right")
-                          h3 Skills - Communication
-                  ul
-                    li Reviewed with my employer the reults from previous testing, the implications the outcomes had on the status of the project, and the next steps to take in order to efficiently progress with our work
-                    li Collaborated with co-workers to ensure that all restaurant tasks are accomplished before the end of the shift
-
-                div#problemSolving(class = "skillTab", style = "display: none")
-                  div(class = "w3-center")
-                    div(class = "w3-margin-left w3-margin-right")
-                      div(class = "w3-margin-left w3-margin-right")
-                        div(class = "w3-margin-left w3-margin-right")
-                          h3 Skills - Problem Solving
-                  ul
-                    li Implemented various command line and graphical solutions to understand the more common shortest path algorithms in depth
-                    li Successfully prioritized tasks that needed to be accomplished during my time at Subway, such as cleaning and baking
-                    li Conducted increasingly specific tests to discover and removes sources of error in my implementations of several shortest path algorithms
+            div#problemSolving(class = "skillTab", style = "display: none")
+              div(class = "w3-panel w3-grey w3-center")
+                h3 #[a(onclick = "changeTab(-1, 'skillTab')") &#10094;] &nbsp Skills - Problem Solving &nbsp #[a(onclick = "changeTab(1, 'skillTab')") &#10095;]
+              div(class = "w3-container")
+                ul
+                  li Implemented various command line and graphical solutions to understand the more common shortest path algorithms in depth
+                  li Successfully prioritized tasks that needed to be accomplished during my time at Subway, such as cleaning and baking
+                  li Conducted increasingly specific tests to discover and removes sources of error in my implementations of several shortest path algorithms
 
         div(class = "w3-col l4")
           div#workExperience(class = "w3-card-4 w3-leftbar w3-border-dark-gray w3-light-gray", style = "min-height: 400px")
-            div(class = "w3-container")
-              div(class = "w3-display-container")
-                a(class = "w3-btn-floating w3-display-topleft", onclick = "changeTab(-1, 'workExperienceTab')") &#10094;
-                a(class = "w3-btn-floating w3-display-topright", onclick = "changeTab(1, 'workExperienceTab')") &#10095;
+            div#pianoTeacher(class = "workExperienceTab")
+              div(class = "w3-panel w3-grey w3-center")
+                h3 #[a(onclick = "changeTab(-1, 'workExperienceTab')") &#10094;] &nbsp Work - Piano Teacher &nbsp #[a(onclick = "changeTab(1, 'workExperienceTab')") &#10095;]
+              div(class = "w3-container")
+                p Lauzon Music, Ottawa, ON (June 2016 - Present)
+                ul
+                  li Instruct children on how to dedicate themselves to a task by teaching them to practice their instrument efficiently
 
-                div#pianoTeacher(class = "workExperienceTab")
-                  div(class = "w3-center")
-                    div(class = "w3-margin-left w3-margin-right")
-                      div(class = "w3-margin-left w3-margin-right")
-                        div(class = "w3-margin-left w3-margin-right")
-                          h3 Work - Piano Teacher
-                    p Lauzon Music, Ottawa, ON (June 2016 - Present)
-                  ul
-                    li Instruct children on how to dedicate themselves to a task by teaching them to practice their instrument efficiently
+            div#undergradResearch(class = "workExperienceTab", style = "display: none")
+              div(class = "w3-panel w3-grey w3-center")
+                h3 #[a(onclick = "changeTab(-1, 'workExperienceTab')") &#10094;] &nbsp Work - Undergrad. Research Assistant&nbsp #[a(onclick = "changeTab(1, 'workExperienceTab')") &#10095;]
+              div(class = "w3-container")
+                p Carleton University, Ottawa, ON (May 2016 - September 2016)
+                ul
+                  li Researched several existing algorithms to optimally find the shortest path to a moving target, with the purpose of discovering more efficient algorithms and furthering my understanding of the research process
 
-                div#undergradResearch(class = "workExperienceTab", style = "display: none")
-                  div(class = "w3-center")
-                    div(class = "w3-margin-left w3-margin-right")
-                      div(class = "w3-margin-left w3-margin-right")
-                        div(class = "w3-margin-left w3-margin-right")
-                          h3 Work - Undergraduate Research Assistant
-                    p Carleton University, Ottawa, ON (May 2016 - September 2016)
-                  ul
-                    li Researched several existing algorithms to optimally find the shortest path to a moving target, with the purpose of discovering more efficient algorithms and furthering my understanding of the research process
-
-                div#sandwichArtist(class = "workExperienceTab", style = "display: none")
-                  div(class = "w3-center")
-                    div(class = "w3-margin-left w3-margin-right")
-                      div(class = "w3-margin-left w3-margin-right")
-                        div(class = "w3-margin-left w3-margin-right")
-                          h3 Work - Sandwich Artist
-                    p Subway, Ottawa, ON (May 2015 - May 2016)
-                  ul
-                    li Contributed to a positive restaurant environment by fully commiting myself to my work each day, ultimately increasing customer and employee satisfaction
+            div#sandwichArtist(class = "workExperienceTab", style = "display: none")
+              div(class = "w3-panel w3-grey w3-center")
+                h3 #[a(onclick = "changeTab(-1, 'workExperienceTab')") &#10094;] &nbsp Work - Sandwich Artist &nbsp #[a(onclick = "changeTab(1, 'workExperienceTab')") &#10095;]
+              div(class = "w3-container")
+                p Subway, Ottawa, ON (May 2015 - May 2016)
+                ul
+                  li Contributed to a positive restaurant environment by fully commiting myself to my work each day, ultimately increasing customer and employee satisfaction
 
       div#row3(class = "w3-row-padding w3-margin")
         div(class = "w3-col l4")
           div#appliedProjects(class = "w3-card-4 w3-leftbar w3-border-dark-gray w3-light-gray", style = "min-height: 400px")
             div(class = "w3-panel w3-gray w3-center")
               h3 Applied Projects
-            div#appliedProjectsText(class = "w3-container")
+            div(class = "w3-container")
               p Lead (and Sole) Developer
               p Two Buttons - The Reflex Tapping Game (February 2016 - September 2016)
               ul
@@ -167,7 +145,7 @@ html
           div#extraCurriculars(class = "w3-card-4 w3-leftbar w3-border-dark-gray w3-light-gray", style = "min-height: 400px")
             div(class = "w3-panel w3-gray w3-center")
               h3 Extra-Curricular Experience
-            div#extraCurricularsText(class = "w3-container")
+            div(class = "w3-container")
               ul
                 li Participated in the Carleton Code Guru Competition (April 2016)
                 li Member of the Carleton Computer Science Society (Since September 2015)
@@ -175,18 +153,17 @@ html
 
         div(class = "w3-col l4")
           div#grades(class = "w3-card-4 w3-leftbar w3-border-dark-gray w3-light-gray", style = "min-height: 400px")
+            div#gradesHeader(class = "w3-panel w3-gray w3-center")
+              h3 Grades
             a(href = "assets/recordOfGrades.pdf")
-              div#gradesText(class = "w3-display-container")
-                img#gradesImage(src = "assets/grades.png", class = "w3-opacity-max w3-hover-opacity", alt = "Grades Page Image", style = "height: 10px; width: 100%")
-                div(class = "w3-display-topmiddle", style = "text-shadow: 0px 0px 3px #fff, -1px -1px #fff, 1px 1px #fff")
-                  h3 Grades
-                div(class = "w3-display-middle w3-center", style = "text-shadow: 0px 0px 3px #fff, -2px -2px 3px #fff, 2px 2px 3px #fff")
-                  p Computer Science GPA: 11.42 / 12
-                  p Overall Carleton GPA: 10.53 / 12
+              div(class = "w3-display-container")
+                div#gradesText(class = "w3-display-topmiddle w3-center")
+                  p Computer Science GPA: 11.42/12
+                  p Overall Carleton GPA: 10.53/12
                   p Academic Terms Completed: 3
                   p Co-op Work Terms Completed: 0
-                div(class = "w3-display-bottommiddle w3-center", style = "text-shadow: 0px 0px 3px #fff, -2px -2px 3px #fff, 2px 2px 3px #fff")
                   p Tap/Click for More
+                img#gradesImage(src = "assets/gradesBlur.png", class = "w3-opacity-full w3-hover-opacity-off" alt = "Grades Page Image", style = "height: 10px; width: 100%")
 
     div(class = "w3-panel")
     div(class = "w3-panel")
