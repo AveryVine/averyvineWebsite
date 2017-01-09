@@ -1,20 +1,16 @@
+//Copyright 2017, Avery Vine, All rights reserved.
+
 html
   head
-    title Page Not Found - Avery Vine - Resume
-    link(rel = "stylesheet", href = "/style.css")
-    script(src = "scripts.js")
+    title 404 - Avery Vine
+    link(rel = "stylesheet", href = "/w3.css")
 
-  body
-    div#bodyDiv
-      div#headerDiv
-        h1#title We lost your page!
-      div#navBarDiv
-        ul#navBar
-          li#navBarLI #[a(href = "/index.pug") Page 1]
-          li#navBarLI #[a(href = "/qwerty.pug") Page 2]
-          li#navBarLI #[a(href = "/abcde.pug") Page 3]
-      div#contents
-        p
-          | It seems like this page doesn't exist! Here's a link to
-          span#documentReferrer #[a(href = "/") the home page]
-          |  to get you back on track.
+  body(class = "w3-brown")
+    div(class = "w3-container")
+      //-404 error panel
+      div(class = "w3-card-8 w3-panel w3-orange")
+        h1#title 404 - Page Not Found
+        div(class = "w3-margin-bottom")
+          p
+          | It seems like this page doesn't exist!
+          | Here's a link to #[a(href = "/") the home page] to get you back on track.
