@@ -165,16 +165,28 @@ html
         div(class = "w3-col l4")
           //-applied projects card (1/3 of screen)
           div#appliedProjects(class = "w3-card-4 w3-leftbar w3-border-dark-gray w3-light-gray", style = "min-height: 400px")
-            //-header of card
-            div(class = "w3-panel w3-gray w3-center")
-              h3 Applied Projects
-            div(class = "w3-container")
-              p Lead (and Sole) Developer
-              p Two Buttons - The Reflex Tapping Game (February 2016 - September 2016)
-              ul
-                li Applied knowledge of Swift and Model-View Controller learned in my mobile applications course to ensure that each screen flows into the next
-                li Overcame challenges such as not knowing how to persistently store data, through careful research and testing
-                li Released the application on the iOS App Store, after delays due to developer age restrictions
+            div#twoButtons(class = "appliedProjectsTab")
+              //-header of card, first tab (includes tab navigation arrows)
+              div(class = "w3-panel w3-grey w3-center")
+                h3 #[a(onclick = "changeTab(-1, 'appliedProjectsTab')") &#10094;] &nbsp Project - iPhone App &nbsp #[a(onclick = "changeTab(1, 'appliedProjectsTab')") &#10095;]
+              div(class = "w3-container")
+                p Lead (and Sole) Developer
+                p Two Buttons - The Reflex Tapping Game (February 2016 - September 2016)
+                ul
+                  li Applied knowledge of Swift and Model-View Controller learned in my mobile applications course to ensure that each screen flows into the next
+                  li Overcame challenges such as not knowing how to persistently store data, through careful research and testing
+                  li Released the application on the iOS App Store, after delays due to developer age restrictions
+
+            div#website(class = "appliedProjectsTab", style = "display: none")
+              //-header of card, second tab (includes tab navigation arrows)
+              div(class = "w3-panel w3-grey w3-center")
+                h3 #[a(onclick = "changeTab(-1, 'appliedProjectsTab')") &#10094;] &nbsp Project - Website &nbsp #[a(onclick = "changeTab(1, 'appliedProjectsTab')") &#10095;]
+              div(class = "w3-container")
+                p Lead (and Sole) Developer
+                p Personal Website (January 2017)
+                ul
+                  li Applied knowledge of HTML, CSS, Javascript, Node.js, Express, and Pug to develop a functional Node.js web application
+                  li Familiarized myself with the w3.css technology to quickly and intelligently design and implement the website format
 
         div(class = "w3-col l4")
           //-extra curricular experience card (1/3 of screen)

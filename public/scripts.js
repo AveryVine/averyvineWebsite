@@ -17,27 +17,59 @@ function collapseNavBar(navBar) {
 
 //increments the current tab on a given card
 function changeTab(n, tabClass) {
-  if (tabClass === "skillTab") showTab(tabIndex.skillTab += n, "skillTab");
-  else showTab(tabIndex.workExperienceTab += n, "workExperienceTab");
+  switch(tabClass) {
+    case "skillTab":
+      showTab(tabIndex.skillTab += n, "skillTab");
+      break;
+    case "workExperienceTab":
+      showTab(tabIndex.workExperienceTab += n, "workExperienceTab");
+      break;
+    case "appliedProjectsTab":
+      showTab(tabIndex.appliedProjectsTab += n, "appliedProjectsTab");
+      break;
+    default:
+      console.log("Error switching tabs");
+  }
 }
 
 //sets the visibility of all tabs on a given card
 function showTab(n, tabClass) {
   var index;
-  if (tabClass === "skillTab") index = tabIndex.skillTab;
-  else index = tabIndex.workExperienceTab;
-  var x = document.getElementsByClassName(tabClass);
-  if (n > x.length) {index = 1}
-  if (n < 1) {index = x.length}
-  for (var i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
+  switch(tabClass) {
+    case "skillTab":
+      index = tabIndex.skillTab;
+      break;
+    case "workExperienceTab":
+      index = tabIndex.workExperienceTab;
+      break;
+    case "appliedProjectsTab":
+      index = tabIndex.appliedProjectsTab;
+      break;
+    default:
+      console.log("Error switching tabs");
   }
+  var x = document.getElementsByClassName(tabClass);
+  if (n > x.length) index = 1;
+  if (n < 1) index = x.length;
+  for (var i = 0; i < x.length; i++) x[i].style.display = "none";
   x[index - 1].style.display = "block";
-  if (tabClass === "skillTab") tabIndex.skillTab = index;
-  else tabIndex.workExperienceTab = index;
+  switch(tabClass) {
+    case "skillTab":
+      tabIndex.skillTab = index;
+      break;
+    case "workExperienceTab":
+      tabIndex.workExperienceTab = index;
+      break;
+    case "appliedProjectsTab":
+      tabIndex.appliedProjectsTab = index;
+      break;
+    default:
+      console.log("Error switching tabs");
+  }
 }
 
-var tabIndex = {"skillTab" : 1, "workExperienceTab" : 1};
+var tabIndex = {"skillTab" : 1, "workExperienceTab" : 1, "appliedProjectsTab" : 1};
 //initialize visible tabs on skills card and work experience card
 showTab(tabIndex.skillTab, "skillTab");
 showTab(tabIndex.workExperienceTab, "workExperienceTab");
+showTab(tabIndex.appliedProjectsTab, "appliedProjectsTab");
