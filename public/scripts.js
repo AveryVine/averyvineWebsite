@@ -88,7 +88,7 @@ var tabIndex = {
   "skillTab" : {
     "index" : 1,
     "title1" : "Skills - Technical",
-    "title2" : "Skills - Communcation",
+    "title2" : "Skills - Communication",
     "title3" : "Skills - Problem Solving"
   }, "workExperienceTab" : {
     "index" : 1,
