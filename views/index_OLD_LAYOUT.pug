@@ -1,0 +1,255 @@
+//Copyright 2017, Avery Vine, All rights reserved.
+
+html
+  head
+    //-set up device width
+    meta(name = "viewport", content = "width=device-width, initial-scale=1")
+    title Avery Vine
+    //-import w3.css for design
+    link(rel = "stylesheet", href = "/w3.css")
+    //-import cloudflare for icons
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    //-import jQuery for javascript
+    script(src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+    //-import javascript file
+    script(src = "scripts.js")
+
+  body(class = "w3-brown")
+    //-horizontal nav bar (always at the top of the page)
+    div#navBar(class = "w3-top")
+      ul(class = "w3-navbar w3-card-8 w3-black")
+        //-button for dropdown menu, only visible on small and medium screens
+        li(class = "w3-hide-large w3-black w3-opennav w3-left")
+          a(href = "javascript:void(0);", onclick = "collapseNavBar('dropdownNavBar')") ☰
+        //-all links below this point are only visible on large screens
+        li
+          a(class = "w3-hover-teal w3-hide-small w3-hide-medium", href = "#") Home
+        li
+          a(class = "w3-hover-teal w3-hide-small w3-hide-medium", href = "#education") Education
+        li
+          a(class = "w3-hover-teal w3-hide-small w3-hide-medium", href = "#skills") Skills
+        li
+          a(class = "w3-hover-teal w3-hide-small w3-hide-medium", href = "#workExperience") Work Experience
+        li
+          a(class = "w3-hover-teal w3-hide-small w3-hide-medium", href = "#appliedProjects") Applied Projects
+        li
+          a(class = "w3-hover-teal w3-hide-small w3-hide-medium", href = "#extraCurriculars") Extra-Curriculars
+        li
+          a(class = "w3-hover-teal w3-hide-small w3-hide-medium", href = "#grades") Grades
+        //-website name on the right side of the nav bar
+        li(class = "w3-right")
+          a(class = "w3-navitem w3-hover-none w3-hover-text-white") Avery Vine
+
+      //-dropdown menu, only visible on small and medium screens
+      div#dropdownNavBar(class = "w3-hide w3-hide-large")
+        ul(class = "w3-navbar w3-left-align w3-black")
+          li
+            a(class = "w3-hover-teal", href = "#") Home
+          li
+            a(class = "w3-hover-teal", href = "#education") Education
+          li
+            a(class = "w3-hover-teal", href = "#skills") Skills
+          li
+            a(class = "w3-hover-teal", href = "#workExperience") Work Experience
+          li
+            a(class = "w3-hover-teal", href = "#appliedProjects") Applied Projects
+          li
+            a(class = "w3-hover-teal", href = "#extraCurriculars") Extra-Curriculars
+          li
+            a(class = "w3-hover-teal", href = "#grades") Grades
+          li
+            a(class = "w3-hover-teal", href = "#contact") Contact
+
+    //-spacing (due to nav bar being persistently on top)
+    div(class = "w3-panel")
+    div(class = "w3-panel")
+
+    div#mainContent(class = "w3-container")
+      //-first row of cards
+      div#row1(class = "w3-row-padding w3-margin")
+        //-home card (significantly large)
+        div#home(class = "w3-card-4 w3-content w3-padding-8 w3-leftbar w3-border-dark-gray w3-light-gray", style = "max-width: 850px")
+          div(class = "w3-container")
+            div(class = "w3-row")
+              div(class = "w3-third")
+                img(src = "assets/avine.jpg", class = "w3-circle", alt = "Avery Vine", style = "width: 100%")
+              div(class = "w3-twothird")
+                div(class = "w3-margin")
+                  div(class = "w3-center")
+                    h2 Avery Vine
+                  div(class = "w3-margin-left")
+                    p
+                    | I am a focused, goal-driven individual who can stay highly organized and work efficiently, independently or in a team.
+                    | I have experience in several areas, with my main interests being programming and music.
+                    | With several personal and university projects completed, I am ready to enthusiastically tackle new and exciting challenges.
+
+      //-second row of cards
+      div#row2(class = "w3-row-padding w3-margin")
+        div(class = "w3-col l4")
+          //-education card (1/3 of screen)
+          div#education(class = "w3-card-4 w3-leftbar w3-border-dark-gray w3-light-gray", style = "min-height: 400px")
+            //-header of card
+            div(class = "w3-panel w3-grey w3-center")
+              h3 Education
+            div(class = "w3-container")
+              p Bachelor of Computer Science, Mobile Computing, Co-op (September 2015 - Present)
+              p Carleton University, Ottawa, ON
+              ul
+                li 2#[sup nd] Year Undergraduate, CGPA 10.53/12 (A-)
+                li Expected Graduation April 2020
+
+        div(class = "w3-col l4")
+          //-skills card (1/3 of screen)
+          div#skills(class = "w3-card-4 w3-leftbar w3-border-dark-gray w3-light-gray", style = "min-height: 400px")
+            div#technical(class = "skillTab")
+              //-header of card, first tab (includes tab navigation arrows)
+              div(class = "w3-panel w3-grey w3-center")
+                h3 #[a(onclick = "changeTab(-1, 'skillTab')") &#10094;] &nbsp Skills - Technical &nbsp #[a(onclick = "changeTab(1, 'skillTab')") &#10095;]
+              div(class = "w3-container")
+                ul
+                  li Developed a proficiency in HTML, CSS, JavaScript, Java, C, C++, and Swift throughout several courses
+                  li Implemented local web servers for several web development assignments
+                  li Experience using macOS, Windows, and Linux operating systems
+
+            div#communication(class = "skillTab", style = "display: none")
+              //-header of card, second tab (includes tab navigation arrows)
+              div(class = "w3-panel w3-grey w3-center")
+                h3 #[a(onclick = "changeTab(-1, 'skillTab')") &#10094;] &nbsp Skills - Communication &nbsp #[a(onclick = "changeTab(1, 'skillTab')") &#10095;]
+              div(class = "w3-container")
+                ul
+                  li Reviewed with my employer the reults from previous testing, the implications the outcomes had on the status of the project, and the next steps to take in order to efficiently progress with our work
+                  li Collaborated with co-workers to ensure that all restaurant tasks are accomplished before the end of the shift
+
+            div#problemSolving(class = "skillTab", style = "display: none")
+              //-header of card, third tab (includes tab navigation arrows)
+              div(class = "w3-panel w3-grey w3-center")
+                h3 #[a(onclick = "changeTab(-1, 'skillTab')") &#10094;] &nbsp Skills - Problem Solving &nbsp #[a(onclick = "changeTab(1, 'skillTab')") &#10095;]
+              div(class = "w3-container")
+                ul
+                  li Implemented various command line and graphical solutions to understand the more common shortest path algorithms in depth
+                  li Successfully prioritized tasks that needed to be accomplished during my time at Subway, such as cleaning and baking
+                  li Conducted increasingly specific tests to discover and removes sources of error in my implementations of several shortest path algorithms
+
+        div(class = "w3-col l4")
+          //-work experience card (1/3 of screen)
+          div#workExperience(class = "w3-card-4 w3-leftbar w3-border-dark-gray w3-light-gray", style = "min-height: 400px")
+            div#pianoTeacher(class = "workExperienceTab")
+              //-header of card, first tab (includes tab navigation arrows)
+              div(class = "w3-panel w3-grey w3-center")
+                h3 #[a(onclick = "changeTab(-1, 'workExperienceTab')") &#10094;] &nbsp Work - Piano Teacher &nbsp #[a(onclick = "changeTab(1, 'workExperienceTab')") &#10095;]
+              div(class = "w3-container")
+                p Lauzon Music, Ottawa, ON (June 2016 - Present)
+                ul
+                  li Instruct children on how to dedicate themselves to a task by teaching them to practice their instrument efficiently
+
+            div#undergradResearch(class = "workExperienceTab", style = "display: none")
+              //-header of card, second tab (includes tab navigation arrows)
+              div(class = "w3-panel w3-grey w3-center")
+                h3 #[a(onclick = "changeTab(-1, 'workExperienceTab')") &#10094;] &nbsp Work - Undergrad. Research Assistant&nbsp #[a(onclick = "changeTab(1, 'workExperienceTab')") &#10095;]
+              div(class = "w3-container")
+                p Carleton University, Ottawa, ON (May 2016 - September 2016)
+                ul
+                  li Researched several existing algorithms to optimally find the shortest path to a moving target, with the purpose of discovering more efficient algorithms and furthering my understanding of the research process
+
+            div#sandwichArtist(class = "workExperienceTab", style = "display: none")
+              //-header of card, third tab (includes tab navigation arrows)
+              div(class = "w3-panel w3-grey w3-center")
+                h3 #[a(onclick = "changeTab(-1, 'workExperienceTab')") &#10094;] &nbsp Work - Sandwich Artist &nbsp #[a(onclick = "changeTab(1, 'workExperienceTab')") &#10095;]
+              div(class = "w3-container")
+                p Subway, Ottawa, ON (May 2015 - May 2016)
+                ul
+                  li Contributed to a positive restaurant environment by fully commiting myself to my work each day, ultimately increasing customer and employee satisfaction
+
+      //-third row of cards
+      div#row3(class = "w3-row-padding w3-margin")
+        div(class = "w3-col l4")
+          //-applied projects card (1/3 of screen)
+          div#appliedProjects(class = "w3-card-4 w3-leftbar w3-border-dark-gray w3-light-gray", style = "min-height: 400px")
+            div#twoButtons(class = "appliedProjectsTab")
+              //-header of card, first tab (includes tab navigation arrows)
+              div(class = "w3-panel w3-grey w3-center")
+                h3 #[a(onclick = "changeTab(-1, 'appliedProjectsTab')") &#10094;] &nbsp Project - iPhone App &nbsp #[a(onclick = "changeTab(1, 'appliedProjectsTab')") &#10095;]
+              div(class = "w3-container")
+                p Lead (and Sole) Developer
+                p Two Buttons - The Reflex Tapping Game (February 2016 - September 2016)
+                ul
+                  li Applied knowledge of Swift and Model-View Controller learned in my mobile applications course to ensure that each screen flows into the next
+                  li Overcame challenges such as not knowing how to persistently store data, through careful research and testing
+                  li Released the application on the iOS App Store, after delays due to developer age restrictions
+
+            div#website(class = "appliedProjectsTab", style = "display: none")
+              //-header of card, second tab (includes tab navigation arrows)
+              div(class = "w3-panel w3-grey w3-center")
+                h3 #[a(onclick = "changeTab(-1, 'appliedProjectsTab')") &#10094;] &nbsp Project - Website &nbsp #[a(onclick = "changeTab(1, 'appliedProjectsTab')") &#10095;]
+              div(class = "w3-container")
+                p Lead (and Sole) Developer
+                p Personal Website (January 2017)
+                ul
+                  li Applied knowledge of HTML, CSS, Javascript, Node.js, Express, and Pug to develop a functional Node.js web application
+                  li Familiarized myself with the w3.css technology to quickly and intelligently design and implement the website format
+
+        div(class = "w3-col l4")
+          //-extra curricular experience card (1/3 of screen)
+          div#extraCurriculars(class = "w3-card-4 w3-leftbar w3-border-dark-gray w3-light-gray", style = "min-height: 400px")
+            //-header of card
+            div(class = "w3-panel w3-gray w3-center")
+              h3 Extra-Curricular Experience
+            div(class = "w3-container")
+              ul
+                li Participated in the Carleton Code Guru Competition (April 2016)
+                li Member of the Carleton Computer Science Society (Since September 2015)
+                li Participated in the ECOO Programming Competition finals in Toronto (May 2015)
+
+        div(class = "w3-col l4")
+          //-grades card (1/3 of screen)
+          div#grades(class = "w3-card-4 w3-leftbar w3-border-dark-gray w3-light-gray", style = "min-height: 400px")
+            //-header of card
+            div#gradesHeader(class = "w3-panel w3-gray w3-center")
+              h3 Grades
+            //-everything below is a link to recordOfGrades.pdf
+            a(href = "assets/recordOfGrades.pdf")
+              div(class = "w3-display-container")
+                div#gradesText(class = "w3-display-topmiddle w3-center")
+                  p Computer Science GPA: 11.42/12
+                  p Overall Carleton GPA: 10.53/12
+                  p Academic Terms Completed: 3
+                  p Co-op Work Terms Completed: 0
+                  p Tap/Click for More
+                //-image, invisible unless hovered over (covers the text above when visible)
+                img#gradesImage(src = "assets/gradesBlur.png", class = "w3-opacity-full w3-hover-opacity-off" alt = "Grades Page Image", style = "height: 10px; width: 100%")
+
+    //-spacing (due to footer being persistently on bottom)
+    div(class = "w3-panel")
+    div(class = "w3-panel")
+    div(class = "w3-panel")
+    div(class = "w3-panel")
+    div(class = "w3-panel")
+    div(class = "w3-panel")
+    div(class = "w3-panel")
+    div(class = "w3-panel")
+
+    //-contact panel (non-persistent, only visible on small and medium screens)
+    div#contact(class = "w3-hide-large w3-container w3-blue-grey")
+      h3
+        | Contact Info &nbsp
+        span
+          a(href = "https://ca.linkedin.com/in/averyvine", target = "_blank")
+            i(class = "fa fa-linkedin-square")
+        | &nbsp
+        span
+          a(href = "https://github.com/AveryVine", target = "_blank")
+            i(class = "fa fa-github")
+      p averyvine@cmail.carleton.ca | (613) 867-2355
+
+    //-contact panel (persistently on bottom, only visible on large screens)
+    div#footer(class = "w3-bottom w3-hide-medium w3-hide-small w3-container w3-blue-grey")
+      h3
+        | Contact Info &nbsp
+        span
+          a(href = "https://ca.linkedin.com/in/averyvine", target = "_blank")
+            i(class = "fa fa-linkedin-square")
+        | &nbsp
+        span
+          a(href = "https://github.com/AveryVine", target = "_blank")
+            i(class = "fa fa-github")
+      p averyvine@cmail.carleton.ca | (613) 867-2355

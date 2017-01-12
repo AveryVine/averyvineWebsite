@@ -20,7 +20,7 @@ app.use(function(req, res, next) {
 
 //send asset files (images, pdfs, etc.)
 app.get("/assets/:assetName", function(req, res) {
-	res.sendFile(req.params.assetName, {root:'./assets'});
+	res.sendFile(req.params.assetName, {root:'./public/assets'});
 });
 
 //render the home page
