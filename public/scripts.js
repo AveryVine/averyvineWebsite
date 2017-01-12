@@ -87,18 +87,18 @@ function showTab(n, tabClass) {
 var tabIndex = {
   "skillTab" : {
     "index" : 1,
-    "title1" : "Technical Skills",
-    "title2" : "Communcation Skills",
-    "title3" : "Problem Solving Skills"
+    "title1" : "Skills - Technical",
+    "title2" : "Skills - Communcation",
+    "title3" : "Skills - Problem Solving"
   }, "workExperienceTab" : {
     "index" : 1,
-    "title1" : "Piano Teacher",
-    "title2" : "Undergraduate Research Assistant",
-    "title3" : "Sandwich Artist"
+    "title1" : "Work - Piano Teacher",
+    "title2" : "Work - Undergraduate Research Assistant",
+    "title3" : "Work - Sandwich Artist"
   }, "appliedProjectsTab" : {
     "index" : 1,
-    "title1" : "Two Buttons - iOS Application",
-    "title2" : "Personal Website"
+    "title1" : "Projects - iOS Application",
+    "title2" : "Projects - Personal Website"
   }
 };
 
