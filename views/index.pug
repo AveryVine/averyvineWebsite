@@ -156,12 +156,12 @@ html
 
       div#skills(class = "w3-card-8 w3-light-gray")
         div(class = "w3-panel w3-teal w3-center")
-          div(class = "w3-col s1")
-            h2 #[a(onclick = "changeTab(-1, 'skillTab')") &#10094;]
+          div(class = "unselectable w3-col s1")
+            h2 #[a(onclick = "changeTab(-1, 'skillTab')", style = "cursor: pointer") &#10094;]
           div(class = "w3-col s10")
             h2#skillsTitle Skills - Technical
-          div(class = "w3-col s1")
-            h2 #[a(onclick = "changeTab(1, 'skillTab')") &#10095;]
+          div(class = "unselectable w3-col s1")
+            h2 #[a(onclick = "changeTab(1, 'skillTab')", style = "cursor: pointer") &#10095;]
         div#technical(class = "skillTab w3-container")
           p
             b Technical Skills
@@ -192,12 +192,12 @@ html
 
       div#workExperience(class = "w3-card-8 w3-light-gray")
         div(class = "w3-panel w3-teal w3-center")
-          div(class = "w3-col s1")
-            h2 #[a(onclick = "changeTab(-1, 'workExperienceTab')") &#10094;]
+          div(class = "unselectable w3-col s1")
+            h2 #[a(onclick = "changeTab(-1, 'workExperienceTab')", style = "cursor: pointer") &#10094;]
           div(class = "w3-col s10")
             h2#workExperienceTitle Work - Piano Teacher
-          div(class = "w3-col s1")
-            h2 #[a(onclick = "changeTab(1, 'workExperienceTab')") &#10095;]
+          div(class = "unselectable w3-col s1")
+            h2 #[a(onclick = "changeTab(1, 'workExperienceTab')", style = "cursor: pointer") &#10095;]
 
         div#pianoTeacher(class = "workExperienceTab w3-container")
           p
@@ -228,12 +228,12 @@ html
 
       div#appliedProjects(class = "w3-card-8 w3-light-gray")
         div(class = "w3-panel w3-teal w3-center")
-          div(class = "w3-col s1")
-            h2 #[a(onclick = "changeTab(-1, 'appliedProjectsTab')") &#10094;]
+          div(class = "unselectable w3-col s1")
+            h2 #[a(onclick = "changeTab(-1, 'appliedProjectsTab')", style = "cursor: pointer") &#10094;]
           div(class = "w3-col s10")
             h2#appliedProjectsTitle Projects - iOS Application
-          div(class = "w3-col s1")
-            h2 #[a(onclick = "changeTab(1, 'appliedProjectsTab')") &#10095;]
+          div(class = "unselectable w3-col s1")
+            h2 #[a(onclick = "changeTab(1, 'appliedProjectsTab')", style = "cursor: pointer") &#10095;]
 
         div#twoButtons(class = "appliedProjectsTab w3-container")
           p
