@@ -59,6 +59,8 @@ html
             a(class = "w3-hover-teal", href = "#appliedProjects") Applied Projects
           li
             a(class = "w3-hover-teal", href = "#extraCurriculars") Extra-Curriculars
+          li
+            a(class = "w3-hover-teal", href = "#contact") Contact
 
     //-spacing (due to nav bar being persistently on top)
     div(class = "w3-panel")
@@ -74,9 +76,13 @@ html
               img(src = "assets/avine.jpg", class = "w3-circle", alt = "Avery Vine", style = "width: 100%")
             div(class = "w3-twothird")
               p(class = "w3-margin-left")
-              | I am a focused, goal-driven individual who can stay highly organized and work efficiently, whether it be independently or in a team environment.
-              | I have experience in several areas with my main interests being programming and music.
-              | With several personal and university projects completed, I am enthusiastic to tackle new and exciting challenges.
+                | I am a focused, goal-driven individual who can stay highly organized and work efficiently, whether it be independently or in a team environment.
+                | I have experience in several areas with my main interests being programming and music.
+                | With several personal and university projects completed, I am enthusiastic to tackle new and exciting challenges.
+              p(class = "w3-margin-left w3-hide-large")
+                | A link to my Github and my LinkedIn pages can be found in the #[a(href = "#contact") Contact] section at the bottom of the page.
+              p(class = "w3-margin-left w3-hide-medium w3-hide-small")
+                | A link to my Github and my LinkedIn pages can be found on the footer of this page.
         //-spacing (due to image overlapping the bottom of card)
         div#imageSpacer(class = "w3-panel")
 
@@ -293,7 +299,7 @@ html
         |  | (613) 867-2355
 
     //-contact panel (persistently on bottom, only visible on large screens)
-    div#footer(class = "w3-bottom w3-hide-medium w3-hide-small w3-container w3-blue-grey")
+    div#contact(class = "w3-bottom w3-hide-medium w3-hide-small w3-container w3-blue-grey")
       div(class = "w3-half")
         div(class = "w3-container w3-left")
         h3
