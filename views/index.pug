@@ -155,7 +155,8 @@ html
               div(class = "w3-half w3-center")
                 img(src = "assets/carletonLogo.png", alt = "Carleton Univeristy", style = "width: 100%; max-width: 200px")
           div(class = "w3-container w3-center")
-            p Tap/click anywhere for grades
+            p
+              b Tap/click anywhere for grades
 
       div#skills(class = "w3-card-8 w3-light-gray")
         div(class = "w3-panel w3-teal w3-center")
@@ -235,7 +236,7 @@ html
           div(class = "unselectable w3-col s1")
             h2 #[a(onclick = "changeTab(-1, 'appliedProjectsTab')", style = "cursor: pointer") &#10094;]
           div(class = "w3-col s10")
-            h2#appliedProjectsTitle Projects - iOS Application
+            h2#appliedProjectsTitle Projects - Two Buttons
           div(class = "unselectable w3-col s1")
             h2 #[a(onclick = "changeTab(1, 'appliedProjectsTab')", style = "cursor: pointer") &#10095;]
 
@@ -248,8 +249,11 @@ html
             li Applied knowledge of Swift and Model-View Controller learned during mobile applications course to ensure that each screen flows into the next
             li Overcame challenges such as not knowing how to persistently store data, through independent research and testing
             li Released the application on the iOS App Store, after delays due to developer age restrictions
+          div(class = "w3-container w3-center")
+            p
+              b #[a(href = "/projects/view/twoButtons") Click to View] - #[a(href = "/projects/github/twoButtons") Github Link]
 
-        div#website(class = "appliedProjectsTab w3-container", style = "display: none")
+        div#averyvine(class = "appliedProjectsTab w3-container", style = "display: none")
           p
             b Web Developer
             br
@@ -258,6 +262,22 @@ html
             li Applied knowledge of HTML, CSS, Javascript, Node.js, Express, and Pug to develop a functional web application
             li Independently researched and learned to use w3.css to efficiently design and implement the website format, which looks good on all screen sizes
             li Familiarized myself with Git commands to facilitate the hosting process
+          div(class = "w3-container w3-center")
+            p
+              b #[a(href = "/projects/view/averyvine") Click to View] - #[a(href = "/projects/github/averyvine") Github Link]
+
+        div#notepadd(class = "appliedProjectsTab w3-container", style = "display: none")
+          p
+            b Web Developer
+            br
+            | Notepadd (February 2017)
+          ul
+            li Efficiently collaborated with three team members using Github to develop the website over the course of 36 hours
+            li Brainstormed various implementations of music playback in order to produce the best synthesized sound
+            li Created an in-depth presentation to advertise the final product to a series of judges at the hackathon QHacks 2017
+          div(class = "w3-container w3-center")
+            p
+              b #[a(href = "/projects/view/notepadd") Click to View] - #[a(href = "/projects/github/notepadd") Github Link]
 
       div#extraCurriculars(class = "w3-card-8 w3-light-gray")
         div(class = "w3-panel w3-teal w3-center")

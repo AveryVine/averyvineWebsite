@@ -23,6 +23,44 @@ app.get("/assets/:assetName", function(req, res) {
 	res.sendFile(req.params.assetName, {root:'./public/assets'});
 });
 
+//redirects the user to the project webpage or github repo
+app.get("/projects/:type/:projectName", function(req, res) {
+	switch (req.params.type) {
+		case "view":
+			switch (req.params.projectName) {
+				case "twoButtons":
+					res.redirect(301, 'https://goo.gl/Ii7qXt');
+					break;
+				case "averyvine":
+					res.redirect(301, 'http://averyvine.com');
+					break;
+				case "notepadd":
+					res.redirect(301, 'http://notepadd.net');
+					break;
+				default:
+					next();
+			}
+			break;
+		case "github":
+			switch (req.params.projectName) {
+				case "twoButtons":
+					res.redirect(301, 'https://github.com/AveryVine/twoButtonsGameiOS');
+					break;
+				case "averyvine":
+					res.redirect(301, 'https://github.com/AveryVine/averyvineWebsite');
+					break;
+				case "notepadd":
+					res.redirect(301, 'https://github.com/AveryVine/quacks17');
+					break;
+				default:
+					next();
+			}
+			break;
+		default:
+			next();
+	}
+});
+
 //render the home page
 app.get(['/', '/index.html', '/index'], function(req, res) {
 	res.render('index');

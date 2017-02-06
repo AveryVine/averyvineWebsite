@@ -79,6 +79,7 @@ function showTab(n, tabClass) {
     tabIndex.appliedProjectsTab.index = index;
     if (index == 1) title.text(tabIndex.appliedProjectsTab.title1);
     else if (index == 2) title.text(tabIndex.appliedProjectsTab.title2);
+    else if (index == 3) title.text(tabIndex.appliedProjectsTab.title3);
     else console.log("Error switching tabs");
   }
   else console.log("Error switching tabs");
@@ -97,8 +98,9 @@ var tabIndex = {
     "title3" : "Work - Sandwich Artist"
   }, "appliedProjectsTab" : {
     "index" : 1,
-    "title1" : "Projects - iOS Application",
-    "title2" : "Projects - Personal Website"
+    "title1" : "Projects - Two Buttons",
+    "title2" : "Projects - Personal Website",
+    "title3" : "Projects - Notepadd"
   }
 };
 
