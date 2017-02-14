@@ -10,7 +10,7 @@ $(document).ready(function() {
 
   //konami code stuff
   var konami = new Konami(function() {
-    alert("Konami!");
+    alert("What, did you expect this to do something useful?");
   })
 });
 
