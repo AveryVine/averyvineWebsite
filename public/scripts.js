@@ -7,6 +7,11 @@ $(document).ready(function() {
   $(window).on("hashchange", function () {
     window.scrollTo(window.scrollX, window.scrollY - 50);
   });
+
+  //konami code stuff
+  var konami = new Konami(function() {
+    alert("Konami!");
+  })
 });
 
 //toggles the visibility of the dropdown menu nav bar
