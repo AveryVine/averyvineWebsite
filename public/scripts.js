@@ -98,8 +98,8 @@ var tabIndex = {
     "title3" : "Skills - Problem Solving"
   }, "workExperienceTab" : {
     "index" : 1,
-    "title1" : "Work - Piano Teacher",
-    "title2" : "Work - Undergraduate Research Assistant",
+    "title1" : "Work - Undergraduate Research Assistant",
+    "title2" : "Work - Piano Teacher",
     "title3" : "Work - Sandwich Artist"
   }, "appliedProjectsTab" : {
     "index" : 1,
