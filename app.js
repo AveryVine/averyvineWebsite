@@ -62,6 +62,9 @@ app.get("/projects/:type/:projectName", function(req, res) {
 				case "notepadd":
 					res.redirect(301, 'https://github.com/AveryVine/quacks17');
 					break;
+				case "javaSwing":
+					res.redirect(301, 'https://github.com/AveryVine/JavaSwingGame');
+					break;
 				default:
 					next();
 			}
