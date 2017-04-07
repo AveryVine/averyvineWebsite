@@ -34,11 +34,8 @@ function openTab(tabClass, tabName) {
   for (i = 0; i < x.length; i++) {
     x[i].className = x[i].className.replace("w3-teal", "w3-blue-gray")
   }
-  x = document.getElementsByClassName(tabName + "Button")
-  console.log(tabName + "Button")
-  for (i = 0; i < x.length; i++) {
-    x[i].className = x[i].className.replace("w3-blue-gray", "w3-teal")
-  }
+  x = document.getElementById(tabName + "Button")
+  x.className = x.className.replace("w3-blue-gray", "w3-teal")
   document.getElementById(tabName).style.display = "block";
   document.getElementById(tabName + "Header").style.display = "block"
 }
