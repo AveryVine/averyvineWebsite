@@ -26,12 +26,12 @@ $(document).ready(function() {
       konamiCounter++;
       alert(konamiMessage[konamiCounter - 2]);
     }
-    else if (randomNumber(0, 10) == 0) {
+    else if (randomNumber(0, 8) == 0) {
       window.open("konami/rickroll");
       konamiCounter = 0;
     }
     else {
-      alert(konamiMessage[randomNumber(0, konamiMessage.length)])
+      alert(konamiMessage[randomNumber(0, konamiMessage.length - 1)])
     }
   })
 
