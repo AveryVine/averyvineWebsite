@@ -163,128 +163,153 @@ html
             p
               b Tap/click anywhere for grades
 
-      div#skills(class = "w3-card-8 w3-light-gray")
-        div(class = "w3-panel w3-teal w3-center")
-          div(class = "unselectable w3-col s1")
-            h2 #[a(onclick = "changeTab(-1, 'skillTab')", style = "cursor: pointer") &#10094;]
-          div(class = "w3-col s10")
-            h2#skillsTitle Skills - Technical
-          div(class = "unselectable w3-col s1")
-            h2 #[a(onclick = "changeTab(1, 'skillTab')", style = "cursor: pointer") &#10095;]
-        div#technical(class = "skillTab w3-container")
-          p
-            b Technical Skills
-            br
-            ul
-              li Created several client-server web application using technologies such as Node.js, jQuery, AJAX, and MongoDB, in order to acquire a deeper understanding of HTML, CSS, and Javascript
-              li Designed, developed, and released a Swift-based iOS application on the App Store to enrich mobile development capabilities
-              li Using C++ and C respectively, implemented a shortest path algorithm and a variety of array- and linked list-based programs, overall improving knowledge of low-level programming
-              li Constructed various Java-based programs involving time- and memory-efficient data structures, using elements of the Java Collections Framework
-              li Experience using macOS, Windows, and Linux operating systems over multiple courses and projects
+      div#skills
+        div(class = "w3-card-8 w3-light-gray")
+          div(class = "w3-teal")
+            div(class = "w3-center w3-container w3-margin-top w3-border-bottom w3-border-black")
+              div#technicalHeader(class = "skillTab")
+                h2 Skills - Technical
+              div#communicationHeader(class = "skillTab", style = "display: none")
+                h2 Skills - Communication
+              div#problemSolvingHeader(class = "skillTab", style = "display: none")
+                h2 Skills - Problem Solving
+            ul#skillsTabBar(class = "w3-navbar w3-light-gray w3-border-top w3-border-black w3-hide-small")
+              li(class = "w3-hover-teal w3-container skillTabButton technicalButton w3-blue-gray" onclick = "openTab('skillTab', 'technical')") Technical
+              li(class = "w3-hover-teal w3-container skillTabButton communicationButton" onclick = "openTab('skillTab', 'communication')") Communication
+              li(class = "w3-hover-teal w3-container skillTabButton problemSolvingButton" onclick = "openTab('skillTab', 'problemSolving')") Problem Solving
+            ul#skillsTabBar(class = "w3-navbar w3-light-gray w3-border-top w3-border-black w3-hide-medium w3-hide-large")
+              li(class = "w3-hover-teal w3-container skillTabButton technicalButton w3-border-bottom w3-border-black w3-blue-gray" onclick = "openTab('skillTab', 'technical')") Technical
+              li(class = "w3-hover-teal w3-container skillTabButton communicationButton w3-border-bottom w3-border-black" onclick = "openTab('skillTab', 'communication')") Communication
+              li(class = "w3-hover-teal w3-container skillTabButton problemSolvingButton w3-border-bottom w3-border-black" onclick = "openTab('skillTab', 'problemSolving')") Problem Solving
+          div(class = "w3-container")
+            div#technical(class = "skillTab")
+              p
+                b Technical Skills
+                br
+                ul
+                  li Created several client-server web application using technologies such as Node.js, jQuery, AJAX, and MongoDB, in order to acquire a deeper understanding of HTML, CSS, and Javascript
+                  li Designed, developed, and released a Swift-based iOS application on the App Store to enrich mobile development capabilities
+                  li Using C++ and C respectively, implemented a shortest path algorithm and a variety of array- and linked list-based programs, overall improving knowledge of low-level programming
+                  li Constructed various Java-based programs involving time- and memory-efficient data structures, using elements of the Java Collections Framework
+                  li Experience using macOS, Windows, and Linux operating systems over multiple courses and projects
+            div#communication(class = "skillTab", style = "display: none")
+              p
+                b Communication Skills
+                br
+                ul
+                  li Discussed with professor the results from previous testing of each phase of our shortest path algorithm, and the technical challenges we expected to face with each new iteration
+                  li Documented important functionality in “ReadMe” files on every project to facilitate code comprehension
+                  li Collaborated with co-workers at Subway to ensure that all restaurant tasks were accomplished before the end of each shift
+            div#problemSolving(class = "skillTab", style = "display: none")
+              p
+                b Problem Solving Skills
+                br
+                ul
+                  li Implemented various command line and graphical solutions to understand the more common shortest path algorithms in depth
+                  li Conducted increasingly specific tests to discover and remove sources of error in several implementations of shortest path algorithms
+                  li Prioritized tasks that needed to be accomplished during time working at Subway restaurant, such as cleaning, baking, and serving customers
 
-        div#communication(class = "skillTab w3-container", style = "display: none")
-          p
-            b Communication Skills
-            br
-            ul
-              li Discussed with professor the results from previous testing of each phase of our shortest path algorithm, and the technical challenges we expected to face with each new iteration
-              li Documented important functionality in “ReadMe” files on every project to facilitate code comprehension
-              li Collaborated with co-workers at Subway to ensure that all restaurant tasks were accomplished before the end of each shift
+      div#workExperience
+        div(class = "w3-card-8 w3-light-gray")
+          div(class = "w3-teal")
+            div(class = "w3-center w3-container w3-margin-top w3-border-bottom w3-border-black")
+              div#undergradResearchHeader(class = "workExperienceTab")
+                h2 Work - Undergraduate Research Assistant
+              div#pianoTeacherHeader(class = "workExperienceTab", style = "display: none")
+                h2 Work - Piano Teacher
+              div#sandwichArtistHeader(class = "workExperienceTab", style = "display: none")
+                h2 Work - Sandwich Artist
+            ul#workExperienceTabBar(class = "w3-navbar w3-light-gray w3-hide-small")
+              li(class = "w3-hover-teal w3-container workExperienceTabButton undergradResearchButton w3-blue-gray" onclick = "openTab('workExperienceTab', 'undergradResearch')") Undergraduate Research Assistant
+              li(class = "w3-hover-teal w3-container workExperienceTabButton pianoTeacherButton" onclick = "openTab('workExperienceTab', 'pianoTeacher')") Piano Teacher
+              li(class = "w3-hover-teal w3-container workExperienceTabButton sandwichArtistButton" onclick = "openTab('workExperienceTab', 'sandwichArtist')") Sandwich Artist
+            ul#workExperienceTabBar(class = "w3-navbar w3-light-gray w3-hide-medium w3-hide-large")
+              li(class = "w3-hover-teal w3-container workExperienceTabButton undergradResearchButton w3-border-bottom w3-border-black w3-blue-gray" onclick = "openTab('workExperienceTab', 'undergradResearch')") Undergraduate Research Assistant
+              li(class = "w3-hover-teal w3-container workExperienceTabButton pianoTeacherButton w3-border-bottom w3-border-black" onclick = "openTab('workExperienceTab', 'pianoTeacher')") Piano Teacher
+              li(class = "w3-hover-teal w3-container workExperienceTabButton sandwichArtistButton w3-border-bottom w3-border-black" onclick = "openTab('workExperienceTab', 'sandwichArtist')") Sandwich Artist
+          div(class = "w3-container")
+            div#undergradResearch(class = "workExperienceTab")
+              p
+                b Undergraduate Research Assistant
+                br
+                | Carleton University, Ottawa, ON (May 2016 - September 2016)
+              ul
+                li Researched several existing algorithms to optimally find the shortest path to a moving target, with the purpose of discovering more efficient algorithms
+                li Familiarized myself with the research and development process by working closely with the professor in order to improve my efficiency during future work
+            div#pianoTeacher(class = "workExperienceTab", style = "display: none")
+              p
+                b Piano Teacher
+                br
+                | Lauzon Music, Ottawa, ON (June 2016 - Present)
+              ul
+                li Using both oral and written methods of communication, I impart musical techniques to students, enabling them to improve their ability to play
+                li Encourage children to evaluate and analyze various elements of the music for themselves, in order to grow their musical understanding
+                li Teach children skills such as dedication to a task and prioritization, by helping them recognize and achieve short, medium, and long-term goals
+            div#sandwichArtist(class = "workExperienceTab", style = "display: none")
+              p
+                b Sandwich Artist
+                br
+                | Subway, Ottawa, ON (May 2015 - May 2016)
+              ul
+                li Prioritized tasks during the work day in order to complete them efficiently and ensure that coworkers in later shifts weren't overwhelmed with leftover work
+                li Contributed to a positive restaurant environment by fully committing to work each day, ultimately increasing customer and employee satisfaction
+                li Dedicated time to inspecting the restaurant during each shift to ensure cleanliness
 
-        div#problemSolving(class = "skillTab w3-container", style = "display: none")
-          p
-            b Problem Solving Skills
-            br
-            ul
-              li Implemented various command line and graphical solutions to understand the more common shortest path algorithms in depth
-              li Conducted increasingly specific tests to discover and remove sources of error in several implementations of shortest path algorithms
-              li Prioritized tasks that needed to be accomplished during time working at Subway restaurant, such as cleaning, baking, and serving customers
-
-      div#workExperience(class = "w3-card-8 w3-light-gray")
-        div(class = "w3-panel w3-teal w3-center")
-          div(class = "unselectable w3-col s1")
-            h2 #[a(onclick = "changeTab(-1, 'workExperienceTab')", style = "cursor: pointer") &#10094;]
-          div(class = "w3-col s10")
-            h2#workExperienceTitle Work - Undergraduate Research Assistant
-          div(class = "unselectable w3-col s1")
-            h2 #[a(onclick = "changeTab(1, 'workExperienceTab')", style = "cursor: pointer") &#10095;]
-
-        div#undergradResearch(class = "workExperienceTab w3-container")
-          p
-            b Undergraduate Research Assistant
-            br
-            | Carleton University, Ottawa, ON (May 2016 - September 2016)
-          ul
-            li Researched several existing algorithms to optimally find the shortest path to a moving target, with the purpose of discovering more efficient algorithms
-            li Familiarized myself with the research and development process by working closely with the professor in order to improve my efficiency during future work
-
-        div#pianoTeacher(class = "workExperienceTab w3-container", style = "display: none")
-          p
-            b Piano Teacher
-            br
-            | Lauzon Music, Ottawa, ON (June 2016 - Present)
-          ul
-            li Using both oral and written methods of communication, I impart musical techniques to students, enabling them to improve their ability to play
-            li Encourage children to evaluate and analyze various elements of the music for themselves, in order to grow their musical understanding
-            li Teach children skills such as dedication to a task and prioritization, by helping them recognize and achieve short, medium, and long-term goals
-
-        div#sandwichArtist(class = "workExperienceTab w3-container", style = "display: none")
-          p
-            b Sandwich Artist
-            br
-            | Subway, Ottawa, ON (May 2015 - May 2016)
-          ul
-            li Prioritized tasks during the work day in order to complete them efficiently and ensure that coworkers in later shifts weren't overwhelmed with leftover work
-            li Contributed to a positive restaurant environment by fully committing to work each day, ultimately increasing customer and employee satisfaction
-            li Dedicated time to inspecting the restaurant during each shift to ensure cleanliness
-
-      div#appliedProjects(class = "w3-card-8 w3-light-gray")
-        div(class = "w3-panel w3-teal w3-center")
-          div(class = "unselectable w3-col s1")
-            h2 #[a(onclick = "changeTab(-1, 'appliedProjectsTab')", style = "cursor: pointer") &#10094;]
-          div(class = "w3-col s10")
-            h2#appliedProjectsTitle Projects - Two Buttons
-          div(class = "unselectable w3-col s1")
-            h2 #[a(onclick = "changeTab(1, 'appliedProjectsTab')", style = "cursor: pointer") &#10095;]
-
-        div#twoButtons(class = "appliedProjectsTab w3-container")
-          p
-            b App Developer
-            br
-            | Two Buttons - The Reflex Tapping Game (February 2016 - September 2016)
-          ul
-            li Applied knowledge of Swift, the Singleton pattern and the Model-View Controller to create a functional, efficient application
-            li Overcame challenges such as not knowing how to persistently store data, through independent research and testing
-            li Released the application on the iOS App Store, after delays due to developer age restrictions
-          div(class = "w3-container w3-center")
-            p
-              b #[a(href = "/projects/view/twoButtons", target = "_blank") View Project] &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp; #[a(href = "/projects/github/twoButtons", target = "_blank") #[i(class = "fa fa-github fa-2x")]]
-
-        div#averyvine(class = "appliedProjectsTab w3-container", style = "display: none")
-          p
-            b Web Developer
-            br
-            | Personal Website (January 2017)
-          ul
-            li Applied knowledge of HTML, CSS, Javascript, Node.js, Express, and Pug to develop a functional web application
-            li Independently researched and learned to use w3.css to efficiently design and implement the website format, which looks good on all screen sizes
-            li Familiarized myself with Git commands to facilitate the hosting process
-          div(class = "w3-container w3-center")
-            p
-              b #[a(href = "/projects/view/averyvine", target = "_blank") View Project] &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp; #[a(href = "/projects/github/averyvine", target = "_blank") #[i(class = "fa fa-github fa-2x")]]
-
-        div#notepadd(class = "appliedProjectsTab w3-container", style = "display: none")
-          p
-            b Web Developer
-            br
-            | Notepadd (February 2017)
-          ul
-            li Efficiently collaborated with three team members using Github to develop the website over the course of 36 hours
-            li Brainstormed various implementations of music playback in order to produce the best synthesized sound
-            li Created an in-depth presentation to advertise the final product to a series of judges at the hackathon QHacks 2017
-          div(class = "w3-container w3-center")
-            p
-              b #[a(href = "/projects/view/notepadd", target = "_blank") View Project] &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp; #[a(href = "/projects/github/notepadd", target = "_blank") #[i(class = "fa fa-github fa-2x")]]
+      div#appliedProjects
+        div(class = "w3-card-8 w3-light-gray")
+          div(class = "w3-teal")
+            div(class = "w3-center w3-container w3-margin-top w3-border-bottom w3-border-black")
+              div#twoButtonsHeader(class = "appliedProjectsTab")
+                h2 Projects - Two Buttons
+              div#averyvineHeader(class = "appliedProjectsTab", style = "display: none")
+                h2 Projects - Personal Website
+              div#notepaddHeader(class = "appliedProjectsTab", style = "display: none")
+                h2 Projects - Notepadd
+            ul#appliedProjectsTabBar(class = "w3-navbar w3-light-gray w3-hide-small")
+              li(class = "w3-hover-teal w3-container appliedProjectsTabButton twoButtonsButton w3-blue-gray" onclick = "openTab('appliedProjectsTab', 'twoButtons')") Two Buttons
+              li(class = "w3-hover-teal w3-container appliedProjectsTabButton averyvineButton" onclick = "openTab('appliedProjectsTab', 'averyvine')") Personal Website
+              li(class = "w3-hover-teal w3-container appliedProjectsTabButton notepaddButton" onclick = "openTab('appliedProjectsTab', 'notepadd')") Notepadd
+            ul#appliedProjectsTabBar(class = "w3-navbar w3-light-gray w3-hide-medium w3-hide-large")
+              li(class = "w3-hover-teal w3-container appliedProjectsTabButton twoButtonsButton w3-border-bottom w3-border-black w3-blue-gray" onclick = "openTab('appliedProjectsTab', 'twoButtons')") Two Buttons
+              li(class = "w3-hover-teal w3-container appliedProjectsTabButton averyvineButton w3-border-bottom w3-border-black" onclick = "openTab('appliedProjectsTab', 'averyvine')") Personal Website
+              li(class = "w3-hover-teal w3-container appliedProjectsTabButton notepaddButton w3-border-bottom w3-border-black" onclick = "openTab('appliedProjectsTab', 'notepadd')") Notepadd
+          div(class = "w3-container")
+            div#twoButtons(class = "appliedProjectsTab")
+              p
+                b App Developer
+                br
+                | Two Buttons - The Reflex Tapping Game (February 2016 - September 2016)
+              ul
+                li Applied knowledge of Swift, the Singleton pattern and the Model-View Controller to create a functional, efficient application
+                li Overcame challenges such as not knowing how to persistently store data, through independent research and testing
+                li Released the application on the iOS App Store, after delays due to developer age restrictions
+              div(class = "w3-container w3-center")
+                p
+                  b #[a(href = "/projects/view/twoButtons", target = "_blank") View Project] &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp; #[a(href = "/projects/github/twoButtons", target = "_blank") #[i(class = "fa fa-github fa-2x")]]
+            div#averyvine(class = "appliedProjectsTab", style = "display: none")
+              p
+                b Web Developer
+                br
+                | Personal Website (January 2017)
+              ul
+                li Applied knowledge of HTML, CSS, Javascript, Node.js, Express, and Pug to develop a functional web application
+                li Independently researched and learned to use w3.css to efficiently design and implement the website format, which looks good on all screen sizes
+                li Familiarized myself with Git commands to facilitate the hosting process
+              div(class = "w3-container w3-center")
+                p
+                  b #[a(href = "/projects/view/averyvine", target = "_blank") View Project] &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp; #[a(href = "/projects/github/averyvine", target = "_blank") #[i(class = "fa fa-github fa-2x")]]
+            div#notepadd(class = "appliedProjectsTab", style = "display: none")
+              p
+                b Web Developer
+                br
+                | Notepadd (February 2017)
+              ul
+                li Efficiently collaborated with three team members using Github to develop the website over the course of 36 hours
+                li Brainstormed various implementations of music playback in order to produce the best synthesized sound
+                li Created an in-depth presentation to advertise the final product to a series of judges at the hackathon QHacks 2017
+              div(class = "w3-container w3-center")
+                p
+                  b #[a(href = "/projects/view/notepadd", target = "_blank") View Project] &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp; #[a(href = "/projects/github/notepadd", target = "_blank") #[i(class = "fa fa-github fa-2x")]]
 
       div#extraCurriculars(class = "w3-card-8 w3-light-gray")
         div(class = "w3-panel w3-teal w3-center")
@@ -294,6 +319,8 @@ html
             b Extra-Curricular Experience
             br
             ul
+              li Volunteer at the Carleton Science Student Success Centre (Since April 2017)
+              li Achieved 3rd place in the 2017 Carleton Code Guru Competition (April 2017)
               li Attended the QHacks hackathon at Queen's University (February 2017)
               li Achieved 2nd place in the 2016 Carleton Code Guru Competition (April 2016)
               li Member of the Carleton Computer Science Society (Since September 2015)
