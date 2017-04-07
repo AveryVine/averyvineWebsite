@@ -23,6 +23,16 @@ app.get("/assets/:assetName", function(req, res) {
 	res.sendFile(req.params.assetName, {root:'./public/assets'});
 });
 
+app.get("/konami/:type", function(req, res) {
+	switch (req.params.type) {
+		case "rickroll":
+			res.redirect(301, 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+			break;
+		default:
+			next();
+	}
+});
+
 //redirects the user to the project webpage or github repo
 app.get("/projects/:type/:projectName", function(req, res) {
 	switch (req.params.type) {

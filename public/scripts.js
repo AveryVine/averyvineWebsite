@@ -9,9 +9,38 @@ $(document).ready(function() {
   });
 
   //konami code stuff
+  var konamiCounter = 0;
+  var konamiMessage = [
+    "If you keep doing this, things will end badly...",
+    "You're playing with fire...",
+    "This is not gonna end well for you...",
+    "Shhh, be vewy, vewy, qwiet, we're hunting wabbits!",
+    "These are not the messages you're looking for..."
+  ]
   var konami = new Konami(function() {
-    alert("What, did you expect this to do something useful?");
+    if (konamiCounter == 0) {
+      konamiCounter++;
+      alert("What, did you expect this to do something useful? P.S. I wouldn't do it again if I were you...");
+    }
+    else if (konamiCounter == 1) {
+      konamiCounter++;
+      alert(konamiMessage[konamiCounter - 2]);
+    }
+    else {
+      konamiCounter = randomNumber()
+      if (konamiCounter == 2) {
+        window.open("konami/rickroll");
+        konamiCounter = 0;
+      }
+      else {
+        alert(konamiMessage[konamiCounter - 3])
+      }
+    }
   })
+
+  function randomNumber() {
+    return Math.floor(Math.random() * (konamiMessage.length + 1)) + 2;
+  }
 });
 
 //toggles the visibility of the dropdown menu nav bar

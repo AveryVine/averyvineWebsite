@@ -12,6 +12,22 @@
   background-size: cover;
 }
 
+h2 {
+  font-family: 'Work Sans', sans-serif;
+}
+
+h3 {
+  font-family: 'Work Sans', sans-serif;
+}
+
+body {
+  font-family: 'Lora', sans-serif;
+}
+
+.w3-navbar {
+  font-family: 'Work Sans', sans-serif;
+}
+
 .unselectable {
   -moz-user-select: none;
   -webkit-user-select: none;

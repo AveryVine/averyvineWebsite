@@ -11,6 +11,8 @@ html
     link(rel = "stylesheet", href = "/styles.css")
     //-import cloudflare for icons
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    //-import fonts
+    link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Lora|Work+Sans")
     //-add favicon to site
     link(rel = "icon", type = "image/png", href = "/assets/favicon.png")
     //-import jQuery for javascript
@@ -72,7 +74,7 @@ html
 
     div#mainContent(class = "w3-container w3-content")
       div#home(class = "w3-card-8 w3-light-gray")
-        div(class = "w3-panel w3-teal w3-center")
+        div(class = "w3-panel w3-teal w3-center w3-border-bottom w3-border-black")
           h2 Avery Vine
         div(class = "w3-container")
           div(class = "w3-row-padding")
@@ -91,7 +93,7 @@ html
         div#imageSpacer(class = "w3-panel")
 
       div#quickInfo(class = "w3-card-8 w3-light-gray")
-        div(class = "w3-panel w3-teal w3-center")
+        div(class = "w3-panel w3-teal w3-center w3-border-bottom w3-border-black")
           h2 Quick Info
         div(class = "w3-container w3-center")
           div(class = "w3-row")
@@ -138,7 +140,7 @@ html
                 b More Coming Soon...
 
       div#education(class = "w3-card-8 w3-light-gray")
-        div(class = "w3-panel w3-teal w3-center")
+        div(class = "w3-panel w3-teal w3-center w3-border-bottom w3-border-black")
           h2 Education
         a(href = "assets/recordOfGrades.pdf")
           div(class = "w3-container")
@@ -168,7 +170,7 @@ html
           div(class = "w3-teal")
             div(class = "w3-center w3-container w3-margin-top w3-border-bottom w3-border-black")
               h2 Relevant Skills
-            ul#skillsTabBar(class = "w3-navbar w3-light-gray w3-border-top w3-border-black w3-hide-small")
+            ul#skillsTabBar(class = "w3-navbar w3-light-gray w3-hide-small")
               li#technicalButton(class = "w3-hover-teal w3-container skillTabButton w3-border-bottom w3-border-right w3-border-black w3-teal" onclick = "openTab('skillTab', 'technical')") Technical
               li#communicationButton(class = "w3-hover-teal w3-container skillTabButton w3-border-bottom w3-border-right w3-border-black w3-blue-gray" onclick = "openTab('skillTab', 'communication')") Communication
               li#problemSolvingButton(class = "w3-hover-teal w3-container skillTabButton w3-border-bottom w3-border-right w3-border-black w3-blue-gray" onclick = "openTab('skillTab', 'problemSolving')") Problem Solving
@@ -297,7 +299,7 @@ html
                   b #[a(href = "/projects/view/notepadd", target = "_blank") View Project] &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp; #[a(href = "/projects/github/notepadd", target = "_blank") #[i(class = "fa fa-github fa-2x")]]
 
       div#extraCurriculars(class = "w3-card-8 w3-light-gray")
-        div(class = "w3-panel w3-teal w3-center")
+        div(class = "w3-panel w3-teal w3-center w3-border-bottom w3-border-black")
           h2 Extra-Curricular Experience
         div(class = "w3-container")
           p
