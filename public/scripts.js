@@ -26,20 +26,17 @@ $(document).ready(function() {
       konamiCounter++;
       alert(konamiMessage[konamiCounter - 2]);
     }
+    else if (randomNumber(0, 10) == 0) {
+      window.open("konami/rickroll");
+      konamiCounter = 0;
+    }
     else {
-      konamiCounter = randomNumber()
-      if (konamiCounter == 2) {
-        window.open("konami/rickroll");
-        konamiCounter = 0;
-      }
-      else {
-        alert(konamiMessage[konamiCounter - 3])
-      }
+      alert(konamiMessage[randomNumber(0, konamiMessage.length)])
     }
   })
 
-  function randomNumber() {
-    return Math.floor(Math.random() * (konamiMessage.length + 1)) + 2;
+  function randomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 });
 
