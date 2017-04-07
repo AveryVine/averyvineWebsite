@@ -32,11 +32,12 @@ function openTab(tabClass, tabName) {
   }
   x = document.getElementsByClassName(tabClass + "Button")
   for (i = 0; i < x.length; i++) {
-    x[i].className = x[i].className.replace(" w3-blue-gray", "")
+    x[i].className = x[i].className.replace("w3-teal", "w3-blue-gray")
   }
   x = document.getElementsByClassName(tabName + "Button")
+  console.log(tabName + "Button")
   for (i = 0; i < x.length; i++) {
-    x[i].className += " w3-blue-gray"
+    x[i].className = x[i].className.replace("w3-blue-gray", "w3-teal")
   }
   document.getElementById(tabName).style.display = "block";
   document.getElementById(tabName + "Header").style.display = "block"
