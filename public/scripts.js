@@ -26,7 +26,7 @@ $(document).ready(function() {
       konamiCounter++;
       alert(konamiMessage[konamiCounter - 2]);
     }
-    else if (randomNumber(0, 8) == 0) {
+    else if (randomNumber(0, 7) == 0) {
       window.open("konami/rickroll");
       konamiCounter = 0;
     }
