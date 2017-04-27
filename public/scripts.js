@@ -14,8 +14,8 @@ $(document).ready(function() {
     "If you keep doing this, things will end badly...",
     "You're playing with fire...",
     "This is not gonna end well for you...",
-    "Shhh, be vewy, vewy, qwiet, we're hunting wabbits!",
-    "These are not the messages you're looking for..."
+    "Shhh, be vewy, vewy, qwiet, we're hunting people who keep entering the Konami code!",
+    "These are not the Konami droids you are looking for..."
   ]
   var konami = new Konami(function() {
     if (konamiCounter == 0) {
