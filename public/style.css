@@ -11,22 +11,22 @@ body {
 }
 
 #parallax1 {
-  background-image: url("/assets/background1Blur20.jpg");
+  background-image: url("/assets/background1Blur60.jpg");
   background-position: bottom;
 }
 
 #parallax2 {
-  background-image: url("/assets/background2Blur20.jpg");
+  background-image: url("/assets/background2.jpg");
   background-position: top;
 }
 
 #parallax3 {
-  background-image: url("/assets/background3Blur20.jpg");
+  background-image: url("/assets/background3.jpg");
   background-position: center;
 }
 
 #parallax4 {
-  background-image: url("/assets/background4Blur20.jpg");
+  background-image: url("/assets/background4.jpg");
   background-position: top;
 }
 
@@ -134,24 +134,18 @@ body {
     min-height: 225px;
     background-attachment: scroll;
   }
-  #parallax1 {
-    background-image: url("/assets/background1Blur60.jpg");
-  }
   #parallax2 {
     border-top: 4px solid black;
     border-bottom: 4px solid black;
-    background-image: url("/assets/background2.jpg");
     background-position: center;
   }
   #parallax3 {
     border-top: 4px solid black;
     border-bottom: 4px solid black;
-    background-image: url("/assets/background3.jpg");
   }
   #parallax4 {
     border-top: 4px solid black;
     border-bottom: 4px solid black;
-    background-image: url("/assets/background4.jpg");
   }
   .card {
     margin-top: 10px;
