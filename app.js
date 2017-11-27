@@ -7,7 +7,6 @@ var bodyParser = require('body-parser')
 const ROOT = "./public";
 
 app.set('views','./views');
-app.set('view engine','pug');
 
 //receive a port, or select default port
 app.set('port', (process.env.PORT || 5000));
@@ -76,7 +75,7 @@ app.get("/projects/:type/:projectName", function(req, res) {
 
 //render the home page
 app.get(['/', '/index.html', '/index'], function(req, res) {
-	res.render('index');
+	res.sendFile('index.html', {root:'./public'});
 });
 
 //send all other static files

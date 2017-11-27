@@ -1,0 +1,213 @@
+body {
+  background-color: #fffff0;
+  background-image: url("/assets/texture.png");
+}
+
+.parallax {
+  min-height: 550px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#parallax1 {
+  background-image: url("/assets/background1Blur20.jpg");
+  background-position: bottom;
+}
+
+#parallax2 {
+  background-image: url("/assets/background2Blur20.jpg");
+  background-position: top;
+}
+
+#parallax3 {
+  background-image: url("/assets/background3Blur20.jpg");
+  background-position: center;
+}
+
+#parallax4 {
+  background-image: url("/assets/background4Blur20.jpg");
+  background-position: top;
+}
+
+.container {
+  min-width: 85%;
+}
+
+.content-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+h1,
+h2 {
+  font-family: 'Work Sans', sans-serif;
+  border-bottom: 4px solid black;
+}
+
+h3,
+h5 {
+  font-family: 'Work Sans', sans-serif;
+}
+
+h5 a:hover {
+  text-decoration: none;
+}
+
+.bullet-text {
+  color: white;
+}
+
+body {
+  font-family: 'Lora', sans-serif;
+}
+
+.navbar {
+  font-family: 'Work Sans', sans-serif;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+#header-container {
+  padding-bottom: 30px;
+}
+
+.bullet-image {
+  padding: 5px;
+  max-width: 69%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.card {
+  display: block;
+  margin: auto;
+  margin-top: 45px;
+  max-width: 20rem;
+  min-height: 11rem;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+.content-block {
+  margin-bottom: 45px;
+}
+
+.contact-block {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-block a {
+  text-decoration: none;
+}
+
+.contact-block h1 {
+  border-bottom: none;
+}
+
+.figure {
+  display: block;
+  margin: auto;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  width: 50%;
+  text-align: center;
+}
+
+#header-image {
+  display: block;
+  margin: auto;
+}
+
+@media(max-width: 1024px) {
+  .navbar {
+    padding-left: constant(safe-area-inset-left);
+    padding-left: env(safe-area-inset-left);
+  }
+  .parallax {
+    min-height: 225px;
+    background-attachment: scroll;
+  }
+  #parallax1 {
+    background-image: url("/assets/background1Blur60.jpg");
+  }
+  #parallax2 {
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    background-image: url("/assets/background2.jpg");
+    background-position: center;
+  }
+  #parallax3 {
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    background-image: url("/assets/background3.jpg");
+  }
+  #parallax4 {
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    background-image: url("/assets/background4.jpg");
+  }
+  .card {
+    margin-top: 10px;
+    min-height: 14rem;
+  }
+  .figure {
+    width: 75%;
+  }
+  .bullet-image {
+    padding: 0.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  .bullet-image {
+    max-width: 100%;
+  }
+  #header-image {
+    max-width: 50%;
+  }
+  #header-image-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #bullet-container {
+    margin-left: 80px;
+  }
+  .card {
+    margin-top: 10px;
+    min-height: 0;
+  }
+  .figure {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bullet-image {
+    max-width: 50%;
+  }
+  #bullet-container {
+    margin-left: auto;
+  }
+}
+
+.unselectable {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+}
+
+* {
+  transition-duration: 0.2s;
+}
