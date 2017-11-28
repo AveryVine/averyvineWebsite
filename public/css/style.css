@@ -39,6 +39,10 @@ body {
   margin-bottom: 100px;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 h1,
 h2 {
   font-family: 'Work Sans', sans-serif;
@@ -87,6 +91,7 @@ body {
   margin-top: 45px;
   max-width: 20rem;
   min-height: 11rem;
+  visibility: hidden; /* This is for animations */
 }
 
 .card a {
@@ -96,6 +101,7 @@ body {
 
 .content-block {
   margin-bottom: 45px;
+  visibility: hidden; /* This is for animations */
 }
 
 .contact-block {
@@ -118,6 +124,7 @@ body {
   margin-bottom: 45px;
   width: 50%;
   text-align: center;
+  visibility: hidden; /* This is for animations */
 }
 
 #header-image {
@@ -159,7 +166,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar {
     padding: 0.5rem 1rem;
   }
@@ -202,6 +209,6 @@ body {
   -o-user-select: none;
 }
 
-* {
+/* * {
   transition-duration: 0.2s;
-}
+} */

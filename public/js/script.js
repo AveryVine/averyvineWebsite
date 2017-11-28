@@ -39,16 +39,34 @@ $(document).ready(function () {
   $("a").on('click', function (event) {
     if (this.hash !== "") {
       event.preventDefault();
-      var hash = this.hash;
-      var offset = 65;
-      if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= 768) {
-        offset = 220;
-      }
+      var offset = parseInt($(".navbar").css('height')) + 10;
       $('html, body').animate({
-        scrollTop: $(hash).offset().top - offset
+        scrollTop: $(this.hash).offset().top - offset
       }, 800);
     }
   });
+
+  window.sr = ScrollReveal({
+    reset: true,
+    mobile: false,
+    scale: 0.7,
+    viewOffset: {
+      top: 60,
+      right: 0,
+      bottom: 0,
+      left: 0
+    }
+  });
+  sr.reveal('.content-block', {
+    duration: 1000
+  });
+  sr.reveal('.figure', {
+    duration: 1000
+  });
+  sr.reveal('.card', {
+    duration: 1000
+  });
+
 });
 
 //toggles the visibility of the dropdown menu nav bar
