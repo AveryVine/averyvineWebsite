@@ -7,7 +7,7 @@
     <title>Avery Vine</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora|Work+Sans">
     <link rel="icon" type="image/png" href="/assets/favicon.png">
@@ -16,14 +16,15 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <script src="konami.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/scrollreveal.min.js"></script>
+    <script src="/js/konami.js"></script>
 </head>
 
-<body id="body">
+<body id="top">
     <nav class="navbar sticky-top unselectable navbar-expand-md navbar-dark bg-dark">
         <div id="brand" class="navbar-header">
-            <a class="navbar-brand" href="#body">Avery Vine</a>
+            <a class="navbar-brand" href="#top">Avery Vine</a>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -58,26 +59,38 @@
                     <div id="bullet-container" class="container">
                         <div class="row align-items-center">
                             <div class="col-sm-2 bullet-image-container">
-                                <img src="/assets/computer.png" alt="Software Development" class="img-fluid rounded-circle img-thumbnail bullet-image">
+                                <a href="#travelclick">
+                                    <img src="/assets/computer.png" alt="Software Development" class="img-fluid rounded-circle img-thumbnail bullet-image">
+                                </a>
                             </div>
                             <div class="col-sm">
-                                <h3 class="text-center text-sm-left bullet-text">Application Developer</h3>
+                                <a href="#travelclick">
+                                    <h3 class="text-center text-sm-left bullet-text">Application Developer</h3>
+                                </a>
                             </div>
                         </div>
                         <div class="row align-items-center">
                             <div class="col-sm-2 bullet-image-container">
-                                <img src="/assets/mobile.png" alt="Software Development" class="img-fluid rounded-circle img-thumbnail bullet-image">
+                                <a href="#twoButtons">
+                                    <img src="/assets/mobile.png" alt="Software Development" class="img-fluid rounded-circle img-thumbnail bullet-image">
+                                </a>
                             </div>
                             <div class="col-sm">
-                                <h3 class="text-center text-sm-left bullet-text">Mobile App Developer</h3>
+                                <a href="#twoButtons">
+                                    <h3 class="text-center text-sm-left bullet-text">Mobile App Developer</h3>
+                                </a>
                             </div>
                         </div>
                         <div class="row align-items-center">
                             <div class="col-sm-2 bullet-image-container">
-                                <img src="/assets/fullstack.png" alt="Software Development" class="img-fluid rounded-circle img-thumbnail bullet-image">
+                                <a href="#website">
+                                    <img src="/assets/fullstack.png" alt="Software Development" class="img-fluid rounded-circle img-thumbnail bullet-image">
+                                </a>
                             </div>
                             <div class="col-sm">
-                                <h3 class="text-center text-sm-left bullet-text">Full-Stack Developer</h3>
+                                <a href="#website">
+                                    <h3 class="text-center text-sm-left bullet-text">Full-Stack Developer</h3>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -96,7 +109,8 @@
                     playing the piano and video games in my spare time. With significant work experience under my belt and
                     several personal and university projects completed, I am enthusiastic to tackle new and exciting challenges.</p>
                 <p>Feel free to peruse my website to learn a bit more about what I've done. If you want to contact me or find
-                    out more, you can find my resume, email address, phone number, LinkedIn page, and GitHub page linked at the bottom.</p>
+                    out more, you can find my resume, email address, phone number, LinkedIn page, and GitHub page linked
+                    at the bottom.</p>
             </div>
             <div class="col-sm">
                 <figure class="figure">
@@ -110,7 +124,7 @@
     <div id="parallax2" class="parallax"></div>
 
     <div id="workExperience" class="container content-section">
-        <div class="row">
+        <div id="travelclick" class="row">
             <div class="col-sm content-block">
                 <h1>Integration Specialist</h1>
                 <h3>TravelClick (May 2017 - Dec 2017)</h3>
@@ -161,7 +175,7 @@
     <div id="parallax3" class="parallax"></div>
 
     <div id="projects" class="container content-section">
-        <div class="row">
+        <div id="twoButtons" class="row">
             <div class="col-sm content-block">
                 <h1>Two Buttons - The Reflex Tapping Game</h1>
                 <h3>App Developer (Feb 2016 - Sept 2016)</h3>
@@ -187,7 +201,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div id="website" class="row">
             <div class="col-sm content-block">
                 <h1>Personal Website</h1>
                 <h3>Web Developer (Jan 2017, Nov 2017)</h3>
