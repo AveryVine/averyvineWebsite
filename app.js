@@ -1,27 +1,25 @@
 //Copyright 2017, Avery Vine, All rights reserved.
 
+const express = require('express');
+const request = require('request');
+const bodyParser = require('body-parser');
 const apiKeys = require('./apiKeys.js');
 const league = require('./league.js');
 const youtube = require('./youtube.js');
 const twitch = require('./twitch.js');
 const Discord = require('discord.js');
-const client = new Discord.Client();
-const botName = "alfred";
-var discordToken = "";
 
-var express = require('express');
-var app = express();
-var bodyParser = require('body-parser')
+const app = express();
+const client = new Discord.Client();
 
 const ROOT = "./public";
-
-app.set('views', './views');
+const botName = "alfred";
 
 //receive a port, or select default port
 app.set('port', (process.env.PORT || 5000));
 
 client.on('ready', () => {
-	console.log('Discord Bot powered on.');
+	console.log('Discord Bot ' + botName.toUpperCase() + ' powered on.');
 });
 
 client.on('message', message => {
@@ -67,47 +65,6 @@ app.get("/konami/:type", function (req, res) {
 	}
 });
 
-//redirects the user to the project webpage or github repo
-app.get("/projects/:type/:projectName", function (req, res) {
-	switch (req.params.type) {
-		case "view":
-			switch (req.params.projectName) {
-				case "twoButtons":
-					res.redirect(301, 'https://goo.gl/Ii7qXt');
-					break;
-				case "averyvine":
-					res.redirect(301, 'http://averyvine.com');
-					break;
-				case "notepadd":
-					res.redirect(301, 'http://notepadd.net');
-					break;
-				default:
-					next();
-			}
-			break;
-		case "github":
-			switch (req.params.projectName) {
-				case "twoButtons":
-					res.redirect(301, 'https://github.com/AveryVine/twoButtonsGameiOS');
-					break;
-				case "averyvine":
-					res.redirect(301, 'https://github.com/AveryVine/averyvineWebsite');
-					break;
-				case "notepadd":
-					res.redirect(301, 'https://github.com/AveryVine/quacks17');
-					break;
-				case "javaSwing":
-					res.redirect(301, 'https://github.com/AveryVine/JavaSwingGame');
-					break;
-				default:
-					next();
-			}
-			break;
-		default:
-			next();
-	}
-});
-
 //render the home page
 app.get(['/', '/index.html', '/index'], function (req, res) {
 	res.sendFile('index.html', {
@@ -128,4 +85,15 @@ app.all("*", function (req, res) {
 app.listen(app.get('port'), function () {
 	client.login(apiKeys.discord);
 	console.log('Server listening on port', app.get('port'));
+	ping();
+	setInterval(() => {
+		ping();
+	}, 1500000);
 });
+
+//gets around the Heroku (hosting service) limit of 30 minutes of inactivity
+function ping() {
+	request('http://averyvine.com', function (error, response, body) {
+		console.log('Pinged to keep dyno awake');
+	});
+}
