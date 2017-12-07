@@ -10,7 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
+    "discord.js": "^11.2.1",
     "express": "^4.14.0",
-    "pug": "^2.0.0-beta6"
+    "pug": "^2.0.0-beta6",
+    "request": "^2.83.0",
+    "youtube-search": "^1.0.10"
   }
 }
