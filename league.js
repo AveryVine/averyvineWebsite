@@ -116,7 +116,7 @@ function rankCallback(error, response, body) {
                 }
             }
             console.log("Rank: " + summoner.rank.toString());
-            sendSummonerEmbedded();
+            sendEmbeddedMessage();
             break;
         case 429:
             console.log("Rate limit exceeded\nCode: " + response.statusCode + "\nBody: " + body);
@@ -128,24 +128,25 @@ function rankCallback(error, response, body) {
     }
 }
 
-function sendSummonerEmbedded() {
+function sendEmbeddedMessage() {
     var embedFields = [];
     for (i in summoner.rank) {
         var embedName = summoner.rank[i].name;
         var embedValue = summoner.rank[i].tier + " " + summoner.rank[i].rank + " (" + summoner.rank[i].leaguePoints + "lp)";
         embedFields.push({
             name: summoner.rank[i].name,
-            value: summoner.rank[i].tier + " " + summoner.rank[i].rank + " (" + summoner.rank[i].leaguePoints + "lp)"
+            value: summoner.rank[i].tier + " " + summoner.rank[i].rank + " (" + summoner.rank[i].leaguePoints + "lp)",
+            inline: true
         });
     }
     var embedData = {
         author: {
-            name: summoner.name
+            name: summoner.name.toUpperCase()
         },
         thumbnail: {
             url: "http://ddragon.leagueoflegends.com/cdn/" + version + "/img/profileicon/" + summoner.profileIconId + ".png"
         },
-        description: "----------",
+        description: "---------------",
         fields: embedFields,
         footer: {
             icon_url: "https://cdn.discordapp.com/embed/avatars/0.png",

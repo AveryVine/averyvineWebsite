@@ -26,7 +26,7 @@ client.on('message', message => {
 				youtube.search(message, content);
 			} else if (content.toLowerCase().startsWith('twitch ')) {
 				content = content.replace(/(twitch )/ig, '').trim();
-				twitch.search(message, content);
+				twitch.searchChannels(message, content);
 			}
 		}
 	}
