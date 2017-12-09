@@ -141,8 +141,10 @@ function sendEmbeddedMessage() {
     }
     var embedData = {
         author: {
-            name: summoner.name.toUpperCase()
+            name: summoner.name.toUpperCase(),
+            icon_url: "https://yt3.ggpht.com/-Ok8l1FqH6nk/AAAAAAAAAAI/AAAAAAAAAAA/NSlkTZ7supM/s100-c-k-no-mo-rj-c0xffffff/photo.jpg"
         },
+        color: 0x116385,
         thumbnail: {
             url: "http://ddragon.leagueoflegends.com/cdn/" + version + "/img/profileicon/" + summoner.profileIconId + ".png"
         },
