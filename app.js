@@ -14,7 +14,6 @@ const client = new Discord.Client();
 
 const ROOT = "./public";
 const botName = "alfred";
-const startBot = true;
 
 //receive a port, or select default port
 app.set('port', (process.env.PORT || 5000));
@@ -85,7 +84,7 @@ app.all("*", function (req, res) {
 //start listening on the selected port
 app.listen(app.get('port'), function () {
 	loadApiKeysFromProcess();
-	if (startBot) {
+	if (apiKeys.startBot) {
 		client.login(apiKeys.discord);
 	}
 	console.log('Server listening on port', app.get('port'));
@@ -107,4 +106,6 @@ function loadApiKeysFromProcess() {
 	apiKeys.riot = process.env.riot;
 	apiKeys.google = process.env.google;
 	apiKeys.twitchId = process.env.twitchId;
+	
+	apiKeys.startBot = process.env.startBot;
 }
