@@ -3,5 +3,5 @@ module.exports = {
     riot: "",
     google: "",
     twitchId: "",
-    startBot: false
+    startBot: ""
 };
