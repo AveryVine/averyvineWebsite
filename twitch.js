@@ -2,6 +2,7 @@ const apiKeys = require('./apiKeys.js');
 const request = require('request');
 const Discord = require('discord.js');
 const $ = module.exports;
+const ROOT = "./public";
 
 var message = null;
 var options = {};
@@ -112,8 +113,10 @@ function sendEmbeddedMessage() {
     })
     var embedData = {
         author: {
-            name: twitchChannel.displayName.toUpperCase() + " - " + twitchChannel.status
+            name: twitchChannel.displayName.toUpperCase() + " - " + twitchChannel.status,
+            icon_url: "http://averyvine.com/assets/twitchIcon.png"
         },
+        color: 0x4b367c,
         thumbnail: {
             url: (twitchChannel.preview ? twitchChannel.preview : twitchChannel.logo)
         },
