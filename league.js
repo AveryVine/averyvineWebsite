@@ -146,7 +146,7 @@ function sendEmbeddedMessage() {
         thumbnail: {
             url: "http://ddragon.leagueoflegends.com/cdn/" + version + "/img/profileicon/" + summoner.profileIconId + ".png"
         },
-        description: "---------------",
+        description: "------------------------------",
         fields: embedFields,
         footer: {
             icon_url: "https://cdn.discordapp.com/embed/avatars/0.png",
