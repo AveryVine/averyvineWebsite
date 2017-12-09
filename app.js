@@ -14,6 +14,7 @@ const client = new Discord.Client();
 
 const ROOT = "./public";
 const botName = "alfred";
+const startBot = false;
 
 //receive a port, or select default port
 app.set('port', (process.env.PORT || 5000));
@@ -83,7 +84,10 @@ app.all("*", function (req, res) {
 
 //start listening on the selected port
 app.listen(app.get('port'), function () {
-	client.login(apiKeys.discord);
+	loadApiKeysFromProcess();
+	if (startBot) {
+		client.login(apiKeys.discord);
+	}
 	console.log('Server listening on port', app.get('port'));
 	ping();
 	setInterval(() => {
@@ -96,4 +100,11 @@ function ping() {
 	request('http://averyvine.com', function (error, response, body) {
 		console.log('Pinged to keep dyno awake');
 	});
+}
+
+function loadApiKeysFromProcess() {
+	apiKeys.discord = process.env.discord;
+	apiKeys.riot = process.env.riot;
+	apiKeys.google = process.env.google;
+	apiKeys.twitchId = process.env.twitchId;
 }

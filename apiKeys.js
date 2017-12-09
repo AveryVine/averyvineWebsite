@@ -2,6 +2,5 @@ module.exports = {
     discord: "",
     riot: "",
     google: "",
-    twitchId: "",
-    twitchSecret: ""
+    twitchId: ""
 };
