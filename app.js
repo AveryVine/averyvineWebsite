@@ -14,7 +14,7 @@ const client = new Discord.Client();
 
 const ROOT = "./public";
 const botName = "alfred";
-const startBot = false;
+const startBot = true;
 
 //receive a port, or select default port
 app.set('port', (process.env.PORT || 5000));
