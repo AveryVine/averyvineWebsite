@@ -16,6 +16,10 @@ class TwitchChannel {
         this.message = message;
 
         this.status = "Offline";
+        this.messageCapped = this.message;
+        if (message.length > 50) {
+            this.messageCapped = this.message.substring(0, 50) + "...";
+        }
         this.game = "None";
         this.viewers = 0;
         this.preview = null;
@@ -113,13 +117,13 @@ function sendEmbeddedMessage() {
     var embedData = {
         author: {
             name: twitchChannel.displayName.toUpperCase() + " - " + twitchChannel.status,
-            icon_url: "http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c540.png"
+            icon_url: "https://cdn1.iconfinder.com/data/icons/iconza-circle-social/64/697028-twitch-512.png"
         },
-        color: 0x4b367c,
+        color: 0x9900ff,
         thumbnail: {
             url: (twitchChannel.preview ? twitchChannel.preview : twitchChannel.logo)
         },
-        description: "------------------------------\n```" + twitchChannel.message + "```",
+        description: "------------------------------\n```" + twitchChannel.messageCapped + "```",
         fields: embedFields,
         footer: {
             icon_url: "https://cdn.discordapp.com/embed/avatars/0.png",
