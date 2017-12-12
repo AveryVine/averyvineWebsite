@@ -44,6 +44,10 @@ function summonerCallback(error, response, body) {
             summoner = new Summoner(json.name, json.id, json.accountId, json.profileIconId, json.summonerLevel);
             getSummonerIcon();
             break;
+        case 403:
+            console.log("API key expired\nCode: " + response.statusCode + "\nBody: " + body);
+            sendMessage("API key expired! Please contact the developer.");
+            break;
         case 404:
             console.log("Summoner not found\nCode: " + response.statusCode + "\nBody: " + body);
             sendMessage("Invalid summoner name!");
