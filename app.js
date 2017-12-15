@@ -23,6 +23,19 @@ app.get("/assets/:assetName", function (req, res) {
 	});
 });
 
+app.get("/discordBot/:function", function (req, res) {
+	switch (req.params.type) {
+		case "keys":
+			res.json({
+				"riot": process.env.riot,
+				"championGG": process.env.championGG
+			});
+			break;
+		default:
+			next();
+	}
+});
+
 app.get("/konami/:type", function (req, res) {
 	switch (req.params.type) {
 		case "rickroll":
