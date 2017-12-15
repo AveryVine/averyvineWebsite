@@ -24,7 +24,7 @@ app.get("/assets/:assetName", function (req, res) {
 });
 
 app.get("/discordBot/:function", function (req, res) {
-	switch (req.params.type) {
+	switch (req.params.function) {
 		case "keys":
 			res.json({
 				"riot": process.env.riot,
