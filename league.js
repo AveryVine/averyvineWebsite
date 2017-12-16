@@ -4,8 +4,11 @@ const Discord = require('discord.js');
 const $ = module.exports;
 
 var summoner = null;
+var command = null;
 var version = null;
 var message = null;
+var region = null;
+var elo = null;
 var options = {};
 
 class Summoner {
@@ -20,9 +23,35 @@ class Summoner {
     }
 }
 
-$.summoner = function (messageObject, content) {
+$.bans = function (messageObject, content) {
+    command = "bans";
     message = messageObject;
-    var region = "NA";
+    region = "NA";
+    elo = null;
+    if (content != "") {
+        elo = content.toUpperCase();
+        if (elo != "BRONZE" && elo != "SILVER" && elo != "GOLD" && elo != "PLATINUM") {
+            elo = null;
+        }
+    }
+    else if (summoner) {
+        for (i in summoner.rank) {
+            if (summoner.rank[i].tier == "BRONZE" || summoner.rank[i].tier == "SILVER" || summoner.rank[i].tier == "GOLD" || summoner.rank[i].tier == "PLATINUM") {
+                elo = summoner.rank[i].tier;
+                console.log("Gathered ELO " + elo + " from " + summoner.rank[i].name + " for " + summoner.name);
+                break;
+            }
+        }
+    }
+    console.log("Retrieving best bans" + (elo ? " for " + elo : ""));
+    sendMessage("This feature is under construction.");
+    //Gather bans from this point forward
+}
+
+$.summoner = function (messageObject, content) {
+    command = "summoner";
+    message = messageObject;
+    region = "NA";
     if (content.includes('/')) {
         region = content.substring(content.indexOf('/') + 1, content.length);
         content = content.substring(0, content.indexOf('/')).trim();

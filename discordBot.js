@@ -14,6 +14,7 @@ client.on('ready', () => {
 client.on('message', message => {
 	const commands = {
 		"summoner": function () { league.summoner(message, content) },
+		"bans": function () { league.bans(message, content) },
 		"youtube": function () { youtube.search(message, content) },
 		"twitch": function () { twitch.searchChannels(message, content) }
 	};
@@ -25,9 +26,12 @@ client.on('message', message => {
 			if (content.toLowerCase() === 'ping') {
 				message.channel.send('pong');
 			} else {
-				var command = content.slice(0, content.indexOf(' '));
+				var command = content;
+				if (content.includes(' ')) {
+					command = content.slice(0, content.indexOf(' ')).trim();
+				}
 				if (commands[command]) {
-					content = content.slice(command.length + 1);
+					content = content.slice(command.length + 1).trim();
 					commands[command]();
 				}
 			}
@@ -38,6 +42,7 @@ client.on('message', message => {
 function loadApiKeysFromProcess() {
 	apiKeys.discord = process.env.discord;
 	apiKeys.riot = process.env.riot;
+	apiKeys.championGG = process.env.championGG;
 	apiKeys.google = process.env.google;
 	apiKeys.twitchId = process.env.twitchId;
 
