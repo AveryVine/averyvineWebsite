@@ -5,28 +5,31 @@ const twitch = require('./twitch.js');
 const request = require('request');
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const botName = "alfred";
 const $ = module.exports;
 
 client.on('ready', () => {
-	console.log('Discord Bot ' + botName.toUpperCase() + ' powered on.');
+	console.log('Discord Bot powered on.');
 });
 
 client.on('message', message => {
+	const commands = {
+		"summoner": function () { league.summoner(message, content) },
+		"youtube": function () { youtube.search(message, content) },
+		"twitch": function () { twitch.searchChannels(message, content) }
+	};
+
 	if (!message.author.bot) {
-		if (message.content.toLowerCase().startsWith(botName + " ")) {
-			var content = message.content.replace(new RegExp(botName + ' ', 'ig'), '').trim();
+		if (message.content.startsWith("!")) {
+			var content = message.content.slice(1);
+			console.log("Received message: " + content);
 			if (content.toLowerCase() === 'ping') {
 				message.channel.send('pong');
-			} else if (content.toLowerCase().startsWith('summoner ')) {
-				content = content.replace(/(summoner )/ig, '').trim();
-				league.summoner(message, content);
-			} else if (content.toLowerCase().startsWith('youtube ')) {
-				content = content.replace(/(youtube )/ig, '').trim();
-				youtube.search(message, content);
-			} else if (content.toLowerCase().startsWith('twitch ')) {
-				content = content.replace(/(twitch )/ig, '').trim();
-				twitch.searchChannels(message, content);
+			} else {
+				var command = content.slice(0, content.indexOf(' '));
+				if (commands[command]) {
+					content = content.slice(command.length + 1);
+					commands[command]();
+				}
 			}
 		}
 	}
@@ -41,9 +44,9 @@ function loadApiKeysFromProcess() {
 	apiKeys.startBot = process.env.startBot;
 }
 
-$.startBot = function() {
-    loadApiKeysFromProcess();
-    if (apiKeys.startBot == "true") {
-        client.login(apiKeys.discord);
-    }
+$.startBot = function () {
+	loadApiKeysFromProcess();
+	if (apiKeys.startBot == "true") {
+		client.login(apiKeys.discord);
+	}
 }
