@@ -44,27 +44,30 @@ $(document).ready(function () {
 });
 
 window.onload = function () {
-  $(".loading-donut").fadeOut(2000);
-  $("#body-container").fadeIn(2000);
+  $(".loading-donut").fadeOut(1000, function() {
+    $("#body-container").fadeIn(1000);
+    window.sr = ScrollReveal({
+      reset: true,
+      mobile: false,
+      scale: 0.7,
+      viewOffset: {
+        top: 60,
+        right: 0,
+        bottom: 0,
+        left: 0
+      }
+    });
+    sr.reveal('.content-block', {
+      duration: 1000
+    });
+    sr.reveal('.figure', {
+      duration: 1000
+    });
+    sr.reveal('.card', {
+      duration: 1000
+    });
+  });
+  
 
-  window.sr = ScrollReveal({
-    reset: true,
-    mobile: false,
-    scale: 0.7,
-    viewOffset: {
-      top: 60,
-      right: 0,
-      bottom: 0,
-      left: 0
-    }
-  });
-  sr.reveal('.content-block', {
-    duration: 1000
-  });
-  sr.reveal('.figure', {
-    duration: 1000
-  });
-  sr.reveal('.card', {
-    duration: 1000
-  });
+  
 }
