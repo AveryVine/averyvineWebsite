@@ -1,9 +1,6 @@
-//Copyright 2017, Avery Vine, All rights reserved.
+//Copyright 2018, Avery Vine, All rights reserved.
 
 $(document).ready(function () {
-
-  $('#gradesImage').height($('#grades').height() - $('#gradesHeader').height() - 16);
-
   //konami code stuff
   var konamiCounter = 0;
   var konamiMessage = [
@@ -32,6 +29,7 @@ $(document).ready(function () {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
+  //override default behaviour for navbar links
   $("a").on('click', function (event) {
     if (this.hash !== "") {
       event.preventDefault();
@@ -41,11 +39,34 @@ $(document).ready(function () {
       }, 800);
     }
   });
+
+  //add modal image code to all relevant images
+  $(".figure").each(function() {
+    $(this).on("click", function() {
+      var modal = $("#modal-display");
+      var modalImg = $("#modal-content");
+      var modalTxt = $("#modal-caption");
+      var img = $(this).find(".content-image");
+      var imgSrc = img.attr("src");
+      var imgTxt = $(this).find(".figure-caption").text();
+
+      modalImg.attr("src", imgSrc);
+      modalTxt.text(imgTxt);
+      modal.show();
+      modal.on("click", function() {
+        modal.hide();
+      });
+
+    });
+  });
 });
 
+//ensures that content only appears when fully loaded
 window.onload = function () {
   $(".loading-donut").fadeOut(1000, function() {
     $("#body-container").fadeIn(1000);
+
+    //animations for fade-in on scroll
     window.sr = ScrollReveal({
       reset: true,
       mobile: false,
@@ -67,7 +88,4 @@ window.onload = function () {
       duration: 1000
     });
   });
-  
-
-  
 }
