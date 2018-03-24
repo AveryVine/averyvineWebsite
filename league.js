@@ -138,19 +138,11 @@ function rankCallback(error, response, body) {
             for (i in json) {
                 var queue = json[i];
                 summoner.rank.push({
-                    name: queue.queue.split("_").join(" "),
+                    name: queue.queueType.split("_").join(" "),
                     tier: queue.tier,
-                    rank: null,
-                    leaguePoints: 0
+                    rank: queue.rank,
+                    leaguePoints: queue.leaguePoints
                 });
-                for (j in queue.entries) {
-                    var player = queue.entries[j];
-                    if (player.playerOrTeamId == summoner.id) {
-                        summoner.rank[i].rank = player.rank;
-                        summoner.rank[i].leaguePoints = player.leaguePoints;
-                        break;
-                    }
-                }
             }
             console.log("Rank: " + summoner.rank.toString());
             sendEmbeddedMessage();
