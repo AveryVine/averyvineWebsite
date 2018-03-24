@@ -36,3 +36,7 @@
 ehthumbs.db
 Thumbs.db
 public/assets/.DS_Store
+
+# Other files #
+###############
+.startCommands.sh
