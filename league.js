@@ -45,7 +45,7 @@ $.bans = function (messageObject, content) {
     }
     console.log("Retrieving best bans" + (elo ? " for " + elo : ""));
     sendMessage("This feature is under construction.");
-    //Gather bans from this point forward
+    //TODO: Gather bans from this point forward
 }
 
 $.summoner = function (messageObject, content) {
@@ -107,6 +107,10 @@ function summonerIconCallback(error, response, body) {
             version = json[0];
             getRank();
             break;
+        case 403:
+            console.log("API key expired\nCode: " + response.statusCode + "\nBody: " + body);
+            sendMessage("API key expired! Please contact the developer.");
+            break;
         case 429:
             console.log("Rate limit exceeded\nCode: " + response.statusCode + "\nBody: " + body);
             sendMessage("Too many requests! Please try again later.");
@@ -119,7 +123,7 @@ function summonerIconCallback(error, response, body) {
 
 function getRank() {
     summoner.rank = [];
-    options.url = 'https://na1.api.riotgames.com/lol/league/v3/leagues/by-summoner/' + summoner.id;
+    options.url = 'https://na1.api.riotgames.com/lol/league/v3/positions/by-summoner/' + summoner.id;
     options.headers = {
         "X-Riot-Token": apiKeys.riot
     };
@@ -134,22 +138,18 @@ function rankCallback(error, response, body) {
             for (i in json) {
                 var queue = json[i];
                 summoner.rank.push({
-                    name: queue.queue.split("_").join(" "),
+                    name: queue.queueType.split("_").join(" "),
                     tier: queue.tier,
-                    rank: null,
-                    leaguePoints: 0
+                    rank: queue.rank,
+                    leaguePoints: queue.leaguePoints
                 });
-                for (j in queue.entries) {
-                    var player = queue.entries[j];
-                    if (player.playerOrTeamId == summoner.id) {
-                        summoner.rank[i].rank = player.rank;
-                        summoner.rank[i].leaguePoints = player.leaguePoints;
-                        break;
-                    }
-                }
             }
             console.log("Rank: " + summoner.rank.toString());
             sendEmbeddedMessage();
+            break;
+        case 403:
+            console.log("API key expired\nCode: " + response.statusCode + "\nBody: " + body);
+            sendMessage("API key expired! Please contact the developer.");
             break;
         case 429:
             console.log("Rate limit exceeded\nCode: " + response.statusCode + "\nBody: " + body);
