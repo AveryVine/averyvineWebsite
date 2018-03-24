@@ -4,7 +4,8 @@
   "description": "Packages for resume server",
   "main": "app.js",
   "scripts": {
-    "start": "discord=Mzg2OTk3MzYzNjE4NzQyMjcy.DQzgVw.3ae4EB6G08zdX7jr4m7xDrC7WrI riot=RGAPI-5371d85d-3717-494d-9d1d-a1773ea4c83b google=AIzaSyCwys46oVhdwlhQ7iNgtT56TtMUG5Nn3Qs twitchId=1pyk0xppawf9cy7gohkemfjcjq78aa championGG=245e4f76b33c6b217115e7d14e7f00f2 startBot=false node app.js"
+    "start": "./.startCommands.sh false",
+    "startWithBot": "./.startCommands.sh true"
   },
   "author": "Avery Vine",
   "license": "ISC",
@@ -12,7 +13,6 @@
     "body-parser": "^1.15.2",
     "discord.js": "^11.2.1",
     "express": "^4.14.0",
-    "pug": "^2.0.0-beta6",
     "request": "^2.83.0",
     "youtube-search": "^1.0.10"
   }
