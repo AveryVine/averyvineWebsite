@@ -22,4 +22,12 @@
     "github": "https://github.com/wenbenz/quacks17",
     "image": "/assets/notepadd.png",
     "caption": "I helped to create this website that turns written text into music at a hackathon."
+}, "project4": {
+    "header": "Quest of the Round Table",
+    "subheader": "Developer (Jan 2018 - Apr 2018)",
+    "description": "<p>This project was a collaboration between myself and three classmates for one of my classes, Objet-Oriented Software Engineering. In this physical card game turned digital, players vie to become the winner (Knight of the Round Table) by completing quests, participating in tournaments, and more.</p><p>I taught myself Unity and C# for the purpose of this project, as using Unity made the graphics development and integration significantly easier. In addition, as it was the focus of the class, I integrated several design patterns into the code, including Mediator, Strategy, and more.</p>",
+    "url": "https://github.com/JKirkYuan/Quest",
+    "github": "https://github.com/JKirkYuan/Quest",
+    "image": "/assets/quest.png",
+    "caption": "In this multiplayer card game, players compete to become a Knight of the Round Table."
 }}

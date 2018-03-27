@@ -64,9 +64,12 @@ function randomNumber(min, max) {
 }
 
 function getProjects() {
-  let NUMBER_OF_PROJECTS = 3;
   
   $.getJSON("/assets/projects.json", function(json) {
+    var numberOfProjects = 1;
+    while (json["project" + (numberOfProjects + 1)] != undefined) {
+      numberOfProjects++;
+    }
 
     $(".project").animate({opacity: 0}, function() {
 
@@ -74,9 +77,9 @@ function getProjects() {
 
       $(".project").each(function() {
 
-        var projectNum = randomNumber(1, NUMBER_OF_PROJECTS);
+        var projectNum = randomNumber(1, numberOfProjects);
         while ($.inArray(projectNum, usedProjects) > -1) {
-          projectNum = randomNumber(1, NUMBER_OF_PROJECTS);
+          projectNum = randomNumber(1, numberOfProjects);
         }
         usedProjects.push(projectNum);
 
