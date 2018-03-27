@@ -165,7 +165,7 @@
                     <p>During the summer of 2016, I volunteered to complete some research with a Computer Science professor
                         at Carleton University, Dr. Doron Nussbaum. At the time, he was researching algorithms to find the
                         shortest path to a moving target. The position began as volunteer work, but he was able to secure
-                        a grant for the project, allowing me to work fulltime.</p>
+                        a grant for the project, allowing me to work full-time.</p>
                     <p>My time working under Dr. Nussbaum was very useful, as I was able to learn many programming best-practices,
                         develop my critical thinking skills, work on the clarity and conciseness of the documentation I wrote.</p>
                     <h5>Want to find out more?
@@ -184,78 +184,92 @@
         <div id="parallax3" class="parallax"></div>
 
         <div id="projects" class="container content-section">
-            <div id="twoButtons" class="row">
+            <div class="row project">
                 <div class="col-sm content-block">
-                    <h1>Two Buttons - The Reflex Tapping Game</h1>
-                    <h3>App Developer (Feb 2016 - Sept 2016)</h3>
-                    <p>I first began developing this application when a friend came to me, requesting that I make an app to
-                        help her with a demonstration for one of her classes. After a short time, I realized that this had
-                        the potential to become a full-fledged app, so I pursued development beyond just the basic stages.</p>
-                    <p>I eventually completed the app in June of 2016, however I was unable to submit it to the App Store due
-                        to developer age restrictions. After a short wait, I paid the developer feeds and completed the submission
-                        process.
-                    </p>
+                    <h1 class="project-header">Two Buttons - The Reflex Tapping Game</h1>
+                    <h3 class="project-subheader">App Developer (Feb 2016 - Sept 2016)</h3>
+                    <span class="project-description">
+                        <p>I first began developing this application when a friend came to me, requesting that I make an app to
+                            help her with a demonstration for one of her classes. After a short time, I realized that this had
+                            the potential to become a full-fledged app, so I pursued development beyond just the basic stages.</p>
+                        <p>I eventually completed the app in June of 2016, however I was unable to submit it to the App Store due
+                            to developer age restrictions. After a short wait, I paid the developer feeds and completed the submission
+                            process.
+                        </p>
+                    </span>
                     <h5>Want to see this project?
-                        <a href="https://goo.gl/Ii7qXt" target="_blank">View</a> -
-                        <a href="https://github.com/AveryVine/twoButtonsGameiOS" target="_blank">
+                        <a class="project-url" href="https://goo.gl/Ii7qXt" target="_blank">View</a> -
+                        <a class="project-github" href="https://github.com/AveryVine/twoButtonsGameiOS" target="_blank">
                             <i class="fa fa-github"></i>
                         </a>
                     </h5>
                 </div>
                 <div class="col-sm">
                     <figure class="figure">
-                        <img src="/assets/twoButtons.png" alt="Placeholder" class="img-fluid img-thumbnail content-image">
-                        <figcaption class="figure-caption">I developed and released an iOS app that tests your reaction time during my spare time.</figcaption>
+                        <img src="/assets/twoButtons.png" alt="Placeholder" class="img-fluid img-thumbnail content-image project-image">
+                        <figcaption class="figure-caption project-caption">I developed and released an iOS app that tests your reaction time during my spare time.</figcaption>
                     </figure>
                 </div>
             </div>
 
-            <div id="website" class="row">
+            <div class="row project">
                 <div class="col-sm content-block">
-                    <h1>Personal Website</h1>
-                    <h3>Web Developer (Jan 2017, Nov 2017)</h3>
-                    <p>I first developed my website in January of 2017, in preparation for my first co-op job search. I had
-                        just completed my web development class, so with that fresh motivation I taught myself to use the
-                        w3.css framework, enabling quick and easy development.</p>
-                    <p>Looking back in November 2017, I realized that my website looked a degree amateur-ish, so I decided to
-                        revamp my it using my newly-acquired understanding of Bootstrap 4 - creating a responsive, modern
-                        website that can properly represent me as a developer.</p>
+                    <h1 class="project-header">Personal Website</h1>
+                    <h3 class="project-subheader">Web Developer (Jan 2017, Nov 2017)</h3>
+                    <span class="project-description">
+                        <p>I first developed my website in January of 2017, in preparation for my first co-op job search. I had
+                            just completed my web development class, so with that fresh motivation I taught myself to use the
+                            w3.css framework, enabling quick and easy development.</p>
+                        <p>Looking back in November 2017, I realized that my website looked a degree amateur-ish, so I decided to
+                            revamp my it using my newly-acquired understanding of Bootstrap 4 - creating a responsive, modern
+                            website that can properly represent me as a developer.</p>
+                    </span>
                     <h5>Want to see this project?
-                        <a href="http://www.averyvine.com">View</a> -
-                        <a href="https://github.com/AveryVine/averyvineWebsite" target="_blank">
+                        <a class="project-url" href="http://www.averyvine.com">View</a> -
+                        <a class="project-github" href="https://github.com/AveryVine/averyvineWebsite" target="_blank">
                             <i class="fa fa-github"></i>
                         </a>
                     </h5>
                 </div>
                 <div class="col-sm">
                     <figure class="figure">
-                        <img src="/assets/website.png" alt="Placeholder" class="img-fluid img-thumbnail content-image">
-                        <figcaption class="figure-caption">My website's first iteration, from January 2017.</figcaption>
+                        <img src="/assets/website.png" alt="Placeholder" class="img-fluid img-thumbnail content-image project-image">
+                        <figcaption class="figure-caption project-caption">My website's first iteration, from January 2017.</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="row project">
+                <div class="col-sm content-block">
+                    <h1 class="project-header">Notepadd</h1>
+                    <h3 class="project-subheader">Web Developer</h3>
+                    <span class="project-description">
+                        <p>This website was the hackathon brainchild of myself, two of my friends from Carleton, and a Waterloo
+                            student. Notepadd takes in whatever text you give it, and generates a song based off of average sentence
+                            length, punctuation usage, and syllabic breakdown - all while using iambic pentameter to determine
+                            what notes to play. The user can select either a major or a minor chord progression, and modify instrument
+                            volume while the song plays.</p>
+                    </span>
+                    <h5>Want to see this project?
+                        <a class="project-url" href="http://notepadd.herokuapp.com" target="_blank">View</a> -
+                        <a class="project-github" href="https://github.com/wenbenz/quacks17" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </h5>
+                </div>
+                <div class="col-sm">
+                    <figure class="figure">
+                        <img src="/assets/notepadd.png" alt="Placeholder" class="img-fluid img-thumbnail content-image project-image">
+                        <figcaption class="figure-caption project-caption">I helped to create this website that turns written text into music at a hackathon.</figcaption>
                     </figure>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-sm content-block">
-                    <h1>Notepadd</h1>
-                    <h3>Web Developer</h3>
-                    <p>This website was the hackathon brainchild of myself, two of my friends from Carleton, and a Waterloo
-                        student. Notepadd takes in whatever text you give it, and generates a song based off of average sentence
-                        length, punctuation usage, and syllabic breakdown - all while using iambic pentameter to determine
-                        what notes to play. The user can select either a major or a minor chord progression, and modify instrument
-                        volume while the song plays.</p>
-                    <h5>Want to see this project?
-                        <a href="http://notepadd.herokuapp.com" target="_blank">View</a> -
-                        <a href="https://github.com/wenbenz/quacks17" target="_blank">
-                            <i class="fa fa-github"></i>
-                        </a>
-                    </h5>
+                    <h4><a href="javascript:void(0);" onclick="getProjects();">Click me to see more projects!</a></h4>
                 </div>
                 <div class="col-sm">
-                    <figure class="figure">
-                        <img src="/assets/notepadd.png" alt="Placeholder" class="img-fluid img-thumbnail content-image">
-                        <figcaption class="figure-caption">I helped to create this website that turns written text into music at a hackathon.</figcaption>
-                    </figure>
                 </div>
             </div>
         </div>

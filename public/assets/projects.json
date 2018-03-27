@@ -1,0 +1,25 @@
+{"project1": {
+    "header": "Two Buttons - The Reflex Tapping Game",
+    "sub-header": "App Developer (Feb 2016 - Sept 2016)",
+    "description": "<p>I first began developing this application when a friend came to me, requesting that I make an app to help her with a demonstration for one of her classes. After a short time, I realized that this had the potential to become a full-fledged app, so I pursued development beyond just the basic stages.</p><p>I eventually completed the app in June of 2016, however I was unable to submit it to the App Store due to developer age restrictions. After a short wait, I paid the developer feeds and completed the submission process.</p>",
+    "url": "https://goo.gl/Ii7qXt",
+    "github": "https://github.com/AveryVine/twoButtonsGameiOS",
+    "image": "/assets/twoButtons.png",
+    "caption": "I developed and released an iOS app that tests your reaction time during my spare time."
+}, "project2": {
+    "header": "Personal Website",
+    "subheader": "Web Developer (Jan 2017, Nov 2017 - Present)",
+    "description": "<p>I first developed my website in January of 2017, in preparation for my first co-op job search. I had just completed my web development class, so with that fresh motivation I taught myself to use the w3.css framework, enabling quick and easy development.</p><p>Looking back in November 2017, I realized that my website looked a degree amateur-ish, so I decided to revamp my it using my newly-acquired understanding of Bootstrap 4 - creating a responsive, modern website that can properly represent me as a developer.</p>",
+    "url": "http://www.averyvine.com",
+    "github": "https://github.com/AveryVine/averyvineWebsite",
+    "image": "/assets/website.png",
+    "caption": "My website's first iteration, from January 2017."
+}, "project3": {
+    "header": "Notepadd",
+    "subheader": "Web Developer",
+    "description": "<p>This website was the hackathon brainchild of myself, two of my friends from Carleton, and a Waterloo student. Notepadd takes in whatever text you give it, and generates a song based off of average sentence length, punctuation usage, and syllabic breakdown - all while using iambic pentameter to determine what notes to play. The user can select either a major or a minor chord progression, and modify instrument volume while the song plays.</p>",
+    "url": "http://notepadd.herokuapp.com",
+    "github": "https://github.com/wenbenz/quacks17",
+    "image": "/assets/notepadd.png",
+    "caption": "I helped to create this website that turns written text into music at a hackathon."
+}}

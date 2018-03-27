@@ -25,9 +25,7 @@ $(document).ready(function () {
     }
   })
 
-  function randomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
+  getProjects();
 
   //override default behaviour for navbar links
   $("a").on('click', function (event) {
@@ -60,6 +58,48 @@ $(document).ready(function () {
     });
   });
 });
+
+function randomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function getProjects() {
+  let NUMBER_OF_PROJECTS = 3;
+  
+  $.getJSON("/assets/projects.json", function(json) {
+
+    $(".project").animate({opacity: 0}, function() {
+
+      var usedProjects = [];
+
+      $(".project").each(function() {
+
+        var projectNum = randomNumber(1, NUMBER_OF_PROJECTS);
+        while ($.inArray(projectNum, usedProjects) > -1) {
+          projectNum = randomNumber(1, NUMBER_OF_PROJECTS);
+        }
+        usedProjects.push(projectNum);
+
+        $(this).find(".project-header").html(json["project" + projectNum].header);
+        $(this).find(".project-subheader").html(json["project" + projectNum].subheader);
+        $(this).find(".project-description").html(json["project" + projectNum].description);
+        $(this).find(".project-url").attr("href", json["project" + projectNum].url);
+        if (json["project" + projectNum].url == "http://www.averyvine.com") {
+          $(this).find(".project-url").attr("target", "_self");
+        } else {
+          $(this).find(".project-url").attr("target", "_blank");
+        }
+        $(this).find(".project-github").attr("href", json["project" + projectNum].github);
+        $(this).find(".project-image").attr("src", json["project" + projectNum].image);
+        $(this).find(".project-caption").html(json["project" + projectNum].caption);
+
+      });
+
+      $(".project").animate({opacity: 1});
+
+    })
+  });
+}
 
 //ensures that content only appears when fully loaded
 window.onload = function () {
