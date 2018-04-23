@@ -16,7 +16,7 @@
     "caption": "My website's first iteration, from January 2017."
 }, "project3": {
     "header": "Notepadd",
-    "subheader": "Web Developer",
+    "subheader": "Web Developer (Feb 2017)",
     "description": "<p>This website was the hackathon brainchild of myself, two of my friends from Carleton, and a Waterloo student. Notepadd takes in whatever text you give it, and generates a song based off of average sentence length, punctuation usage, and syllabic breakdown - all while using iambic pentameter to determine what notes to play. The user can select either a major or a minor chord progression, and modify instrument volume while the song plays.</p>",
     "url": "http://notepadd.herokuapp.com",
     "github": "https://github.com/wenbenz/quacks17",
@@ -25,9 +25,25 @@
 }, "project4": {
     "header": "Quest of the Round Table",
     "subheader": "Developer (Jan 2018 - Apr 2018)",
-    "description": "<p>This project was a collaboration between myself and three classmates for one of my classes, Objet-Oriented Software Engineering. In this physical card game turned digital, players vie to become the winner (Knight of the Round Table) by completing quests, participating in tournaments, and more.</p><p>I taught myself Unity and C# for the purpose of this project, as using Unity made the graphics development and integration significantly easier. In addition, as it was the focus of the class, I integrated several design patterns into the code, including Mediator, Strategy, and more.</p>",
+    "description": "<p>This project was a collaboration between myself and three classmates for one of my courses, Objet-Oriented Software Engineering. In this physical card game turned digital, players vie to become the winner (Knight of the Round Table) by completing quests, participating in tournaments, and more.</p><p>I taught myself Unity and C# for the purpose of this project, as using Unity made the graphics development and integration significantly easier. In addition, as it was the focus of the class, I integrated several design patterns into the code, including Mediator, Strategy, and more.</p>",
     "url": "https://github.com/JKirkYuan/Quest",
     "github": "https://github.com/JKirkYuan/Quest",
     "image": "/assets/quest.png",
     "caption": "In this multiplayer card game, players compete to become a Knight of the Round Table."
+}, "project5": {
+    "header": "Wing It",
+    "subheader": "Developer (Apr 2018)",
+    "description": "<p>As the final project in my Intelligent Web-based Information Systems course, we were given the freedom to explore a project topic of our choosing, as long as it integrated the course contents. My friend and I built Wing It, a web application that can determine the political leaning of a given news article through content analysis. In addition, the application recommends articles concerning similar topics from left wing, centrist, and right wing news sources.</p><p>We used a ranged of technologies and algorithms to complete this project including Jersey, MongoDB, crawler4j, Naive Bayes analysis, and more. In the future, we hope to continue to improve this project by implementing features ranging from unsupervised learning for training purposes to better contextual recommendation.</p>",
+    "url": "https://github.com/lifeofcows/WingIt",
+    "github": "https://github.com/lifeofcows/WingIt",
+    "image": "/assets/wingit.png",
+    "caption": "When a user enters an article, its political leaning is analyzed and recommendations are made from news sources with alternative political leanings."
+}, "project6": {
+    "header": "Science Student Success Centre Mobile App",
+    "subheader": "Developer (Feb 2018 - Present)",
+    "description": "<p>As a mentor at the Carleton Science Student Success Centre and a member of the Computer Science Team, one of my tasks for the 2017/2018 school year was to begin development on a mobile application. The app, when complete, will display all of the centre's upcoming events, provide students with an easy way to keep track of upcoming mentoring sessions, and offer a fully-fledged grade calculator.</p><p>The app has two components: a mobile front-end that displays information to the user, and a Node.js server that the app accesses in order to retrieve the information to be displayed. I will be completing the iOS application first, before moving onto the Android counterpart, with a planned release during the 2018/2019 school year.</p>",
+    "url": "https://github.com/AveryVine/SSSC-iOS-App",
+    "github": "https://github.com/AveryVine/SSSC-iOS-App",
+    "image": "/assets/ssscapp.png",
+    "caption": "This mobile app provides an easy way for students to view SSSC events, keep track of their mentoring sessions, and calculate their current/potential grades."
 }}

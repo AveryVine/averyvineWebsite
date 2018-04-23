@@ -59,30 +59,24 @@ $(document).ready(function () {
   });
 });
 
-function randomNumber(min, max) {
+randomNumber = function(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function getProjects() {
-  
+var projectIndex = 0;
+getProjects = function() {
+
   $.getJSON("/assets/projects.json", function(json) {
-    var numberOfProjects = 1;
+
+    var numberOfProjects = 0;
     while (json["project" + (numberOfProjects + 1)] != undefined) {
       numberOfProjects++;
     }
 
-    $(".project").animate({opacity: 0}, function() {
+    $(".project").fadeOut(600, function() {
 
-      var usedProjects = [];
-
-      $(".project").each(function() {
-
-        var projectNum = randomNumber(1, numberOfProjects);
-        while ($.inArray(projectNum, usedProjects) > -1) {
-          projectNum = randomNumber(1, numberOfProjects);
-        }
-        usedProjects.push(projectNum);
-
+      var projectNum = projectIndex + 1;
+      if (json["project" + projectNum] != undefined) {
         $(this).find(".project-header").html(json["project" + projectNum].header);
         $(this).find(".project-subheader").html(json["project" + projectNum].subheader);
         $(this).find(".project-description").html(json["project" + projectNum].description);
@@ -95,12 +89,14 @@ function getProjects() {
         $(this).find(".project-github").attr("href", json["project" + projectNum].github);
         $(this).find(".project-image").attr("src", json["project" + projectNum].image);
         $(this).find(".project-caption").html(json["project" + projectNum].caption);
+      }
 
-      });
+      projectIndex = projectNum % numberOfProjects;
 
-      $(".project").animate({opacity: 1});
+    });
 
-    })
+    $(".project").fadeIn(600);
+
   });
 }
 
