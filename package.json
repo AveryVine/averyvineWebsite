@@ -1,7 +1,7 @@
 {
-  "name": "resume",
+  "name": "website",
   "version": "1.0.0",
-  "description": "Packages for resume server",
+  "description": "Personal website",
   "main": "app.js",
   "scripts": {
     "start": "./.startCommands.sh false",

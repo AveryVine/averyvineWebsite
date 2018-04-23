@@ -48,14 +48,20 @@ a:hover {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Work Sans', sans-serif;
+}
+
+h1,
+h2 {
   border-bottom: 4px solid black;
 }
 
-h3,
-h5 {
-  font-family: 'Work Sans', sans-serif;
+h4 {
+  border-top: 4px solid black;
 }
 
 h5 a:hover {
