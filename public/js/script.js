@@ -128,3 +128,15 @@ window.onload = function () {
     });
   });
 }
+
+window.onscroll = function() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  $("#progress-bar").css("width", scrolled + "%");
+  if (winScroll == 0 && $(".progress-container").is(":visible")) {
+    $(".progress-container").fadeOut();
+  } else if (!$(".progress-container").is(":visible")) {
+    $(".progress-container").fadeIn();
+  }
+};
