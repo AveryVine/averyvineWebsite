@@ -25,7 +25,7 @@ $(document).ready(function () {
     }
   })
 
-  getProjects();
+  loadProjects();
 
   //override default behaviour for navbar links
   $("a").on('click', function (event) {
@@ -39,8 +39,8 @@ $(document).ready(function () {
   });
 
   //add modal image code to all relevant images
-  $(".figure").each(function() {
-    $(this).on("click", function() {
+  $(".figure").each(function () {
+    $(this).on("click", function () {
       var modal = $("#modal-display");
       var modalImg = $("#modal-content");
       var modalTxt = $("#modal-caption");
@@ -51,7 +51,7 @@ $(document).ready(function () {
       modalImg.attr("src", imgSrc);
       modalTxt.text(imgTxt);
       modal.show();
-      modal.on("click", function() {
+      modal.on("click", function () {
         modal.hide();
       });
 
@@ -59,50 +59,54 @@ $(document).ready(function () {
   });
 });
 
-randomNumber = function(min, max) {
+randomNumber = function (min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-var projectIndex = 0;
-getProjects = function() {
 
-  $.getJSON("/assets/projects.json", function(json) {
+//projects scripts
+const projectsToDisplay = 3;
+var firstVisibleProject = 1;
 
-    var numberOfProjects = 0;
-    while (json["project" + (numberOfProjects + 1)] != undefined) {
-      numberOfProjects++;
+//runs when a user requests more projects
+getProjects = function () {
+  loadProjects();
+  var offset = parseInt($(".navbar").css('height')) + 10;
+  $('html, body').animate({
+    scrollTop: $('#projects').offset().top - offset
+  }, 800);
+}
+
+//loads a set of up to {projectsToDisplay} projects (probably 3)
+loadProjects = function () {
+  var projectsToShow = [];
+  var totalProjects = 0;
+
+  //track which projects should be shown
+  for (var projectIndex = 1; $('#project' + projectIndex).length; projectIndex++) {
+    if (projectIndex >= firstVisibleProject && projectIndex < firstVisibleProject + projectsToDisplay) {
+      projectsToShow.push($('#project' + projectIndex).attr('id'));
     }
+    totalProjects++;
+  }
 
-    $(".project").fadeOut(600, function() {
-
-      var projectNum = projectIndex + 1;
-      if (json["project" + projectNum] != undefined) {
-        $(this).find(".project-header").html(json["project" + projectNum].header);
-        $(this).find(".project-subheader").html(json["project" + projectNum].subheader);
-        $(this).find(".project-description").html(json["project" + projectNum].description);
-        $(this).find(".project-url").attr("href", json["project" + projectNum].url);
-        if (json["project" + projectNum].url == "http://www.averyvine.com") {
-          $(this).find(".project-url").attr("target", "_self");
-        } else {
-          $(this).find(".project-url").attr("target", "_blank");
-        }
-        $(this).find(".project-github").attr("href", json["project" + projectNum].github);
-        $(this).find(".project-image").attr("src", json["project" + projectNum].image);
-        $(this).find(".project-caption").html(json["project" + projectNum].caption);
+  //hide all projects, then show tracked projects
+  for (var projectIndex = 1; $('#project' + projectIndex).length; projectIndex++) {
+    var project = $('#project' + projectIndex);
+    project.fadeOut(600, function () {
+      if (projectsToShow.includes($(this).attr('id'))) {
+        $(this).fadeIn(600);
       }
-
-      projectIndex = projectNum % numberOfProjects;
-
     });
+  }
 
-    $(".project").fadeIn(600);
-
-  });
+  //increment firstVisibleProject for next time
+  firstVisibleProject = ((firstVisibleProject + projectsToDisplay - 1) % totalProjects) + 1;
 }
 
 //ensures that content only appears when fully loaded
 window.onload = function () {
-  $(".loading-donut").fadeOut(1000, function() {
+  $(".loading-donut").fadeOut(1000, function () {
     $("#body-container").fadeIn(1000);
 
     //animations for fade-in on scroll
@@ -129,7 +133,8 @@ window.onload = function () {
   });
 }
 
-window.onscroll = function() {
+//progress bar scripts
+window.onscroll = function () {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;

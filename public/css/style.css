@@ -1,6 +1,7 @@
 body {
   background-color: #fffff0;
   background-image: url("/assets/texture.png");
+  font-family: 'Lora', sans-serif;
 }
 
 #body-container {
@@ -51,7 +52,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -68,12 +70,13 @@ h5 a:hover {
   text-decoration: none;
 }
 
-.bullet-text {
-  color: white;
+h6 {
+  color: gray;
+  font-size: 1.5em;
 }
 
-body {
-  font-family: 'Lora', sans-serif;
+.bullet-text {
+  color: white;
 }
 
 .navbar {
