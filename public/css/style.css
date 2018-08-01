@@ -1,6 +1,6 @@
 body {
   background-color: #fffff0;
-  background-image: url("/assets/texture.png");
+  background-image: url("/assets/minified/texture.png");
   font-family: 'Lora', sans-serif;
 }
 
@@ -16,22 +16,22 @@ body {
 }
 
 #parallax1 {
-  background-image: url("/assets/background1Blur60.jpg");
+  background-image: url("/assets/minified/background1Blur60.jpg");
   background-position: bottom;
 }
 
 #parallax2 {
-  background-image: url("/assets/background2.jpg");
+  background-image: url("/assets/minified/background2.jpg");
   background-position: top;
 }
 
 #parallax3 {
-  background-image: url("/assets/background3.jpg");
+  background-image: url("/assets/minified/background3.jpg");
   background-position: center;
 }
 
 #parallax4 {
-  background-image: url("/assets/background4.jpg");
+  background-image: url("/assets/minified/background4.jpg");
   background-position: top;
 }
 
@@ -178,6 +178,12 @@ h6 {
   margin: auto;
 }
 
+#header-typeit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .progress-container {
   display: none;
   width: 100%;
@@ -260,15 +266,18 @@ h6 {
 }
 
 @media (max-width: 600px) {
-  .bullet-image {
-    max-width: 40%;
-  }
-  #bullet-container {
-    margin-left: auto;
-  }
   .modal-content {
     padding-top: 0px;
     max-height: 200px;
+  }
+
+  #parallax1 {
+    min-height: 350px;
+  }
+
+  #header-typeit-container {
+    min-height: 110px;
+    align-items: inherit;
   }
 }
 

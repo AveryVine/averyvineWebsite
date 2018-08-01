@@ -57,6 +57,31 @@ $(document).ready(function () {
 
     });
   });
+
+  //set up typeit
+  const typeitPhrases = [
+    'a co-op student',
+    'an application developer',
+    'a black belt in karate',
+    'a mobile developer',
+    'an avid musician',
+    'a full stack developer',
+    'a video game enthusiast'
+  ];
+  
+  const headerTypeIt = new TypeIt('#header-typeit', {
+    strings: [],
+    breakLines: true,
+    loop: true,
+    autoStart: false,
+    startDelay: 2000,
+    afterString: function () {
+      headerTypeIt.pause(2000).delete().type(typeitPhrases[Math.floor(Math.random() * typeitPhrases.length)]);
+    }
+  });
+
+  headerTypeIt.type(typeitPhrases[Math.floor(Math.random() * typeitPhrases.length)]);
+
 });
 
 randomNumber = function (min, max) {
