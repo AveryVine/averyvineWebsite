@@ -75,10 +75,6 @@ h6 {
   font-size: 1.5em;
 }
 
-.bullet-text {
-  color: white;
-}
-
 .navbar {
   font-family: 'Work Sans', sans-serif;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
@@ -86,16 +82,6 @@ h6 {
 
 #header-container {
   padding-bottom: 30px;
-}
-
-.bullet-image {
-  padding: 5px;
-  max-width: 69%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 .card {
@@ -182,6 +168,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .progress-container {
@@ -229,17 +216,11 @@ h6 {
   .figure {
     width: 75%;
   }
-  .bullet-image {
-    padding: 0.1rem;
-  }
 }
 
 @media (max-width: 767px) {
   .navbar {
     padding: 0.5rem 1rem;
-  }
-  .bullet-image {
-    max-width: 100%;
   }
   #header-image {
     max-width: 60%;
@@ -247,9 +228,6 @@ h6 {
   #header-image-container {
     margin-top: 30px;
     margin-bottom: 30px;
-  }
-  #bullet-container {
-    margin-left: 80px;
   }
   .card {
     margin-top: 10px;
