@@ -16,6 +16,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
+    <script src="/js/typeit.min.js"></script>
     <script src="/js/script.js"></script>
     <script src="/js/scrollreveal.min.js"></script>
     <script src="/js/konami.js"></script>
@@ -64,47 +65,12 @@
             <div id="header-container" class="container">
                 <div class="row">
                     <div id="header-image-container" class="col-md-3">
-                        <img id="header-image" src="/assets/avine.jpg" alt="Avery Vine" class="img-thumbnail img-fluid">
+                        <img id="header-image" src="/assets/minified/avine.jpg" alt="Avery Vine" class="img-thumbnail img-fluid">
                     </div>
 
                     <div class="col-md">
-                        <div id="bullet-container" class="container">
-                            <div class="row align-items-center">
-                                <div class="col-sm-2 bullet-image-container">
-                                    <a href="#travelclick">
-                                        <img src="/assets/computer.png" alt="Software Development" class="img-fluid rounded-circle img-thumbnail bullet-image">
-                                    </a>
-                                </div>
-                                <div class="col-sm">
-                                    <a href="#travelclick">
-                                        <h3 class="text-center text-sm-left bullet-text">Application Developer</h3>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row align-items-center">
-                                <div class="col-sm-2 bullet-image-container">
-                                    <a href="#twoButtons">
-                                        <img src="/assets/mobile.png" alt="Software Development" class="img-fluid rounded-circle img-thumbnail bullet-image">
-                                    </a>
-                                </div>
-                                <div class="col-sm">
-                                    <a href="#twoButtons">
-                                        <h3 class="text-center text-sm-left bullet-text">Mobile App Developer</h3>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row align-items-center">
-                                <div class="col-sm-2 bullet-image-container">
-                                    <a href="#website">
-                                        <img src="/assets/fullstack.png" alt="Software Development" class="img-fluid rounded-circle img-thumbnail bullet-image">
-                                    </a>
-                                </div>
-                                <div class="col-sm">
-                                    <a href="#website">
-                                        <h3 class="text-center text-sm-left bullet-text">Full-Stack Developer</h3>
-                                    </a>
-                                </div>
-                            </div>
+                        <div id="header-typeit-container" class="container h-100">
+                            <h3 class="text-center text-sm-left">I am... <span id="header-typeit"></span></h3>
                         </div>
                     </div>
                 </div>
@@ -116,18 +82,18 @@
                 <div class="col-sm content-block">
                     <h1>About Me</h1>
                     <p>Hi, my name is Avery! I'm a developer based in Ottawa, Ontario, studying Computer Science at Carleton
-                        University and currently working at TripAdvisor. I am a focused, goal-driven individual who can stay highly organized and work efficiently,
-                        whether it be independently or in a team environment. I have experience in several areas of programming,
-                        and I enjoy playing the piano and video games in my spare time. With significant work experience
-                        under my belt and several personal and university projects completed, I am enthusiastic to tackle
-                        new and exciting challenges.</p>
+                        University and currently working at TripAdvisor. I am a focused, goal-driven individual who can stay
+                        highly organized and work efficiently, whether it be independently or in a team environment. I have
+                        experience in several areas of programming, and I enjoy playing the piano and video games in my spare
+                        time. With significant work experience under my belt and several personal and university projects
+                        completed, I am enthusiastic to tackle new and exciting challenges.</p>
                     <p>Feel free to peruse my website to learn a bit more about what I've done. If you want to contact me or
                         find out more, you can find my resume, email address, phone number, LinkedIn page, and GitHub page
                         linked at the bottom.</p>
                 </div>
                 <div class="col-sm">
                     <figure class="figure">
-                        <img src="/assets/profile.jpg" alt="Placeholder" class="img-fluid img-thumbnail content-image">
+                        <img src="/assets/minified/profile.jpg" alt="Placeholder" class="img-fluid img-thumbnail content-image">
                         <figcaption class="figure-caption">I play piano in a big band and trumpet in a concert band some evenings.</figcaption>
                     </figure>
                 </div>
@@ -150,13 +116,10 @@
                         with many locations). This project was my first significant coding project at a company, and it gave
                         me the chance to put my expertise in Java to the test.
                     </p>
-                    <h5>Want to find out more?
-                        <a href="https://www.tripadvisor.com/" target="_blank">View</a>
-                    </h5>
                 </div>
                 <div class="col-sm">
                     <figure class="figure">
-                        <img src="/assets/tripadvisor.jpg" alt="Placeholder" class="img-fluid img-thumbnail content-image">
+                        <img src="/assets/minified/tripadvisor.jpg" alt="Placeholder" class="img-fluid img-thumbnail content-image">
                         <figcaption class="figure-caption">I've been given the opportunity to visit the TripAdvisor headquarters in Needham, Massachusetts twice
                             so far!
                         </figcaption>
@@ -176,13 +139,10 @@
                         hotels with our databases by installing the GMS software on their servers. I monitered data feeds,
                         wrote extensive documentation, fixed elusive bugs, and completed several significant code changes,
                         all while ensuring clients were satisfied with our service.</p>
-                    <h5>Want to find out more?
-                        <a href="https://www.travelclick.com/" target="_blank">View</a>
-                    </h5>
                 </div>
                 <div class="col-sm">
                     <figure class="figure">
-                        <img src="/assets/theYadi.jpg" alt="Placeholder" class="img-fluid img-thumbnail content-image">
+                        <img src="/assets/minified/theYadi.jpg" alt="Placeholder" class="img-fluid img-thumbnail content-image">
                         <figcaption class="figure-caption">The trophy awarded to the winners of TravelClick Ottawa's in-house sports tournament (spoiler: my
                             team won).
                         </figcaption>
@@ -190,7 +150,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div id="carleton" class="row">
                 <div class="col-sm content-block">
                     <h1>Carleton University</h1>
                     <h3>Undergraduate Research Assistant</h3>
@@ -201,13 +161,10 @@
                         a grant for the project, allowing me to work full-time.</p>
                     <p>My time working under Dr. Nussbaum was very useful, as I was able to learn many programming best-practices,
                         develop my critical thinking skills, work on the clarity and conciseness of the documentation I wrote.</p>
-                    <h5>Want to find out more?
-                        <a href="https://carleton.ca/scs/people/doron-nussbaum/" target="_blank">View</a>
-                    </h5>
                 </div>
                 <div class="col-sm">
                     <figure class="figure">
-                        <img src="/assets/undergradResearch.png" alt="Carleton University" class="img-fluid img-thumbnail content-image">
+                        <img src="/assets/minified/undergradResearch.jpg" alt="Carleton University" class="img-fluid img-thumbnail content-image">
                         <figcaption class="figure-caption">I spent Summer 2016 researching algorithms for the fastest path to a moving target at Carleton University.</figcaption>
                     </figure>
                 </div>
@@ -232,15 +189,15 @@
                         </p>
                     </span>
                     <h5>Want to see this project?
-                        <a class="project-url" href="https://goo.gl/Ii7qXt" target="_blank">View</a> -
-                        <a class="project-github" href="https://github.com/AveryVine/twoButtonsGameiOS" target="_blank">
+                        <a class="project-url" href="https://goo.gl/Ii7qXt" target="_blank" rel="noopener">View</a> -
+                        <a class="project-github" href="https://github.com/AveryVine/twoButtonsGameiOS" target="_blank" rel="noopener">
                             <i class="fa fa-github"></i>
                         </a>
                     </h5>
                 </div>
                 <div class="col-sm">
                     <figure class="figure">
-                        <img src="/assets/twoButtons.png" alt="Placeholder" class="img-fluid img-thumbnail content-image project-image">
+                        <img src="/assets/minified/twoButtons.jpg" alt="Placeholder" class="img-fluid img-thumbnail content-image project-image">
                         <figcaption class="figure-caption project-caption">I developed and released an iOS app that tests your reaction time during my spare time.</figcaption>
                     </figure>
                 </div>
@@ -260,14 +217,14 @@
                     </span>
                     <h5>Want to see this project?
                         <a class="project-url" href="http://www.averyvine.com">View</a> -
-                        <a class="project-github" href="https://github.com/AveryVine/averyvineWebsite" target="_blank">
+                        <a class="project-github" href="https://github.com/AveryVine/averyvineWebsite" target="_blank" rel="noopener">
                             <i class="fa fa-github"></i>
                         </a>
                     </h5>
                 </div>
                 <div class="col-sm">
                     <figure class="figure">
-                        <img src="/assets/website.png" alt="Placeholder" class="img-fluid img-thumbnail content-image project-image">
+                        <img src="/assets/minified/website.jpg" alt="Placeholder" class="img-fluid img-thumbnail content-image project-image">
                         <figcaption class="figure-caption project-caption">My website's first iteration, from January 2017.</figcaption>
                     </figure>
                 </div>
@@ -285,15 +242,15 @@
                             and modify instrument volume while the song plays.</p>
                     </span>
                     <h5>Want to see this project?
-                        <a class="project-url" href="http://notepadd.herokuapp.com" target="_blank">View</a> -
-                        <a class="project-github" href="https://github.com/wenbenz/quacks17" target="_blank">
+                        <a class="project-url" href="http://notepadd.herokuapp.com" target="_blank" rel="noopener">View</a> -
+                        <a class="project-github" href="https://github.com/wenbenz/quacks17" target="_blank" rel="noopener">
                             <i class="fa fa-github"></i>
                         </a>
                     </h5>
                 </div>
                 <div class="col-sm">
                     <figure class="figure">
-                        <img src="/assets/notepadd.png" alt="Placeholder" class="img-fluid img-thumbnail content-image project-image">
+                        <img src="/assets/minified/notepadd.jpg" alt="Placeholder" class="img-fluid img-thumbnail content-image project-image">
                         <figcaption class="figure-caption project-caption">I helped to create this website that turns written text into music at a hackathon.</figcaption>
                     </figure>
                 </div>
@@ -312,14 +269,14 @@
                             several design patterns into the code, including Mediator, Strategy, and more.</p>
                     </span>
                     <h5>Want to see this project?
-                        <a class="project-github" href="https://github.com/JKirkYuan/Quest" target="_blank">
+                        <a class="project-github" href="https://github.com/JKirkYuan/Quest" target="_blank" rel="noopener">
                             <i class="fa fa-github"></i>
                         </a>
                     </h5>
                 </div>
                 <div class="col-sm">
                     <figure class="figure">
-                        <img src="/assets/quest.png" alt="Placeholder" class="img-fluid img-thumbnail content-image project-image">
+                        <img src="/assets/minified/quest.jpg" alt="Placeholder" class="img-fluid img-thumbnail content-image project-image">
                         <figcaption class="figure-caption project-caption">In this multiplayer card game, players compete to become a Knight of the Round Table.</figcaption>
                     </figure>
                 </div>
@@ -341,14 +298,14 @@
                             better contextual recommendation.</p>
                     </span>
                     <h5>Want to see this project?
-                        <a class="project-github" href="https://github.com/lifeofcows/WingIt" target="_blank">
+                        <a class="project-github" href="https://github.com/lifeofcows/WingIt" target="_blank" rel="noopener">
                             <i class="fa fa-github"></i>
                         </a>
                     </h5>
                 </div>
                 <div class="col-sm">
                     <figure class="figure">
-                        <img src="/assets/wingit.png" alt="Placeholder" class="img-fluid img-thumbnail content-image project-image">
+                        <img src="/assets/minified/wingit.jpg" alt="Placeholder" class="img-fluid img-thumbnail content-image project-image">
                         <figcaption class="figure-caption project-caption">When a user enters an article, its political leaning is analyzed and recommendations are made from
                             news sources with alternative political leanings.</figcaption>
                     </figure>
@@ -370,14 +327,14 @@
                             release during the 2018/2019 school year.</p>
                     </span>
                     <h5>Want to see this project?
-                        <a class="project-github" href="https://github.com/AveryVine/SSSC-iOS-App" target="_blank">
+                        <a class="project-github" href="https://github.com/AveryVine/SSSC-iOS-App" target="_blank" rel="noopener">
                             <i class="fa fa-github"></i>
                         </a>
                     </h5>
                 </div>
                 <div class="col-sm">
                     <figure class="figure">
-                        <img src="/assets/ssscapp.png" alt="Placeholder" class="img-fluid img-thumbnail content-image project-image">
+                        <img src="/assets/minified/ssscapp.jpg" alt="Placeholder" class="img-fluid img-thumbnail content-image project-image">
                         <figcaption class="figure-caption project-caption">This mobile app provides an easy way for students to view SSSC events, keep track of their mentoring
                             sessions, and calculate their current/potential grades.</figcaption>
                     </figure>
@@ -428,7 +385,7 @@
                             </p>
                         </a>
 
-                        <a href="https://github.com/AveryVine" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <a href="https://github.com/AveryVine" target="_blank" rel="noopener" class="list-group-item list-group-item-action flex-column align-items-start">
                             <div class="d-flex w-100 justify-content-between">
                                 <h5 class="mb-1">
                                     <i class="fa fa-github"></i> GitHub</h5>
@@ -438,7 +395,7 @@
                             </p>
                         </a>
 
-                        <a href="https://linkedin.com/in/averyvine" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <a href="https://linkedin.com/in/averyvine" target="_blank" rel="noopener" class="list-group-item list-group-item-action flex-column align-items-start">
                             <div class="d-flex w-100 justify-content-between">
                                 <h5 class="mb-1">
                                     <i class="fa fa-linkedin-square"></i> LinkedIn</h5>
