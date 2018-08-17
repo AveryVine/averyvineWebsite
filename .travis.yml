@@ -6,7 +6,6 @@ before_install:
 script:
 -
 deploy:
-  provider: script
-  script: deploy.sh
-  on:
-    branch: release/master
+  provider: firebase
+  token:
+    secure: $FIREBASE_TOKEN_ENCRYPTED
