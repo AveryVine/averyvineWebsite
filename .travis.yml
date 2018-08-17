@@ -2,11 +2,11 @@ language: node_js
 node_js:
 - 10
 before_install:
-- npm install -g npm@latest
 - npm install -g firebase-tools
 script:
 -
 deploy:
-  provider: firebase
-  token:
-    secure: IzNOkDZH8feEanIgUu/11UlSssh2myMzBpXEeHqVAXd4jQ4BLKz4q/QaNBduWGxZsTWZs8m4AuXbm22ossd5Vp4F0FsfnNHOKc86wPWo20tCvdK80L5oITIdxjiRxgMHKiEzMyFjZeJOSI8Zbl7HzV9KnSkWx4LQow9MSJB6ebISRXEJC8jHLaLYJWtzPAcMsB5uhvimQPfFG9CzuGpgsERwVqhmtGfa4bIRSxFl8pWpZoUOSakpuJztDfaVKc2uMQj8wH5F8IuE2OPp5RuiJ9twKib6ajozqRMkMTVJYfc4qaWidrHqQ/GQSkz7SsSqTnlz51De+gJN3+1EsAQPciw8ZDFilXC1IVj9XhIllLISFZR1dxPI8ElOslh3KgcoJIIEDjKlbSpYsLuSl5X7Bx8o8TW+Eo2N2jm0qbbgdBEGyXHXs2ITep8rVPsn/D9gW/f2tEtcacnUxD8tthaZeGJ0yMbpffSrhtaR5ja1N7cpn7JAz0IROvBoAibakOAKivaYAfeMBMJVihXwlY96m/ysGyuvKxI5vYRF1K0f0wRWpP+CUap5CZ8KW4kdu1Eep/6+oU4O4eC6hluez//QH0FzqSgA9MZ9Vv2YylBBZgVAFQXXe9hP7uAyxy7RWcG0hPDwOGVlW45PxMi9khg8zR8MiB0AN4T4lVZP02aoCkE=
+  provider: script
+  script: deploy.sh
+  on:
+    branch: release/master
