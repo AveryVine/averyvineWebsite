@@ -4,26 +4,22 @@ $(document).ready(function () {
   //konami code stuff
   var konamiCounter = 0;
   var konamiMessage = [
+    "What, did you expect this to do something useful? P.S. I wouldn't do it again if I were you...",
     "If you keep doing this, things will end badly...",
     "You're playing with fire...",
     "This is not gonna end well for you...",
-    "Shhh, be vewy, vewy, qwiet, we're hunting people who keep entering the Konami code!",
-    "These are not the Konami droids you are looking for..."
-  ]
+  ];
   var konami = new Konami(function () {
-    if (konamiCounter == 0) {
+    if (konamiCounter < 2) {
+      alert(konamiMessage[konamiCounter]);
       konamiCounter++;
-      alert("What, did you expect this to do something useful? P.S. I wouldn't do it again if I were you...");
-    } else if (konamiCounter == 1) {
-      konamiCounter++;
-      alert(konamiMessage[konamiCounter - 2]);
-    } else if (randomNumber(0, 7) == 0) {
-      window.open("konami/rickroll");
+    } else if (randomNumber(0, konamiMessage.length - 2) == 0) {
+      window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
       konamiCounter = 0;
     } else {
-      alert(konamiMessage[randomNumber(0, konamiMessage.length - 1)])
+      alert(konamiMessage[randomNumber(2, konamiMessage.length - 1)]);
     }
-  })
+  });
 
   loadProjects();
 
@@ -68,7 +64,7 @@ $(document).ready(function () {
     'a full stack developer',
     'a video game enthusiast'
   ];
-  
+
   const headerTypeIt = new TypeIt('#header-typeit', {
     strings: [],
     breakLines: true,
