@@ -41,4 +41,3 @@ public/assets/.DS_Store
 ###############
 .startCommands.sh
 node_modules/*
-.jshintrc

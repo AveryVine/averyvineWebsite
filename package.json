@@ -1,19 +1,17 @@
 {
-  "name": "website",
+  "name": "PersonalWebsite",
   "version": "1.0.0",
-  "description": "Personal website",
+  "description": "Personal Website",
   "main": "app.js",
   "scripts": {
-    "start": "./.startCommands.sh false",
-    "startWithBot": "./.startCommands.sh true"
+    "start": "firebase serve"
   },
   "author": "Avery Vine",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "discord.js": "^11.2.1",
-    "express": "^4.14.0",
-    "request": "^2.83.0",
-    "youtube-search": "^1.0.10"
+  "dependencies": {},
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.16.5",
+    "webpack-dev-server": "^3.1.5"
   }
 }
