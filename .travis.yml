@@ -6,8 +6,6 @@ before_install:
 script:
 -
 deploy:
-  provider: script
-  script: deploy.sh
-  # provider: firebase
-  # token:
-  #   secure: RFftnfvUBDhbM38Sh0s5rh7xpG/cBVaHv/5vCxyxjduNoRk2Gf7dBLckj9zPv3akX2KUdr2rZpqyBAPU9q1zJUvFlJlKc6hQWhpzshR0gz1g2GSkd3CSJ8vgXv8ILkmh1uiYqghVBJ9xkjAfvyrNgH5WxhiwT7FpK98nlKcyfgX8uqvjN8sj5juJi//8qYFJ8RRsCJ5tD0nIohDQZz88c2Ra/YYof6cw04O1jhrj5wpZQz9bRX6XqTkP/4braCDdErQqpm13PGg9Y4hlRe427nLgTFxffVlRv+9VGbOA8poxBaUPM65zynF0p5kSK1Ym54/SHqBiKS3vPqKz1x92JCIw3a/EKJ1Dy04lp9gexBVS04YCB3HDszu9w+a80r+ZyokEENSaYNfXHKCVRwatxKUs87eo3TX9s3kwp0SXrerbhPuIPFGr1CI7WeXq6jYOLlS53jPEIZFQapOiQYU240KMeGsZtTRAj7nU91IKwxw/Fzw9K3vqSt8MZysyos5GTFpjvbHEz0ZQcPPZz4qsztMfniq13iV9eB9H9uIXBKZRmKKBvD1RZ6dvUzoymOtEkxX/AmNy+SIVUdqulWpZsIBtBt96BujjQbwInL4nfdxoRLO2GPjiWMI/hfb0ooVZUj7XjKKPRCt6ekCWnz53UoXWm79CJ7XYGqP1hl6ASh0=
+  provider: firebase
+  token:
+    secure: $FIREBASE_TOKEN_ENCRYPTED
