@@ -9,5 +9,3 @@ deploy:
   provider: firebase
   token:
     secure: $FIREBASE_TOKEN_ENCRYPTED
-  on:
-    branch: release/master
