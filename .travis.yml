@@ -6,7 +6,9 @@ before_install:
 script:
 -
 deploy:
-  provider: script
-  script: deploy.sh
+  provider: firebase
+  skip_cleanup: true
   on:
-    branch: release/master
+    branch: master
+  token:
+    - $FIREBASE_TOKEN
