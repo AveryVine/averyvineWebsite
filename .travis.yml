@@ -11,4 +11,4 @@ deploy:
   on:
     branch: master
   token:
-    - 1/VP0skPC7gqOlO-nNC7skKBwQ2t-5y1XdeTV70fPNOMc
+    - $FIREBASE_TOKEN
