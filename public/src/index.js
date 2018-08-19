@@ -1,4 +1,7 @@
 //Copyright 2018, Avery Vine, All rights reserved.
+// import Konami from './konami.js';
+// import ScrollReveal from './scrollreveal.min.js';
+// import './typeit.min.js';
 
 $(document).ready(function () {
   //konami code stuff
@@ -80,9 +83,9 @@ $(document).ready(function () {
 
 });
 
-randomNumber = function (min, max) {
+let randomNumber = function (min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+};
 
 
 //projects scripts
@@ -90,16 +93,16 @@ const projectsToDisplay = 3;
 var firstVisibleProject = 1;
 
 //runs when a user requests more projects
-getProjects = function () {
+let getProjects = function () {
   loadProjects();
   var offset = parseInt($(".navbar").css('height')) + 10;
   $('html, body').animate({
     scrollTop: $('#projects').offset().top - offset
   }, 800);
-}
+};
 
 //loads a set of up to {projectsToDisplay} projects (probably 3)
-loadProjects = function () {
+let loadProjects = function () {
   var projectsToShow = [];
   var totalProjects = 0;
 
@@ -123,7 +126,7 @@ loadProjects = function () {
 
   //increment firstVisibleProject for next time
   firstVisibleProject = ((firstVisibleProject + projectsToDisplay - 1) % totalProjects) + 1;
-}
+};
 
 //ensures that content only appears when fully loaded
 window.onload = function () {
@@ -152,7 +155,7 @@ window.onload = function () {
       duration: 1000
     });
   });
-}
+};
 
 //progress bar scripts
 window.onscroll = function () {
