@@ -1,8 +1,3 @@
-//Copyright 2018, Avery Vine, All rights reserved.
-// import Konami from './konami.js';
-// import ScrollReveal from './scrollreveal.min.js';
-// import './typeit.min.js';
-
 $(document).ready(function () {
   //konami code stuff
   var konamiCounter = 0;
@@ -136,7 +131,7 @@ window.onload = function () {
     //animations for fade-in on scroll
     window.sr = ScrollReveal({
       reset: true,
-      mobile: false,
+      mobile: true,
       scale: 0.7,
       viewOffset: {
         top: 60,
