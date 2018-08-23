@@ -129,6 +129,10 @@ window.onload = function () {
     $("#body-container").fadeIn(1000);
 
     //animations for fade-in on scroll
+    let bottomValue = 0;
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      bottomValue = -120;
+    }
     window.sr = ScrollReveal({
       reset: true,
       mobile: true,
@@ -136,7 +140,7 @@ window.onload = function () {
       viewOffset: {
         top: 60,
         right: 0,
-        bottom: 0,
+        bottom: bottomValue,
         left: 0
       }
     });

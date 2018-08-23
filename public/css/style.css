@@ -13,11 +13,14 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
 }
 
 #parallax1 {
   background-image: url("/assets/minified/background1Blur60.jpg");
-  background-position: bottom;
+  background-position: 80%;
+  border-top: none;
 }
 
 #parallax2 {
@@ -90,7 +93,8 @@ h6 {
   margin-top: 45px;
   max-width: 20rem;
   min-height: 11rem;
-  visibility: hidden; /* This is for animations */
+  visibility: hidden;
+  /* This is for animations */
 }
 
 .card a {
@@ -100,7 +104,8 @@ h6 {
 
 .content-block {
   margin-bottom: 45px;
-  visibility: hidden; /* This is for animations */
+  visibility: hidden;
+  /* This is for animations */
 }
 
 .contact-block {
@@ -123,7 +128,8 @@ h6 {
   margin-bottom: 45px;
   width: 50%;
   text-align: center;
-  visibility: hidden; /* This is for animations */
+  visibility: hidden;
+  /* This is for animations */
 }
 
 .modal {
@@ -136,7 +142,7 @@ h6 {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
@@ -185,7 +191,7 @@ h6 {
   height: 4px;
   background: #00ff26;
   width: 0%;
-} 
+}
 
 @media(max-width: 1024px) {
   .navbar {
@@ -193,21 +199,11 @@ h6 {
     padding-left: env(safe-area-inset-left);
   }
   .parallax {
-    min-height: 225px;
+    min-height: 275px;
     background-attachment: scroll;
   }
   #parallax2 {
-    border-top: 4px solid black;
-    border-bottom: 4px solid black;
     background-position: center;
-  }
-  #parallax3 {
-    border-top: 4px solid black;
-    border-bottom: 4px solid black;
-  }
-  #parallax4 {
-    border-top: 4px solid black;
-    border-bottom: 4px solid black;
   }
   .card {
     margin-top: 10px;
@@ -219,6 +215,10 @@ h6 {
 }
 
 @media (max-width: 767px) {
+  .content-section {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
   .navbar {
     padding: 0.5rem 1rem;
   }
@@ -236,7 +236,6 @@ h6 {
   .figure {
     margin-top: 20px;
   }
-
   .modal-content {
     padding-top: 0px;
     max-height: 250px;
@@ -248,11 +247,9 @@ h6 {
     padding-top: 0px;
     max-height: 200px;
   }
-
   #parallax1 {
     min-height: 350px;
   }
-
   #header-typeit-container {
     min-height: 110px;
     align-items: inherit;
@@ -284,12 +281,10 @@ h6 {
   width: 30px;
   height: 30px;
   animation: donut-spin 1.2s linear infinite;
-
   position: absolute;
-  top:0;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-
   margin: auto;
 }
