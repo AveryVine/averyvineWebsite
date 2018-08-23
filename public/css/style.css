@@ -93,8 +93,7 @@ h6 {
   margin-top: 45px;
   max-width: 20rem;
   min-height: 11rem;
-  visibility: hidden;
-  /* This is for animations */
+  visibility: hidden; /* This is for animations */
 }
 
 .card a {
@@ -104,8 +103,7 @@ h6 {
 
 .content-block {
   margin-bottom: 45px;
-  visibility: hidden;
-  /* This is for animations */
+  visibility: hidden; /* This is for animations */
 }
 
 .contact-block {
@@ -128,8 +126,7 @@ h6 {
   margin-bottom: 45px;
   width: 50%;
   text-align: center;
-  visibility: hidden;
-  /* This is for animations */
+  visibility: hidden; /* This is for animations */
 }
 
 .modal {
