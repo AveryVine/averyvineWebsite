@@ -36,6 +36,12 @@
 ehthumbs.db
 Thumbs.db
 
+# Jekyll/Blog files #
+public/blog
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+
 # Other files #
 ###############
 node_modules
