@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "npm run build && firebase serve",
-    "build": "echo `Running jekyll build` && jekyll build",
+    "build": "jekyll build",
     "start-blog": "jekyll serve",
     "postinstall": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"

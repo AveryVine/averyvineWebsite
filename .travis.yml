@@ -16,9 +16,9 @@
 language: ruby
 rvm:
   - 2.2
+install: bundle install
 after_install:
   - npm install
-install: gem install jekyll
 script:
 - npm run build
 env:
