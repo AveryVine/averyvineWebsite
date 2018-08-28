@@ -19,7 +19,7 @@ rvm:
 after_install:
   - npm install
 install: gem install jekyll
-script:
+script: npm run build
 -
 env:
   global:
