@@ -4,7 +4,6 @@
   "description": "",
   "private": true,
   "devDependencies": {
-    "jekyll": "^3.0.0-beta1",
     "jshint": "^2.9.6"
   },
   "scripts": {
@@ -23,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/AveryVine/PersonalWebsite/issues"
   },
-  "homepage": "https://github.com/AveryVine/PersonalWebsite#readme"
+  "homepage": "https://github.com/AveryVine/PersonalWebsite#readme",
+  "dependencies": {
+    "jekyll": "^3.0.0-beta1"
+  }
 }
