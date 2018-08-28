@@ -4,13 +4,13 @@
   "description": "",
   "private": true,
   "devDependencies": {
-    "jshint": "^2.9.6",
-    "webpack": "^4.16.5",
-    "webpack-cli": "^3.1.0"
+    "jshint": "^2.9.6"
   },
   "scripts": {
-    "start": "firebase serve",
-    "build": "webpack --config webpack.config.js",
+    "start": "npm run build && firebase serve",
+    "build": "jekyll build",
+    "start-blog": "jekyll serve",
+    "postinstall": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/AveryVine/PersonalWebsite/issues"
   },
-  "homepage": "https://github.com/AveryVine/PersonalWebsite#readme"
+  "homepage": "https://github.com/AveryVine/PersonalWebsite#readme",
+  "dependencies": {
+    "jekyll": "^3.0.0-beta1"
+  }
 }
