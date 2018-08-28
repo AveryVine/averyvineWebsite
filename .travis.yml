@@ -16,7 +16,10 @@
 language: ruby
 rvm:
   - 2.2
-install: bundle install
+before_install:
+  - npm install -g firebase-tools
+install:
+  - bundle install
 after_install:
   - npm install
 script:
