@@ -4,13 +4,14 @@
   "description": "",
   "private": true,
   "devDependencies": {
-    "jshint": "^2.9.6",
-    "webpack": "^4.16.5",
-    "webpack-cli": "^3.1.0"
+    "jekyll": "^3.0.0-beta1",
+    "jshint": "^2.9.6"
   },
   "scripts": {
-    "start": "firebase serve",
-    "build": "webpack --config webpack.config.js",
+    "start": "npm run build && firebase serve",
+    "build": "jekyll build",
+    "start-blog": "jekyll serve",
+    "postinstall": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
