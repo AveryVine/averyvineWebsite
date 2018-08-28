@@ -43,3 +43,5 @@ github:
   repo:             https://github.com/AveryVine
 
 port: 5000
+
+exclude: [vendor]
