@@ -16,7 +16,7 @@
 language: ruby
 rvm:
   - 2.2
-before_install:
+after_install:
   - npm install
 install: gem install jekyll
 script:
