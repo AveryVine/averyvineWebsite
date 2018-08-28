@@ -9,8 +9,7 @@
   "scripts": {
     "start": "npm run build && firebase serve",
     "build": "jekyll build",
-    "start-blog": "jekyll serve",
-    "postinstall": "npm run build",
+    "blog": "jekyll serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,8 +21,5 @@
   "bugs": {
     "url": "https://github.com/AveryVine/PersonalWebsite/issues"
   },
-  "homepage": "https://github.com/AveryVine/PersonalWebsite#readme",
-  "dependencies": {
-    "jekyll": "^3.0.0-beta1"
-  }
+  "homepage": "https://github.com/AveryVine/PersonalWebsite#readme"
 }
