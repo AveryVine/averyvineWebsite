@@ -13,6 +13,10 @@ article + *, .post-body ~ section {
   }
 }
 
+article {
+  border-top: none;
+}
+
 .post, .page {
   .content {
     li + li {

@@ -55,22 +55,16 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Work Sans', sans-serif;
 }
 
-h1,
-h2 {
-  border-bottom: 4px solid black;
+h1, h2 {
+  border-bottom: 3px solid black;
 }
 
 h4 {
-  border-top: 4px solid black;
+  border-top: 3px solid black;
 }
 
 h5 a:hover {
