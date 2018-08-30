@@ -1,37 +1,37 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      rouge
+# Meta
+title:              Avery Vine
+tagline:            'Blog'
+description:        'A collection of posts about programming, music, travel, and my general life experiences'
 
-# Setup
-title:            Avery Vine
-tagline:          'Blog'
-description:      'A collection of posts about programming, music, travel, and my general life experiences'
-url:              https://averyvine.com
-baseurl:          '/blog'
-source:           'public/_blog'
-destination:      'public/blog'
-
+# URLs and Services
+url:                https://averyvine.com
+baseurl:            '/blog'
+source:             'public/_blog'
+destination:        'public/blog'
 author:
-  name:           'Avery Vine'
-  url:            https://twitter.com/AveryVine
-
-paginate:         5
+  name:             'Avery Vine'
+  url:              https://twitter.com/AveryVine
+github:
+  repo:             https://github.com/AveryVine
 disqus:
-  shortname: averyvine
-excerpt_separator:  <!--more-->
+  shortname:        averyvine
+jekyll_analytics:
+  GoogleAnalytics:
+    id:             UA-124828377-1
+    anonymizeIp:    false
 
+# Settings
+port:               5000
+paginate:           5
+excerpt_separator:  <!--more-->
+sidebar_home_link:  true
+exclude:            [vendor]
+
+# Dependencies and Plugins
+markdown:           kramdown
+highlighter:        rouge
 plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-
-# Custom vars
-# version:            3.7.1
-sidebar_home_link:  true
-# sidebar_blog_link:  '/blog'
-github:
-  repo:             https://github.com/AveryVine
-
-port: 5000
-
-exclude: [vendor]
+  - jekyll-analytics
