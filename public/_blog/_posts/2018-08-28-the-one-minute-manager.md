@@ -1,11 +1,12 @@
 ---
-layout: post
 title: The One Minute Manager
+date: "2018-08-28"
 category: Life
 tags: [sssc, university]
+layout: post
 ---
 
-![The One Minute Manager]({{ "/assets/2018-08-28-the-one-minute-manager-1.jpg" | absolute_url }})
+![The One Minute Manager]({{ "/assets/the-one-minute-manager/book-logo.jpg" | absolute_url }})
 
 I just finished reading a fascinating short book called "The One Minute Manager", written by Dr. Kenneth Blanchard and Dr. Spencer Johnson. This book was part of my training to become a team lead for the computer science team at the Carleton Science Student Success Centre. It provides insight into a style of management that is definitely applicable to many aspects of our daily lives - not just in a work setting.<!--more--> According to the book, the techniques talked about can, and should, be applied by all levels of employees, not just managers.
 

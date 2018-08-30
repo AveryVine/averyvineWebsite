@@ -1,11 +1,12 @@
 ---
-layout: post
 title: Blogging with Jekyll
+date: "2018-08-28"
 category: Programming
 tags: [jekyll, personal website, web development, meta]
+layout: post
 ---
 
-![Jekyll's Home Page]({{ "/assets/2018-08-28-blogging-with-jekyll-1.png" | absolute_url }})
+![Jekyll's Home Page]({{ "/assets/blogging-with-jekyll/jekyll-home-page.png" | absolute_url }})
 
 I think the most fitting way to start my blog would be to talk about the process of setting it up in the first place! The idea to blog first came into my head about a week ago, but at the time I figured that I didn't have the technical expertise and experience to post information about the technologies I work with with any sort of authority.<!--more--> However, over the past week I've grown attached to the idea of blogging. Not only does it provide an interesting way for me to reflect on the stuff I've worked on, but it can provide context to future me when I go back to projects I've worked on in the past - and it doesn't only have to be a professional blog. The blogging platform I've chosen (more about that in a moment) gives me the flexibility to categorize posts, besides just tagging them with particular keywords. This way, I can essentially separate my posts into a variety of categories that fit my lifestyle and experiences.
 
@@ -45,7 +46,7 @@ Outside of that, I made a few tweaks to blockquotes, tables, code blocks, layout
 
 ## Posting Blog Entries
 
-![Creating a Blog Entry]({{ "/assets/2018-08-28-blogging-with-jekyll-2.png" | absolute_url }})
+![Creating a Blog Entry]({{ "/assets/blogging-with-jekyll/blog-entry.png" | absolute_url }})
 
 At this point, I'm essentially writing about what I'm doing right now! From this point forward, blog management is very easy. Whenever I want to make a new blog entry, I create a file in the `_posts` directory in the following format: `YEAR-MONTH-DAY-title.md`. I set the layout to be that of a post, and give it a title. From there, it's just basic markdown to fill the contents of the entry. If I want to present an excerpt of the post on the blog home page, instead of the entire contents of the post, I can throw in a `<!--more-->` tag, as defined in my `_config.yml` file, which tells Jekyll that anything before that tag should be shown as an excerpt, and anything afterwards is the regular content that should be saved for the actual post's page. Outside of that, you can do all kinds of things like tag posts, categorize them, etc.
 

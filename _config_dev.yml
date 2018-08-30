@@ -1,0 +1,37 @@
+# Meta
+title:              Avery Vine
+tagline:            'Blog'
+description:        'A collection of posts about programming, music, travel, and my general life experiences'
+
+# URLs and Services
+url:                http://localhost:5000
+baseurl:            '/blog'
+source:             'public/_blog'
+destination:        'public/blog'
+author:
+  name:             'Avery Vine'
+  url:              https://twitter.com/AveryVine
+github:
+  repo:             https://github.com/AveryVine
+disqus:
+  shortname:        averyvine
+# jekyll_analytics:
+#   GoogleAnalytics:
+#     id:             UA-124828377-1
+#     anonymizeIp:    false
+
+# Settings
+port:               5000
+paginate:           5
+excerpt_separator:  <!--more-->
+sidebar_home_link:  true
+exclude:            [vendor]
+
+# Dependencies and Plugins
+markdown:           kramdown
+highlighter:        rouge
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-analytics
