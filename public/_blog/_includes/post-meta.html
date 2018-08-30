@@ -2,7 +2,7 @@
   <span class="post-date">{{ include.post.date | date_to_string }}</span>
   <span class="post-categories">
     {% for category in include.post.categories %}
-      &bull;
+      &nbsp;&bull;&nbsp;
 
       {% comment %}
         Check if this category has a corresponding page before decide
@@ -25,5 +25,27 @@
         {{ category }}
       {% endif %}
     {% endfor %}
+  </span>
+  <span class="post-reading-time">
+    &nbsp;&bull;&nbsp;
+
+    {% assign num_words = post.content | strip_html | number_of_words %}
+    {% if num_words < 1 %}
+      {% assign num_words = page.content | strip_html | number_of_words %}
+    {% endif %}
+
+    {% assign minutes_f = num_words | divided_by: 200.0 %}
+    {% assign minutes_i = num_words | divided_by: 200 %}
+    {% assign diff = minutes_f | minus: minutes_i %}
+
+    {% if diff >= 0.5 %}
+      {% assign minutes = minutes_i + 1 %}
+    {% else %}
+      {% assign minutes = minutes_i %}
+    {% endif %}
+
+    {% assign reading_time = minutes | append: ' minute read' %}
+
+    {{ reading_time }}
   </span>
 </div>
