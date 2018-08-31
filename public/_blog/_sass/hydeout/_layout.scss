@@ -65,6 +65,7 @@ main {
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
+  padding: 0;
 
   > .content {
     flex-grow: 1;
@@ -73,9 +74,9 @@ main {
 }
 
 .content {
-  // background: $body-bg;
   color: $body-color;
-  padding: $section-spacing;
+  padding: $section-spacing / 4;
+  padding-top: $section-spacing;
 }
 
 
@@ -95,9 +96,6 @@ main {
 .container > header {
   background: transparent;
   color: white;
-  // margin: ($heading-spacing - $section-spacing)
-  //         $section-spacing
-  //         $section-spacing;
   margin: ($section-spacing)
           $section-spacing
           $section-spacing;
@@ -213,8 +211,13 @@ main {
       }
     }
 
+    .post-card {
+      padding: $section-spacing;
+    }
+
     > * {
-      max-width: 38rem;
+      // max-width: 38rem;
+      max-width: 50rem;
       padding: 0;
     }
   }

@@ -25,6 +25,14 @@ article {
   }
 }
 
+.post-card {
+  background-color: $gray-1;
+  box-shadow: 4px 8px $gray-5;
+  border: 1px solid black;
+  padding: $section-spacing / 2;
+  margin-bottom: $section-spacing;
+}
+
 // Blog post or page title
 .page-title,
 .post-title,
