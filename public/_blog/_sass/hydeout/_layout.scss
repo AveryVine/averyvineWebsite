@@ -37,6 +37,7 @@ body {
 
 main {
   background: $body-bg;
+  height: 100% !important;
 }
 
 #sidebar {
@@ -148,6 +149,37 @@ main {
   Tablet / Desktop view
 ----------------------------------------------------------- */
 
+@media (min-width: $medium-breakpoint) {
+  .container {
+    color: $body-color;
+    padding: $section-spacing * 2
+             $section-spacing * 2
+             0;
+    height: 100vh;
+
+    > header {
+      color: inherit;
+      margin: 0;
+      h1, h2 {
+        color: inherit;
+
+        &:last-child {
+          margin-bottom: $heading-spacing;
+        }
+      }
+    }
+
+    .post-card {
+      padding: $section-spacing;
+    }
+
+    > * {
+      max-width: 50rem;
+      padding: 0;
+    }
+  }
+}
+
 @media (min-width: $large-breakpoint) {
   body {
     flex-direction: row;
@@ -192,35 +224,35 @@ main {
   .index #sidebar { margin-bottom: 0; }
 
   // Make entire container background white to contrast against sidebar
-  .container {
-    color: $body-color;
-    padding: $section-spacing * 2
-             $section-spacing * 2
-             0;
-    height: 100vh;
+  // .container {
+  //   color: $body-color;
+  //   padding: $section-spacing * 2
+  //            $section-spacing * 2
+  //            0;
+  //   height: 100vh;
 
-    > header {
-      color: inherit;
-      margin: 0;
-      h1, h2 {
-        color: inherit;
+  //   > header {
+  //     color: inherit;
+  //     margin: 0;
+  //     h1, h2 {
+  //       color: inherit;
 
-        &:last-child {
-          margin-bottom: $heading-spacing;
-        }
-      }
-    }
+  //       &:last-child {
+  //         margin-bottom: $heading-spacing;
+  //       }
+  //     }
+  //   }
 
-    .post-card {
-      padding: $section-spacing;
-    }
+  //   .post-card {
+  //     padding: $section-spacing;
+  //   }
 
-    > * {
-      // max-width: 38rem;
-      max-width: 50rem;
-      padding: 0;
-    }
-  }
+  //   > * {
+  //     // max-width: 38rem;
+  //     max-width: 50rem;
+  //     padding: 0;
+  //   }
+  // }
 }
 
 
