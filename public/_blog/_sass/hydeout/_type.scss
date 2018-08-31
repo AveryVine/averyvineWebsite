@@ -139,13 +139,7 @@ a[href^="#fnref:"] {
   font-family: $header-font-family;
 }
 
-.comments {
-  h2 {
-    border-bottom: none;
-  }
-}
-
-.related {
+.comments, .related, .posts-list {
   h2 {
     border-bottom: none;
   }
