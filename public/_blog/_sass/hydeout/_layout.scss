@@ -37,6 +37,7 @@ body {
 
 main {
   background: $body-bg;
+  height: 100% !important;
 }
 
 #sidebar {
@@ -65,6 +66,7 @@ main {
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
+  padding: 0;
 
   > .content {
     flex-grow: 1;
@@ -73,9 +75,9 @@ main {
 }
 
 .content {
-  // background: $body-bg;
   color: $body-color;
-  padding: $section-spacing;
+  padding: $section-spacing / 3;
+  padding-top: $section-spacing;
 }
 
 
@@ -95,9 +97,6 @@ main {
 .container > header {
   background: transparent;
   color: white;
-  // margin: ($heading-spacing - $section-spacing)
-  //         $section-spacing
-  //         $section-spacing;
   margin: ($section-spacing)
           $section-spacing
           $section-spacing;
@@ -150,6 +149,38 @@ main {
   Tablet / Desktop view
 ----------------------------------------------------------- */
 
+@media (min-width: $medium-breakpoint) {
+  // Make entire container background white to contrast against sidebar
+  .container {
+    color: $body-color;
+    padding: $section-spacing * 2
+             $section-spacing * 2
+             0;
+    height: 100vh;
+
+    > header {
+      color: inherit;
+      margin: 0;
+      h1, h2 {
+        color: inherit;
+
+        &:last-child {
+          margin-bottom: $heading-spacing;
+        }
+      }
+    }
+
+    .post-card {
+      padding: $section-spacing;
+    }
+
+    > * {
+      max-width: 50rem;
+      padding: 0;
+    }
+  }
+}
+
 @media (min-width: $large-breakpoint) {
   body {
     flex-direction: row;
@@ -192,32 +223,6 @@ main {
   }
 
   .index #sidebar { margin-bottom: 0; }
-
-  // Make entire container background white to contrast against sidebar
-  .container {
-    color: $body-color;
-    padding: $section-spacing * 2
-             $section-spacing * 2
-             0;
-    height: 100vh;
-
-    > header {
-      color: inherit;
-      margin: 0;
-      h1, h2 {
-        color: inherit;
-
-        &:last-child {
-          margin-bottom: $heading-spacing;
-        }
-      }
-    }
-
-    > * {
-      max-width: 38rem;
-      padding: 0;
-    }
-  }
 }
 
 
