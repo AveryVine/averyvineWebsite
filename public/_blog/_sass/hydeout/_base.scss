@@ -56,6 +56,15 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+.posts-list {
+  a {
+    &:hover,
+    &:focus {
+      text-decoration: underline !important;
+    }
+  }
+}
+
 
 
 a > .click-arrow {
