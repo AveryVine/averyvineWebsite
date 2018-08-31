@@ -110,6 +110,14 @@ main {
   }
 }
 
+.card {
+  background-color: $gray-1;
+  box-shadow: 4px 8px $gray-5;
+  border: 1px solid black;
+  padding: $section-spacing / 2;
+  margin-bottom: $section-spacing;
+}
+
 
 /* -----------------------------------------------------------
   Mobile view for home page)
@@ -170,7 +178,7 @@ main {
       }
     }
 
-    .post-card {
+    .card {
       padding: $section-spacing;
     }
 
