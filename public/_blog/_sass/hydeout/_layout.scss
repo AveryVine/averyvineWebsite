@@ -150,6 +150,7 @@ main {
 ----------------------------------------------------------- */
 
 @media (min-width: $medium-breakpoint) {
+  // Make entire container background white to contrast against sidebar
   .container {
     color: $body-color;
     padding: $section-spacing * 2
@@ -222,37 +223,6 @@ main {
   }
 
   .index #sidebar { margin-bottom: 0; }
-
-  // Make entire container background white to contrast against sidebar
-  // .container {
-  //   color: $body-color;
-  //   padding: $section-spacing * 2
-  //            $section-spacing * 2
-  //            0;
-  //   height: 100vh;
-
-  //   > header {
-  //     color: inherit;
-  //     margin: 0;
-  //     h1, h2 {
-  //       color: inherit;
-
-  //       &:last-child {
-  //         margin-bottom: $heading-spacing;
-  //       }
-  //     }
-  //   }
-
-  //   .post-card {
-  //     padding: $section-spacing;
-  //   }
-
-  //   > * {
-  //     // max-width: 38rem;
-  //     max-width: 50rem;
-  //     padding: 0;
-  //   }
-  // }
 }
 
 
