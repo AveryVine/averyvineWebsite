@@ -1,6 +1,5 @@
 ---
 title: The One Minute Manager
-date: "2018-08-28"
 category: Life
 tags: [sssc, university]
 layout: post

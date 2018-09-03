@@ -1,6 +1,5 @@
 ---
 title: Blogging with Jekyll
-date: "2018-08-28"
 category: Programming
 tags: [jekyll, personal website, web development, meta]
 layout: post

@@ -42,6 +42,10 @@
       {% assign minutes = minutes_i %}
     {% endif %}
 
+    {% if minutes < 1 %}
+      {% assign minutes = 1 %}
+    {% endif %}
+
     {% assign reading_time = minutes | append: ' minute read' %}
 
     {{ reading_time }}
