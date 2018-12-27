@@ -52,6 +52,12 @@ $(document).ready(function () {
     });
   });
 
+  var deviceAgent = navigator.userAgent.toLowerCase();
+  if (deviceAgent.match(/(iphone|ipod|ipad)/)) {
+    $('.parallax').css("background-attachment", "scroll");
+    $('.parallax').css("background-size", "auto");
+  }
+
   //set up typeit
   const typeitPhrases = [
     'a co-op student',

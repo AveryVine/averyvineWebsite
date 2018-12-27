@@ -9,7 +9,7 @@ body {
 }
 
 .parallax {
-  min-height: 550px;
+  min-height: calc(0.5 * 40vh + 0.5 * 40vw);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -195,9 +195,6 @@ h6 {
   .navbar {
     padding-left: constant(safe-area-inset-left);
     padding-left: max(16px, env(safe-area-inset-left));
-  }
-  .parallax {
-    min-height: 275px;
   }
   #parallax2 {
     background-position: center;
