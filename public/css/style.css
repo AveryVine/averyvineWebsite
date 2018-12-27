@@ -9,7 +9,7 @@ body {
 }
 
 .parallax {
-  min-height: calc(0.5 * 40vh + 0.5 * 40vw);
+  min-height: calc(0.6 * 40vh + 0.4 * 40vw);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;

@@ -52,12 +52,6 @@ $(document).ready(function () {
     });
   });
 
-  var deviceAgent = navigator.userAgent.toLowerCase();
-  if (deviceAgent.match(/(iphone|ipod|ipad)/)) {
-    $('.parallax').css("background-attachment", "scroll");
-    $('.parallax').css("background-size", "auto");
-  }
-
   //set up typeit
   const typeitPhrases = [
     'a co-op student',
@@ -82,6 +76,10 @@ $(document).ready(function () {
 
   headerTypeIt.type(typeitPhrases[Math.floor(Math.random() * typeitPhrases.length)]);
 
+  //adjust parallax effect for devices that do not support "background-attachment: fixed"
+  if (navigator.userAgent.toLowerCase().match(/(iphone|ipod|ipad)/)) {
+    $('.parallax').css("background-attachment", "scroll");
+  }
 });
 
 let randomNumber = function (min, max) {
