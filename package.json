@@ -8,8 +8,8 @@
   },
   "scripts": {
     "start": "npm run build && firebase serve",
-    "build": "bundle exec jekyll build",
-    "blog": "bundle exec jekyll liveserve --config _config_dev.yml",
+    "build": "jekyll build",
+    "blog": "jekyll liveserve --config _config_dev.yml",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
