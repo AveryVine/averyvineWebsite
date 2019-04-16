@@ -60,7 +60,8 @@ $(document).ready(function () {
     'an avid musician',
     'a full stack developer',
     'a video game enthusiast',
-    'a proud cat owner'
+    'a proud cat owner',
+    'a WWDC scholarship winner'
   ];
 
   let phraseIndex = Math.floor(Math.random() * typeitPhrases.length);
@@ -71,11 +72,9 @@ $(document).ready(function () {
     autoStart: false,
     startDelay: 2000,
     afterString: function () {
-      console.log(phraseIndex);
       let previousIndex = phraseIndex;
       do {
         phraseIndex = Math.floor(Math.random() * typeitPhrases.length);
-        console.log(phraseIndex);
       } while (phraseIndex == previousIndex);
       headerTypeIt.pause(2000).delete().type(typeitPhrases[phraseIndex]);
     }
@@ -131,7 +130,7 @@ let loadProjects = function () {
   }
 
   //increment firstVisibleProject for next time
-  firstVisibleProject = ((firstVisibleProject + projectsToDisplay - 1) % totalProjects) + 1;
+  firstVisibleProject = ((firstVisibleProject + projectsToShow.length - 1) % totalProjects) + 1;
 };
 
 //ensures that content only appears when fully loaded
