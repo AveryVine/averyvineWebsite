@@ -38,6 +38,11 @@ body {
   background-position: top;
 }
 
+#parallax-twister {
+  background-image: url("/assets/minified/twister-ios.png");
+  background-position: top;
+}
+
 .container {
   min-width: 85%;
 }
