@@ -5,7 +5,7 @@ tags: [swift, swiftui, wwdc19, uicollectionview, uicollectionviewdiffabledatasou
 layout: post
 ---
 
-![SwiftUI]({{ "assets/uicollectionview-and-uicollectionviewdiffabledatasource-in-swiftui/swiftui.png" | absolute_url }})
+![SwiftUI]({{ "assets/uicollectionview-and-uicollectionviewdiffabledatasource-in-swiftui/swiftui-cover.png" | absolute_url }})
 
 Just a few days ago at WWDC19, Apple announced that they had been developing an incredible new declaritive UI framework called [SwiftUI](https://developer.apple.com/xcode/swiftui), designed to substantially increase the rate at which developers can create, test, and tweak beautiful layouts for their apps. However, it became clear after the first day or two of the conference that not quite everything that was possible using UIKit had an equivalent in SwiftUI, notably `UICollectionView`. To find out how to interate `UICollectionView` with SwiftUI, I did what any WWDC attendee would do: asked at the labs! Today I'll be sharing with you what I found out. <!--more-->
 
