@@ -1,13 +1,13 @@
 ---
 title: Implementing UICollectionView / UICollectionViewDiffableDataSource in SwiftUI
 category: Programming
-tags: [swift, swiftui, wwdc19, uicollectionview, uicollectionviewdiffabledatasource]
+tags: [swift, swiftui, wwdc, uicollectionview, uicollectionviewdiffabledatasource]
 layout: post
 ---
 
 ![SwiftUI]({{ "assets/uicollectionview-and-uicollectionviewdiffabledatasource-in-swiftui/swiftui-cover.png" | absolute_url }})
 
-Just a few days ago at WWDC19, Apple announced that they had been developing an incredible new declaritive UI framework called [SwiftUI](https://developer.apple.com/xcode/swiftui), designed to substantially increase the rate at which developers can create, test, and tweak beautiful layouts for their apps. However, it became clear after the first day or two of the conference that not quite everything that was possible using UIKit had an equivalent in SwiftUI, notably `UICollectionView`. To find out how to interate `UICollectionView` with SwiftUI, I did what any WWDC attendee would do: asked at the labs! Today I'll be sharing with you what I found out. <!--more-->
+Just a few days ago at WWDC19, Apple announced that they had been developing an incredible new declaritive UI framework called [SwiftUI](https://developer.apple.com/xcode/swiftui), designed to substantially increase the rate at which developers can create, test, and tweak beautiful layouts for their apps. However, it became clear after the first day or two of the conference that not quite everything that was possible using UIKit had an equivalent in SwiftUI, notably `UICollectionView`. To find out how to interate `UICollectionView` with SwiftUI, I did what any WWDC attendee (or [scholarship winner]({{ site.baseurl }}{% post_url 2019-04-16-how-i-won-a-wwdc-scholarship %})!) would do: asked at the labs! Today I'll be sharing with you what I found out. <!--more-->
 
 Of course, since SwiftUI is only available for devices running iOS 13+, iPadOS 13+, etc, I figured we may as well take advantage of another iOS 13 -specific API that Apple announced: `UICollectionViewDiffableDataSource`, designed to greatly simplify insertion, deletion, and general content management for collections.
 
