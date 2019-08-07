@@ -27,4 +27,4 @@ I ended up meeting a few people at my hostel, most notably Ollie from New Zealan
 ![teamLab Borderless]({{ "assets/tokyo-japan/teamlab-borderless.JPG" | absolute_url }})
 > teamLab Borderless’ most famous exhibit, the lantern room
 
-I could go on and on about Tokyo, including the [owl cafe](http://akiba2960.com/) I went to or the [Samurai museum](https://www.samuraimuseum.jp/en/), but there are a few other places I wanted to highlight from my time in Japan. Next up, [Mt. Fuji and Lake Kawaguchiko!]({{ site.baseurl }}{% post_url 2019-08-07-mt-fuji-and-lake-kawaguchiko-japan %})
+I could go on and on about Tokyo, including the [owl cafe](http://akiba2960.com/) I went to or the [Samurai museum](https://www.samuraimuseum.jp/en/), but there are a few other places I wanted to highlight from my time in Japan. Next up, [Mt. Fuji and Lake Kawaguchiko!]({{ site.baseurl }}{% post_url 2019-08-08-mt-fuji-and-lake-kawaguchiko-japan %})
