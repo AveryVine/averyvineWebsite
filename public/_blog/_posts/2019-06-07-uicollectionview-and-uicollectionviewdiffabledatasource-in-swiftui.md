@@ -1,5 +1,5 @@
 ---
-title: Implementing UICollectionView / UICollectionViewDiffableDataSource in SwiftUI
+title: Implementing UICollectionView / UICollectionView DiffableDataSource in SwiftUI
 category: Programming
 tags: [swift, swiftui, wwdc, uicollectionview, uicollectionviewdiffabledatasource]
 layout: post
