@@ -2,6 +2,7 @@
 title: Mt. Fuji and Lake Kawaguchiko, Japan
 category: Travel
 tags: [japan, vacation]
+date: 2019-08-08
 layout: post
 ---
 
