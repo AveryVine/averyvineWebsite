@@ -14,7 +14,7 @@ Totally rain-soaked, but still mildly pleased with myself, I left [Mt. Fuji and 
 
 The first thing I wanted to do after checking into my hostel, [Hakone Guest House Gaku](https://www.hakonegaku.com/), was grab some dinner and check out the town. But bizarrely, basically nothing in Hakone is open after 7pm, so I ended grabbing some cheap finger food at a nearby bar, and resigned myself to sightseeing the next day instead.
 
-The next morning, the first thing I did was check out Hakone’s famous [open air museum](https://www.hakone-oam.or.jp/), which features an amazing selection of statues, gardens, and artwork overlooking the valleys below the town and the various mountains beyond it, as well as a central tower filled with stained glass.
+The next morning, the first thing I did was check out Hakone’s famous [Open Air Museum](https://www.hakone-oam.or.jp/), which features an amazing selection of statues, gardens, and artwork overlooking the valleys below the town and the various mountains beyond it, as well as a central tower filled with stained glass.
 
 ![Open Air Museum spiral tower]({{ "assets/hakone-and-lake-ashi-japan/tower.jpg" | absolute_url }})
 > Hakone Open Air Museum’s spiral tower of stained glass
@@ -23,7 +23,7 @@ One of the other interesting things to do in Hakone is to take a series of two c
 
 However, the lake was worth the trip. I took a boat that looked like an old pirate ship all the way around the lake, with a stop-off at a shrine on the far side known for its *torii* (gate) that overlooks the water. There was actually a long line to take pictures at the gate, but no one needs to know that 😉
 
-![Peace gate over water]({{ "assets/hakone-and-lake-ashi-japan/peace-gate-over-water.jpg" | absolute_url }})
+![Peace gate over Lake Ashi]({{ "assets/hakone-and-lake-ashi-japan/peace-gate-over-lake.jpg" | absolute_url }})
 > Lake Ashi’s "Torii of Peace"
 
 After a long day of walking and sailing, I checked into a new hostel in Hakone, [Emblem Flow](http://emblemflow.com/), which had a built in *onsen*! Niiiiice and relaxing.
