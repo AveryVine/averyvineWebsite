@@ -31,4 +31,4 @@ So yeah, I didn’t end up seeing the sunrise, but the hike was still fun! I end
 ![The view from Mt. Fuji]({{ "assets/mt-fuji-and-lake-kawaguchiko-japan/view-from-fuji.jpeg" | absolute_url }})
 > Once the clouds cleared, the view from Mt. Fuji was quite beautiful!
 
-I only ended up spending another half day in Lake Kawaguchiko, just enough time to see the [Kawaguchiko Music Forest Museum](http://fuji.kawaguchikomusicforest.jp/). Then, it was off to Hakone! (coming soon)
+I only ended up spending another half day in Lake Kawaguchiko, just enough time to see the [Kawaguchiko Music Forest Museum](http://fuji.kawaguchikomusicforest.jp/). Then, it was off to [Hakone!]({{ site.baseurl }}{% post_url 2019-08-11-hakone-and-lake-ashi-japan %})
