@@ -39,4 +39,4 @@ Totally worth it.
 ![Senso-ji Temple]({{ "assets/hakone-and-lake-ashi-japan/senso-ji-temple.jpg" | absolute_url }})
 > Senso-ji Temple in the early morning
 
-And that’s that! From that point, I was finished with that area of Japan. I definitely would have loved to spend longer, but Kyoto was calling! (coming soon)
+And that’s that! From that point, I was finished with that area of Japan. I definitely would have loved to spend longer, but [Kyoto]({{ site.baseurl }}{% post_url 2019-08-13-kyoto-japan %}) was calling!

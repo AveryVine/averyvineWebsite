@@ -12,7 +12,8 @@ I’d always wanted to visit Japan. It has a certain cultural appeal to me, one 
 * [Tokyo]({{ site.baseurl }}{% post_url 2019-08-07-tokyo-japan %})
 * [Mt. Fuji and Lake Kawaguchiko]({{ site.baseurl }}{% post_url 2019-08-08-mt-fuji-and-lake-kawaguchiko-japan %})
 * [Hakone and Lake Ashi]({{ site.baseurl }}{% post_url 2019-08-11-hakone-and-lake-ashi-japan %})
-* Kyoto (coming soon)
-* Nara and Osaka (coming soon)
+* [Kyoto]({{ site.baseurl }}{% post_url 2019-08-13-kyoto-japan %})
+* Nara (coming soon)
+* Osaka (coming soon)
 
 Want more? Check out where I went next: Vietnam! (coming soon)
