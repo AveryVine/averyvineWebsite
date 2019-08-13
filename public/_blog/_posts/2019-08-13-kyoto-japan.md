@@ -7,7 +7,7 @@ layout: post
 
 ![Man holding flag during Gion Festival]({{ "assets/kyoto-japan/gion-festival.jpg" | absolute_url }})
 
-I really looked forward to my trip to Kyoto, especially because it started off with a ride on Japan’s *Shinkansen*, or bullet train. Expensive as hell, but totally worth the experience and the speed. The trip took about two hour, with the train reaching speeds of hundreds of kilometres per hour as we blasted through the Japanese countryside.
+I really looked forward to my trip to Kyoto, especially because it started off with a ride on Japan’s *Shinkansen*, or bullet train. Expensive as hell, but totally worth the experience and the speed. The trip took about two hour, with the train reaching speeds of hundreds of kilometres per hour as we blasted through the Japanese countryside.<!--more-->
 
 ![Boarding the Shinkansen]({{ "assets/kyoto-japan/shinkansen.jpg" | absolute_url }})
 > Boarding the *Shinkansen* at Tokyo Station
