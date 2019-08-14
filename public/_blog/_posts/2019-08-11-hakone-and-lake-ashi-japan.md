@@ -40,3 +40,5 @@ Totally worth it.
 > Senso-ji Temple in the early morning
 
 And that’s that! From that point, I was finished with that area of Japan. I definitely would have loved to spend longer, but [Kyoto]({{ site.baseurl }}{% post_url 2019-08-13-kyoto-japan %}) was calling!
+
+> Want more? Check out an overview of my Japan trip [here!]({{ site.baseurl }}{% post_url 2019-08-07-japan-land-of-the-rising-sun %})

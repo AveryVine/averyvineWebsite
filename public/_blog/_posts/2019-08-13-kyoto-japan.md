@@ -42,3 +42,5 @@ The final place I want to call out is Kennin-ji Temple. Still used day to day by
 > Who knew a pile of rocks could be so mesmerizing?
 
 And that’s most of it! I did other things here and there while visiting Kyoto, including a day trip to [Nara]({{ site.baseurl }}{% post_url 2019-08-14-nara-japan %}), but I won’t go into all the little details here. Instead, you can check out my experiences in Nara, or move ahead to the last city on my Japan itinerary - Osaka! (coming soon)
+
+> Want more? Check out an overview of my Japan trip [here!]({{ site.baseurl }}{% post_url 2019-08-07-japan-land-of-the-rising-sun %})

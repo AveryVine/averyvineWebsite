@@ -1,6 +1,3 @@
-# Blog Post
-#blog
-
 ---
 title: Nara, Japan
 category: Travel
@@ -12,7 +9,7 @@ layout: post
 
 While I was in [Kyoto]({{ site.baseurl }}{% post_url 2019-08-13-kyoto-japan %}), I decided that I wanted to take a day trip to Nara, as I had heard about their famous “Deer Park”.  Knowing next to nothing about it before going, I hopped on a JR Line train that took me about an hour south of Kyoto.
 
-Turns out that there aren’t just deer in one spot. There are deer absolutely everywhere.
+Turns out that there aren’t just deer in one spot. There are deer absolutely everywhere.<!--more-->
 
 ![People and deer at a temple gate]({{ "assets/nara-japan/temple-gate.jpeg" | absolute_url }})
 > People and deer milling about near a temple gate
@@ -33,3 +30,5 @@ Interestingly, I had read on TripAdvisor about another temple, very close by to 
 > Gazing out over the countryside from Nigatsu-do Temple
 
 Overall, the trip didn’t take more than 4 or 5 hours, but it was absolutely worth the time and money spent to get down to this region of Japan from Kyoto. I ended up going back to Kyoto for the night, but this was just before I left for my final Japanese destination, Osaka! (coming soon)
+
+> Want more? Check out an overview of my Japan trip [here!]({{ site.baseurl }}{% post_url 2019-08-07-japan-land-of-the-rising-sun %})
