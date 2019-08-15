@@ -51,6 +51,6 @@ The show itself had its effects done by Moment Factory, who are based in Montrea
 ![Sword fight from "Keren"]({{ "assets/osaka-japan/keren.jpeg" | absolute_url }})
 > An epic samurai sword fight from the show "Keren"
 
-And that’s it! I ended up leaving Japan a day later than I planned due to me screwing up with my Vietnamese visa (oops!), but I didn’t really do anything worth writing about. You can check out where I went next on my Vietnam table of contents post. (coming soon)
+And that’s it! I ended up leaving Japan a day later than I planned due to me screwing up with my Vietnamese visa (oops!), but I didn’t really do anything worth writing about. You can check out where I went next on my [Vietnam]({{ site.baseurl }}{% post_url 2019-08-15-vietnam-timeless-charm %}) master post.
 
 > Want more? Check out an overview of my Japan trip [here!]({{ site.baseurl }}{% post_url 2019-08-07-japan-land-of-the-rising-sun %})
