@@ -1,7 +1,7 @@
 ---
 title: Nara, Japan
 category: Travel
-tags: [japan, vacation, animals]
+tags: [nara, japan, vacation, animals]
 layout: post
 ---
 
@@ -29,6 +29,6 @@ Interestingly, I had read on TripAdvisor about another temple, very close by to 
 ![View from Nigatsu-do Temple]({{ "assets/nara-japan/nigatsu-do.jpeg" | absolute_url }})
 > Gazing out over the countryside from Nigatsu-do Temple
 
-Overall, the trip didn’t take more than 4 or 5 hours, but it was absolutely worth the time and money spent to get down to this region of Japan from Kyoto. I ended up going back to Kyoto for the night, but this was just before I left for my final Japanese destination, Osaka! (coming soon)
+Overall, the trip didn’t take more than 4 or 5 hours, but it was absolutely worth the time and money spent to get down to this region of Japan from Kyoto. I ended up going back to Kyoto for the night, but this was just before I left for my final Japanese destination, [Osaka!]({{ site.baseurl }}{% post_url 2019-08-15-osaka-japan %})
 
 > Want more? Check out an overview of my Japan trip [here!]({{ site.baseurl }}{% post_url 2019-08-07-japan-land-of-the-rising-sun %})

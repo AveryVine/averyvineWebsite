@@ -1,7 +1,7 @@
 ---
 title: Hakone and Lake Ashi, Japan
 category: Travel
-tags: [japan, vacation]
+tags: [hakone, lake ashi, japan, vacation]
 layout: post
 ---
 

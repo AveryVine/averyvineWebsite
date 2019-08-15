@@ -1,7 +1,7 @@
 ---
 title: Tokyo, Japan
 category: Travel
-tags: [japan, vacation]
+tags: [tokyo, japan, vacation]
 layout: post
 ---
 
