@@ -9,8 +9,8 @@ layout: post
 
 When choosing the countries for this trip, I wanted to end up with three countries that were as culturally distinct as possible. Japan I already knew would be on my list, so I figured I would choose New Zealand (since I wanted to see the beautiful landscapes), and a country in Southeast Asia. It ended up being a tossup between Vietnam and Thailand. In the end, I’m not sure why I chose Vietnam, but I’m very glad I did! I had an absolutely incredible time doing everything from navigating the busy streets of Hanoi’s Old Quarter to trekking through the mountains in Sapa.<!--more--> Here are all the places I went!
 
-- Hanoi (coming soon)
-- Sapa (coming soon)
+- [Hanoi]({{ site.baseurl }}{% post_url 2019-08-17-hanoi-vietnam %})
+- [Sapa]({{ site.baseurl }}{% post_url 2019-08-17-sapa-vietnam %})
 - Cat Ba Island (coming soon)
 - Da Nang and Hoi An (coming soon)
 - Ho Chi Minh City (coming soon)
