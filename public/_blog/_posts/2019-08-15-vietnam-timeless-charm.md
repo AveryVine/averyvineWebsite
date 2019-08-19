@@ -11,7 +11,7 @@ When choosing the countries for this trip, I wanted to end up with three countri
 
 - [Hanoi]({{ site.baseurl }}{% post_url 2019-08-17-hanoi-vietnam %})
 - [Sapa]({{ site.baseurl }}{% post_url 2019-08-17-sapa-vietnam %})
-- Cat Ba Island (coming soon)
+- [Cat Ba Island]({{ site.baseurl }}{% post_url 2019-08-19-cat-ba-island-vietnam %})
 - Da Nang and Hoi An (coming soon)
 - Ho Chi Minh City (coming soon)
 
