@@ -1,7 +1,7 @@
 ---
 title: Cat Ba Island, Vietnam
 category: Travel
-tags: [cat ba island, vietnam, vacation]
+tags: [cat ba island, vietnam, vacation, food, animals]
 layout: post
 ---
 
