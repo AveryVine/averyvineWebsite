@@ -5,7 +5,7 @@ tags: [cat ba island, vietnam, vacation]
 layout: post
 ---
 
-![Monkey Island beach from above]({{ "assets/hanoi-vietnam/monkey-island-beach.jpeg" | absolute_url }})
+![Monkey Island beach from above]({{ "assets/cat-ba-island-vietnam/monkey-island-beach.jpeg" | absolute_url }})
 
 We arrived on Cat Ba Island after a 9 hour overnight bus trip from [Sapa]({{ site.baseurl }}{% post_url 2019-08-17-sapa-vietnam %}). With no charging ports on board the bus, I only had about 15% battery on my phone, so I kept it off for most of the day, and had to source my pictures from other people.<!--more-->
 
