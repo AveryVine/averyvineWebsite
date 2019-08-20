@@ -65,6 +65,6 @@ I did want to mention my brief few hours in Hanoi for the second time (you can r
 ![Mannequins in Hoa Lo Prison]({{ "assets/cat-ba-island-vietnam/hanoi-hilton.jpeg" | absolute_url }})
 > Mannequins showing what is was like to be chained up at the Hanoi Hilton
 
-Following that brief interlude at the prison, I hopped over to the Hanoi airport to catch my flight to [Da Nang!]({{ site.baseurl }}{% post_url 2019-08-21-da-nang-and-hoi-an-vietnam %})
+Following that brief interlude at the prison, I hopped over to the Hanoi airport to catch my flight to [Da Nang!]({{ site.baseurl }}{% post_url 2019-08-20-da-nang-and-hoi-an-vietnam %})
 
 > Want more? Check out an overview of my Vietnam trip [here!]({{ site.baseurl }}{% post_url 2019-08-15-vietnam-timeless-charm %})
