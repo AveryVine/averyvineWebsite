@@ -63,7 +63,7 @@ And that more or less concluded my time on Cat Ba Island! I took a bus back to H
 I did want to mention my brief few hours in Hanoi for the second time (you can read about the first time [here]({{ site.baseurl }}{% post_url 2019-08-17-hanoi-vietnam %}). I had the opportunity to visit the infamous [Hoa Lo Prison](http://hoalo.vn/), better known as the Hanoi Hilton. It was used to imprison political prisoners by the French when Vietnam was still one of their colonies, and the used again by the Vietnamese to imprison American pilots that had been shot down. It was very sobering to wander what was left of this fascinating and awful piece of Vietnamese history, accompanied by an audio guide.
 
 ![Mannequins in Hoa Lo Prison]({{ "assets/cat-ba-island-vietnam/hanoi-hilton.jpeg" | absolute_url }})
-> Mannequins showing what is was like to be chained up at the Hanoi Hilton
+> Mannequins showing what it was like to be chained up at the Hanoi Hilton
 
 Following that brief interlude at the prison, I hopped over to the Hanoi airport to catch my flight to [Da Nang!]({{ site.baseurl }}{% post_url 2019-08-20-da-nang-and-hoi-an-vietnam %})
 
