@@ -55,7 +55,7 @@ I did make a quick stop at the Hospital Cave, a hidden cave that was used during
 After my brief detour, I arrived at Cat Ba National Park. The hike up the mountain through the lush green forest was very peaceful. After about 45 very hot and sweaty minutes of hiking, I got above the tree line and the view was revealed to me. Trees and mountains stretched for kilometres in all directions. Totally worth the hike.
 
 ![View from Cat Ba National Park]({{ "assets/cat-ba-island-vietnam/national-park.jpeg" | absolute_url }})
-> The gorgeous 360° view from Cat Ba National Park
+> The gorgeous mountain view from Cat Ba National Park
 
 And that more or less concluded my time on Cat Ba Island! I took a bus back to Hanoi the next morning in order to catch a flight down to Da Nang.
 
@@ -65,6 +65,6 @@ I did want to mention my brief few hours in Hanoi for the second time (you can r
 ![Mannequins in Hoa Lo Prison]({{ "assets/cat-ba-island-vietnam/hanoi-hilton.jpeg" | absolute_url }})
 > Mannequins showing what is was like to be chained up at the Hanoi Hilton
 
-Following that brief interlude at the prison, I hopped over to the Hanoi airport to catch my flight to Da Nang! (coming soon)
+Following that brief interlude at the prison, I hopped over to the Hanoi airport to catch my flight to [Da Nang!]({{ site.baseurl }}{% post_url 2019-08-21-da-nang-and-hoi-an-vietnam %})
 
 > Want more? Check out an overview of my Vietnam trip [here!]({{ site.baseurl }}{% post_url 2019-08-15-vietnam-timeless-charm %})
