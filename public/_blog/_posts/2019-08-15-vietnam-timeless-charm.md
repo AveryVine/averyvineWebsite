@@ -15,5 +15,5 @@ When choosing the countries for this trip, I wanted to end up with three countri
 - [Da Nang and Hoi An]({{ site.baseurl }}{% post_url 2019-08-20-da-nang-and-hoi-an-vietnam %})
 - [Ho Chi Minh City]({{ site.baseurl }}{% post_url 2019-08-22-ho-chi-minh-city-vietnam %})
 
-Want more? Check out where I went next: New Zealand! (coming soon)
+Want more? Check out where I went next: [New Zealand!]({{ site.baseurl }}{% post_url 2019-08-22-new-zealand-100-pure-new-zealand %})
 Or maybe where I visited first: [Japan!]({{ site.baseurl }}{% post_url 2019-08-07-japan-land-of-the-rising-sun %})

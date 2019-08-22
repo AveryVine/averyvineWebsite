@@ -56,6 +56,6 @@ And so it came to my last day in Vietnam! I decided to take it easy, visiting a 
 ![View from Bitexco Financial Tower]({{ "assets/ho-chi-minh-city-vietnam/tower.jpeg" | absolute_url }})
 > Bitexco Financial Tower provided sanctuary from the chaos below
 
-Vietnam ended up being a wonderful country, and I liked it even more than I could have imagined. I definitely want to return someday, and hopefully I’ll get the chance to see more of Southeast Asia as well. But for now, you can check out where I went next on my New Zealand master post. (coming soon)
+Vietnam ended up being a wonderful country, and I liked it even more than I could have imagined. I definitely want to return someday, and hopefully I’ll get the chance to see more of Southeast Asia as well. But for now, you can check out where I went next on my [New Zealand]({{ site.baseurl }}{% post_url 2019-08-22-new-zealand-100-pure-new-zealand %}) master post.
 
 > Want more? Check out an overview of my Vietnam trip [here!]({{ site.baseurl }}{% post_url 2019-08-15-vietnam-timeless-charm %})
