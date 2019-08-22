@@ -55,6 +55,6 @@ I had to fill my time, so I wandered into the local folklore and living museum, 
 
 After another wander through the market, I check in on my shirt’s progress at 7pm. It was fitted to sit far too loosely on me, so they promised to readjust within the hour. So I filled my time by listening to a podcast in the market, and finally picked up the well-fitted shirt around 8pm. Success!
 
-The next morning, I woke up nice and early to catch a flight to my final destination in Vietnam: Saigon. Or, as it’s known these days, Ho Chi Minh City! (coming soon)
+The next morning, I woke up nice and early to catch a flight to my final destination in Vietnam: Saigon. Or, as it’s known these days, [Ho Chi Minh City!]({{ site.baseurl }}{% post_url 2019-08-22-ho-chi-minh-city-vietnam %})
 
 > Want more? Check out an overview of my Vietnam trip [here!]({{ site.baseurl }}{% post_url 2019-08-15-vietnam-timeless-charm %})
