@@ -41,6 +41,6 @@ To fill my last day in Auckland, I decided to do a wine tour on Waiheke Island! 
 ![Wine on Waiheke Island]({{ "assets/auckland-new-zealand/wine.jpeg" | absolute_url }})
 > Finishing off a glass of Chardonnay on Waiheke Island
 
-I ended up staying on the island for Thai food, but did call it an early night after getting back to the mainland. I had booked my trip to Wellington (coming soon) on the [Northern Explorer](https://www.greatjourneysofnz.co.nz/northern-explorer/) train that runs through the North Island countryside, and it was leaving bright and early the next morning!
+I ended up staying on the island for Thai food, but did call it an early night after getting back to the mainland. I had booked my trip to [Wellington]({{ site.baseurl }}{% post_url 2019-08-25-wellington-new-zealand %}) on the [Northern Explorer](https://www.greatjourneysofnz.co.nz/northern-explorer/) train that runs through the North Island countryside, and it was leaving bright and early the next morning!
 
 > Want more? Check out an overview of my New Zealand trip [here!]({{ site.baseurl }}{% post_url 2019-08-22-new-zealand-100-pure-new-zealand %})
