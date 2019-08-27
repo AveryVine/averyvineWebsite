@@ -11,7 +11,7 @@ New Zealand was actually the second country I selected for this trip, despite it
 
 - [Auckland]({{ site.baseurl }}{% post_url 2019-08-25-auckland-new-zealand %})
 - [Wellington]({{ site.baseurl }}{% post_url 2019-08-25-wellington-new-zealand %})
-- Christchurch (coming soon)
-- Queenstown (coming soon)
+- [Christchurch]({{ site.baseurl }}{% post_url 2019-08-26-christchurch-new-zealand %})
+- [Queenstown]({{ site.baseurl }}{% post_url 2019-08-26-queenstown-new-zealand %})
 
 Want more? Check out where I visited first: [Vietnam!]({{ site.baseurl }}{% post_url 2019-08-15-vietnam-timeless-charm %})

@@ -34,6 +34,6 @@ Finally, I headed to the airport to catch a quick flight over to Christchurch! O
 ![Smaug the Dragon]({{ "assets/wellington-new-zealand/dragon.jpeg" | absolute_url }})
 > The Weta Cave’s work is everywhere, even at the airport!
 
-It’s amazing how time flies - only two cities left on this whole trip, and Christchurch was the penultimate one! (coming soon)
+It’s amazing how time flies - only two cities left on this whole trip, and [Christchurch]({{ site.baseurl }}{% post_url 2019-08-26-christchurch-new-zealand %}) was the penultimate one!
 
 > Want more? Check out an overview of my New Zealand trip [here!]({{ site.baseurl }}{% post_url 2019-08-22-new-zealand-100-pure-new-zealand %})
