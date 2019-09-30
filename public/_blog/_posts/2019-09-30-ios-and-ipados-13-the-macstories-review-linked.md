@@ -1,5 +1,5 @@
 ---
-title: iOS and iPadOS 13: The MacStories Review (Linked)
+title: iOS and iPadOS 13 - The MacStories Review (Linked)
 category: Programming
 tags: [ios, ipados, apple, ios development, tech, iphone, ipad]
 layout: post
