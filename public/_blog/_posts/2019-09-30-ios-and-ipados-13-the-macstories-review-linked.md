@@ -1,7 +1,7 @@
 ---
 title: iOS and iPadOS 13 - The MacStories Review (Linked)
 category: Programming
-tags: [ios, ipados, apple, ios development, tech, iphone, ipad]
+tags: [ios, ipados, apple, ios development, tech, iphone, ipad, linked]
 layout: post
 ---
 ![Floating iPhones Cover Image]({{ "assets/ios-and-ipados-13-the-macstories-review-linked/ios-and-ipados-review.jpeg" | absolute_url }})
