@@ -49,7 +49,7 @@ main {
     font-weight: normal;
     font-size: $large-font-size;
     color: rgba(255,255,255,.75);
-    margin-top: 0;
+    margin-top: 1.5rem;
     margin-bottom: $heading-spacing;
 
     a {
@@ -131,6 +131,7 @@ main {
   // Bigger title
   .site-title {
     font-size: 3.25rem;
+    line-height: 1.2;
     color: $sidebar-title-color;
   }
 
@@ -148,7 +149,7 @@ main {
   // Slightly more bottom padding to compensate for heading not match 100% of
   // line-height on top
   > *:last-child {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem;
   }
 }
 
@@ -283,7 +284,7 @@ main {
 
 #sidebar nav > * {
   display: block;
-  line-height: 1.75;
+  line-height: 1.5;
 }
 
 #sidebar nav > .icon {
