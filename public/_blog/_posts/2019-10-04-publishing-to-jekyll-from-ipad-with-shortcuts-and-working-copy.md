@@ -23,7 +23,7 @@ Inspiration struck while I was in Vietnam; I met two girls from England shortly 
 
 After a short investigation, I came across [Working Copy](https://workingcopyapp.com/), a fantastic Git client for iOS and iPadOS. So, I set about writing up posts on my iPad, and pushing them to my GitHub repo using the app. For the first couple of posts it worked wonderfully, but then the checking out of branches, creation of file structures, and pushing of changes started becoming a little bit tedious. What does one do when presented with repetitive and tedious work? Turn to automation - in my case, [Shortcuts](https://apps.apple.com/ca/app/shortcuts/id1462947752).
 
-> Just want to download the shortcut? Scroll down to the bottom!
+> Just want to download the shortcut? Scroll down to [Downloading the Shortcut](#downloading-the-shortcut)!
 
 ## Shortcuts and Working Copy
 
