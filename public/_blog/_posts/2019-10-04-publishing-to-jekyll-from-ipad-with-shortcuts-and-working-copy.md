@@ -5,7 +5,7 @@ tags: [jekyll, meta, blog, ios, ipad os, automation, shortcuts, working copy]
 layout: post
 ---
 
-![blog-home-page.jpeg]({{ "assets/publishing-to-jekyll-from-ipad-with-shortcuts-and-working-copy/blog-home-page.jpeg" | absolute_url }})
+![Blog Home Page]({{ "assets/publishing-to-jekyll-from-ipad-with-shortcuts-and-working-copy/blog-home-page.png" | absolute_url }})
 
 
 This is a post that has sort of been in the works for a while now, ever since I got the chance to travel halfway around the world this summer! You can read more about that trip [here]({{ site.baseurl }}{% post_url 2019-08-07-japan-land-of-the-rising-sun %}).
@@ -17,7 +17,7 @@ Now, another neat trick that I set up early on was to automatically run pushes t
 Inspiration struck while I was in Vietnam; I met two girls from England shortly after landing in [Hanoi]({{ site.baseurl }}{% post_url 2019-08-17-hanoi-vietnam %}). One of them had been blogging about their whole adventure so far, which pushed me to investigate publishing posts to my blog from my iPad (as I was travelling without my laptop).
 
 
-![sapa-vietnam.jpeg]({{ "assets/publishing-to-jekyll-from-ipad-with-shortcuts-and-working-copy/sapa-vietnam.jpeg" | absolute_url }})
+![Sapa, Vietnam]({{ "assets/publishing-to-jekyll-from-ipad-with-shortcuts-and-working-copy/sapa-vietnam.jpeg" | absolute_url }})
 
 > Vietnam was an absolute blast!
 
@@ -28,7 +28,7 @@ After a short investigation, I came across [Working Copy](https://workingcopyapp
 ## Shortcuts and Working Copy
 
 
-![shortcuts-for-ipados.jpeg]({{ "assets/publishing-to-jekyll-from-ipad-with-shortcuts-and-working-copy/shortcuts-for-ipados.jpeg" | absolute_url }})
+![Shortcuts for iPadOS]({{ "assets/publishing-to-jekyll-from-ipad-with-shortcuts-and-working-copy/shortcuts-for-ipados.png" | absolute_url }})
 
 > Shortcuts for iPadOS was the automation answer I was looking for
 
@@ -37,28 +37,28 @@ Working Copy supported x-callback URLs, a (fairly primitive) way of interacting 
 And that worked very well - in fact, it lasted me throughout my entire trip. I posted upwards of 10 posts using this method... and then iOS 13 showed up.
 
 
-![ipados-home-screen.jpeg]({{ "assets/publishing-to-jekyll-from-ipad-with-shortcuts-and-working-copy/ipados-home-screen.jpeg" | absolute_url }})
+![iPadOS Home Screen]({{ "assets/publishing-to-jekyll-from-ipad-with-shortcuts-and-working-copy/ipados-home-screen.png" | absolute_url }})
 
 > iPadOS brings many awesome new features, including a new look for the home screen.
 
 iOS 13 introduced parameters to Shortcuts, which allows shortcut actions to take in variable parameters at runtime. This opens up the possibility for way more custom shortcuts, and Working Copy takes advantage of this very well. Starting with their iOS 13 update, there are now shortcut actions provided directly from Working Copy that allow you to take actions such as pulling a repository, pushing to one, writing directly to files, and more. All of a sudden, I didn’t have to rely on x-callback URLs anymore!
 
 
-![list-of-working-copy-actions.jpeg]({{ "assets/publishing-to-jekyll-from-ipad-with-shortcuts-and-working-copy/list-of-working-copy-actions.jpeg" | absolute_url }})
+![List of Working Copy Actions]({{ "assets/publishing-to-jekyll-from-ipad-with-shortcuts-and-working-copy/list-of-working-copy-actions.png" | absolute_url }})
 
 > A list of the actions provided by Working Copy in iOS 13, at the time of writing
 
 So, I set about revamping my shortcut. But this time, I wanted to automate more than just the prep work. I wanted to be able to share various types of input with the shortcut, and have the appropriate actions be offered to me in order to put up a new blog post. For example, sharing a note from [Bear](https://apps.apple.com/ca/app/bear/id1016366447) should take the text from inside and create a new blog post, whereas sharing a webpage should create a special kind of linked post, where I can add a small comment about why I’m linking to that page. In the former case, images should be chosen from the Photos app, while in the latter the primary image should be the hero photo from the linked page. So, I invested a lot of time and effort, leaving me with this!
 
 
-![publish-blog-post-shortcut.jpeg]({{ "assets/publishing-to-jekyll-from-ipad-with-shortcuts-and-working-copy/publish-blog-post-shortcut.jpeg" | absolute_url }})
+![Publish Blog Post Shortcut]({{ "assets/publishing-to-jekyll-from-ipad-with-shortcuts-and-working-copy/publish-blog-post-shortcut.png" | absolute_url }})
 
 > My glorious 100+ action blog post shortcut
 
 Unfortunately, that didn’t get me all the way. I needed to put all of the assets for a particular post in the same folder, but that folder wouldn’t exist until it was created by Working Copy. And unfortunately, there was no way to create the folder in the first place! So I reached out to the creator of Working Copy on Twitter, and they told me that the next version of the app may give the Write shortcut the ability to do just that. Imagine my surprise when, within 48 hours of my conversation, there was an update on the App Store with that very feature!
 
 
-![working-copy-app-store-update.jpeg]({{ "assets/publishing-to-jekyll-from-ipad-with-shortcuts-and-working-copy/working-copy-app-store-update.jpeg" | absolute_url }})
+![Working Copy App Store Update]({{ "assets/publishing-to-jekyll-from-ipad-with-shortcuts-and-working-copy/working-copy-app-store-update.png" | absolute_url }})
 
 > The creator of Working Copy saves the day!
 
