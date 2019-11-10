@@ -10,7 +10,7 @@ body {
 
 .parallax {
   min-height: calc(0.6 * 40vh + 0.4 * 40vw);
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-repeat: no-repeat;
   background-size: cover;
   border-top: 4px solid black;
@@ -25,7 +25,7 @@ body {
 
 #parallax2 {
   background-image: url("/assets/minified/background2.jpg");
-  background-position: top;
+  background-position: center;
 }
 
 #parallax3 {
