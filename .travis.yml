@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 2.3
 before_install:
-  - nvm install-latest-npm
+  - nvm use node
   - npm install -g firebase-tools
 install:
   - bundle install
