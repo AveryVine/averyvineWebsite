@@ -146,7 +146,7 @@ window.onload = function () {
     window.sr = ScrollReveal({
       reset: true,
       mobile: true,
-      scale: 0.7,
+      scale: 0.8,
       viewOffset: {
         top: 60,
         right: 0,
@@ -155,13 +155,13 @@ window.onload = function () {
       }
     });
     sr.reveal('.content-block', {
-      duration: 1000
+      duration: 800
     });
     sr.reveal('.figure', {
-      duration: 1000
+      duration: 800
     });
     sr.reveal('.card', {
-      duration: 1000
+      duration: 800
     });
   });
 };
