@@ -109,12 +109,14 @@ let getProjects = function () {
 //loads a set of up to {projectsToDisplay} projects (probably 3)
 let loadProjects = function () {
   let projectsToShow = [];
+  let projectSeparatorsToShow = [];
   let totalProjects = 0;
 
   //track which projects should be shown
   for (let projectIndex = 1; $('#project' + projectIndex).length; projectIndex++) {
     if (projectIndex >= firstVisibleProject && projectIndex < firstVisibleProject + projectsToDisplay) {
       projectsToShow.push($('#project' + projectIndex).attr('id'));
+      projectSeparatorsToShow.push($('#project-separator-' + projectIndex).attr('id'));
     }
     totalProjects++;
   }
@@ -122,8 +124,14 @@ let loadProjects = function () {
   //hide all projects, then show tracked projects
   for (let projectIndex = 1; $('#project' + projectIndex).length; projectIndex++) {
     let project = $('#project' + projectIndex);
-    project.fadeOut(600, function () {
+    let projectSeparator = $('#project-separator-' + projectIndex);
+    project.fadeOut(600, function() {
       if (projectsToShow.includes($(this).attr('id'))) {
+        $(this).fadeIn(600);
+      }
+    });
+    projectSeparator.fadeOut(600, function() {
+      if (projectSeparatorsToShow.includes($(this).attr('id'))) {
         $(this).fadeIn(600);
       }
     });
