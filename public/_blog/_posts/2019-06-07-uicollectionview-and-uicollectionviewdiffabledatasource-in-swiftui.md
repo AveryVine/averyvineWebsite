@@ -27,7 +27,7 @@ struct MyCollectionView : View {
 }
 ```
 
-We're going to replace the protocol that `MyCollectionView` conforms to with `UIViewRepresentable`. This protocol requires us to implement the functions `makeUIView` and `updateUIView`, so lets do that. You can start typing their names and Xcode autocomplete will take care of the rest. You'll want to adjust the return of the `makeUIView` function to be a `UICollectionView`, as well as the first parameter of `updateUIView`. Finally, fill in the body of `makeUIView` to return a `UICollectionView`.
+We're going to replace the protocol that `MyCollectionView` conforms to with `UIViewRepresentable`. This protocol requires us to implement the functions `makeUIView` and `updateUIView`, so let's do that. You can start typing their names and Xcode autocomplete will take care of the rest. You'll want to adjust the return of the `makeUIView` function to be a `UICollectionView`, as well as the first parameter of `updateUIView`. Finally, fill in the body of `makeUIView` to return a `UICollectionView`.
 
 > Fun fact: auto-completing the `makeUIView` and `updateUIView` functions of the `UIViewRepresentable` protocol for our UICollectionView will generate a parameter with the type `UIViewRepresentableContext<MyCollectionView>`. This type can be replaced with `Context` for readability!
 
