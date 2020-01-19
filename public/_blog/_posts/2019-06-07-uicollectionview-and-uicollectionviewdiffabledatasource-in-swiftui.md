@@ -29,7 +29,7 @@ struct MyCollectionView : View {
 
 We're going to replace the protocol that `MyCollectionView` conforms to with `UIViewRepresentable`. This protocol requires us to implement the functions `makeUIView` and `updateUIView`, so lets do that. You can start typing their names and Xcode autocomplete will take care of the rest. You'll want to adjust the return of the `makeUIView` function to be a `UICollectionView`, as well as the first parameter of `updateUIView`. Finally, fill in the body of `makeUIView` to return a `UICollectionView`.
 
-> Fun fact: as of beta 1, auto-completing the `makeUIView` and `updateUIView` functions of the `UIViewRepresentable` protocol for our UICollectionView will generate a parameter with the type `UIViewRepresentableContext<MyCollectionView>`. This type can be replaced with `Context` for readability!
+> Fun fact: auto-completing the `makeUIView` and `updateUIView` functions of the `UIViewRepresentable` protocol for our UICollectionView will generate a parameter with the type `UIViewRepresentableContext<MyCollectionView>`. This type can be replaced with `Context` for readability!
 
 Once you've done all that, you should end up with something like the code below.
 
@@ -92,7 +92,7 @@ struct MyCollectionView : UIViewRepresentable {
     }
 
     func populate(dataSource: UICollectionViewDiffableDataSource<MySection, MyModelObject>) {
-        let snapshot = NSDiffableDataSourceSnapshot<MySection, MyModelObject>()
+        var snapshot = NSDiffableDataSourceSnapshot<MySection, MyModelObject>()
         snapshot.appendSections([.main])
         snapshot.appendItems([MyModelObject(), MyModelObject(), MyModelObject()])
         dataSource.apply(snapshot)
@@ -139,6 +139,7 @@ func updateUIView(_ uiView: UICollectionView, context: Context) {
     let dataSource = context.coordinator.dataSource
     // ...
     // Do whatever updates you need to here!
+    // e.g. populate(dataSource: dataSource)
     // ...
 }
 ```
@@ -150,5 +151,7 @@ Resume the preview on the right side, and you should see red cells!
 ## Wrap Up
 
 SwiftUI has an incredible amount of potential, and while it doesn't yet intrinsically support `UICollectionView` and the new `UICollectionViewDiffableDataSource`, we can quite easily create a wrapper around our collection to take advantage of this awesome new API.
+
+If you've made it this far, and want to download a version of the code, you can grab it [here]({{ "assets/uicollectionview-and-uicollectionviewdiffabledatasource-in-swiftui/MyCollectionView.swift" | absolute_url }}).
 
 What do you think of SwiftUI? Leave your comments below!
