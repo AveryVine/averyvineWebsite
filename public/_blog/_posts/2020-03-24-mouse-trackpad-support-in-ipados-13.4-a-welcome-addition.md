@@ -1,5 +1,5 @@
 ---
-title: Mouse/Trackpad Support in iPadOS 13.4: A Welcome Addition!
+title: Mouse/Trackpad Support in iPadOS 13.4 - A Welcome Addition!
 category: Programming
 tags: [ipad, ipados, software, tech]
 layout: post
