@@ -54,7 +54,7 @@ $(document).ready(function () {
 
   //set up typeit
   const typeitPhrases = [
-    'a co-op student',
+    'available for hire!',
     'a black belt in karate',
     'an iOS developer',
     'an avid musician',
